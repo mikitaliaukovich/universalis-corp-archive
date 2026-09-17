@@ -1,0 +1,11 @@
+id: reports
+category: documents
+firstChapter: 2
+name: { ru: "Отчёт", en: "Report" }
+aliases:
+  ru: ["Отчёты"]
+  en: ["Reports"]
+summary:
+  ru: "Сотни строк по шаблону. По отчётам проверяют точность прогноза судьбы и оценивают душу."
+  en: "Hundreds of templated lines. Reports are used to check the accuracy of fate forecasts and to evaluate the soul."
+related: [moral-evaluation-department, mord]

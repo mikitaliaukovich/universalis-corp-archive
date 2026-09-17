@@ -1,0 +1,16 @@
+id: li
+name: { ru: "Ли", en: "Li" }
+role: { ru: "Бегунок", en: "Runner" }
+summary:
+  ru: "Бегунок-сплетник с сальной чёлкой и нелепо широким галстуком. Его акцент пробивается даже сквозь всеобщий перевод."
+  en: "A gossiping runner with a greasy fringe and an absurdly wide tie. His accent survives even the universal translation."
+status: dead
+faction: staff
+firstChapter: 9
+order: 42
+facts:
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Рубашка с коротким рукавом, широкий серый галстук", en: "Short-sleeved shirt, wide grey tie" }
+relations:
+  - id: mari
+    type: { ru: "Зовёт её «Мери»", en: "Calls her “Meri”" }

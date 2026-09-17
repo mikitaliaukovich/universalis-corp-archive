@@ -1,0 +1,8 @@
+id: engineers
+category: organization
+firstChapter: 8
+name: { ru: "Инженеры", en: "Engineers" }
+summary:
+  ru: "Отдел со множеством подотделов, по которым можно бегать днями."
+  en: "A department with so many sub-departments you can spend days running between them."
+related: [runners]

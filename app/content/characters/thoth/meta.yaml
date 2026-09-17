@@ -1,0 +1,14 @@
+id: thoth
+name: { ru: "Тот", en: "Thoth" }
+role: { ru: "Главный Писарь Судеб", en: "Chief Scribe of Fates" }
+summary:
+  ru: "Древнее божество письма, возглавляющее Вычислительную. Проверяет, переплетает и подписывает книги судеб."
+  en: "The ancient god of writing who heads the Computing Hall. Checks, binds and signs the books of fate."
+status: immortal
+faction: administration
+firstChapter: 8
+order: 11
+facts:
+  - label: { ru: "Кабинет", en: "Office" }
+    value: { ru: "Стеклянный балкон над входом в Вычислительную", en: "A glass balcony above the entrance to the Computing Hall" }
+relations: []

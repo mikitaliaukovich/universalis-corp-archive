@@ -1,0 +1,8 @@
+id: catch-contract
+category: documents
+firstChapter: 8
+name: { ru: "Контракт на отлов", en: "Catch Contract" }
+summary:
+  ru: "Скреплённая пачка листов с целевой душой, причиной и местом смерти."
+  en: "A stapled bundle naming the target soul, cause and place of death."
+related: [pneumatic-tube, mord, reports]

@@ -1,0 +1,11 @@
+id: charter
+category: documents
+firstChapter: 2
+name: { ru: "Устав", en: "Charter" }
+aliases:
+  ru: ["Пункты Устава"]
+  en: ["Points of the Charter"]
+summary:
+  ru: "Свод правил, за нарушение пунктов которого душу направляют на испытания. Мари нарушила семь."
+  en: "The code whose points, when violated, send a soul to trials. Mari violated seven."
+related: [trials, seven-assignments]

@@ -1,0 +1,14 @@
+id: chapter-05
+number: 5
+name: { ru: "Архивариус 2", en: "The Archivist 2" }
+summary:
+  ru: "Архивариус дочитывает книгу Мари и обнаруживает, что её судьбу переписали. Он решает предупредить её."
+  en: "The Archivist finishes Mari's book and discovers her fate has been rewritten. He decides to warn her."
+pov: archivist
+realm: archive
+status: outline
+setting:
+  ru: "Чистилище: Архив"
+  en: "Purgatory: the Archive"
+characters: [archivist, mari]
+terms: [altered-book, books-of-fates, doors, archive]

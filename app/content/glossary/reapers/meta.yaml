@@ -1,0 +1,11 @@
+id: reapers
+category: ranks
+firstChapter: 6
+name: { ru: "Ангел Смерти", en: "Angel of Death" }
+aliases:
+  ru: ["Жнец", "Жнецы", "Смерть"]
+  en: ["Reaper", "Reapers", "Death"]
+summary:
+  ru: "Ловит душу в момент смерти тела и уводит её в иной мир. Огромный штат."
+  en: "Catches a soul at the moment the body dies and leads it to the other world. A huge staff."
+related: [reaper, pager, restless-souls, first-moment]

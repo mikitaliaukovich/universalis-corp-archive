@@ -1,0 +1,8 @@
+id: chief-scribe
+category: ranks
+firstChapter: 8
+name: { ru: "Главный Писарь Судеб", en: "Chief Scribe of Fates" }
+summary:
+  ru: "Финальный проверяющий и переплётчик книг судеб. Эту должность занимает Тот."
+  en: "The final checker and binder of the books of fate. The post is held by Thoth."
+related: [thoth, books-of-fates, computing-hall]

@@ -1,0 +1,20 @@
+id: jay-abrams
+name: { ru: "Джей «Отец» Абрамс", en: "Jay “Father” Abrams" }
+role: { ru: "Звёздный квотербек «Далласских Быков»", en: "Star quarterback of the Dallas Bulls" }
+summary:
+  ru: "Лидер команды, чья гордыня превратилась в презрение. Первая пойманная Мари душа — испытание Гордыней."
+  en: "A team leader whose pride turned to contempt. The first soul Mari catches — the trial of Pride."
+status: dead
+faction: living
+firstChapter: 6
+order: 53
+facts:
+  - label: { ru: "Прозвище", en: "Nickname" }
+    value: { ru: "«Отец» — за лидерство", en: "“Father” — for his leadership" }
+  - label: { ru: "Испытание", en: "Trial" }
+    value: { ru: "Гордыня", en: "Pride" }
+relations:
+  - id: ron
+    type: { ru: "Отравитель", en: "Poisoner" }
+  - id: reaper
+    type: { ru: "Увёл его душу", en: "Led his soul away" }

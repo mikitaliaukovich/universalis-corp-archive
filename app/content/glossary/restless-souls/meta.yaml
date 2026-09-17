@@ -1,0 +1,8 @@
+id: restless-souls
+category: mechanics
+firstChapter: 6
+name: { ru: "Неупокоенная душа", en: "Restless Soul" }
+summary:
+  ru: "Душа, которую не поймали в момент смерти."
+  en: "A soul that was not caught at the moment of death."
+related: [reapers, possession]

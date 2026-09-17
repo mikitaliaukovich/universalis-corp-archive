@@ -1,0 +1,8 @@
+id: manual
+category: documents
+firstChapter: 8
+name: { ru: "Методичка", en: "Manual" }
+summary:
+  ru: "Инструкция для новых ловцов, выдаваемая после первого задания."
+  en: "An instruction booklet issued to new catchers after their first job."
+related: [first-moment, reapers]

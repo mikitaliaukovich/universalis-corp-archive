@@ -1,0 +1,18 @@
+id: rafael
+name: { ru: "Рафаэль", en: "Rafael" }
+role: { ru: "Любовник Мари", en: "Mari's lover" }
+summary:
+  ru: "Молодой «итальянский жеребец» из автодетейлинга, на самом деле — славянского происхождения. Сидит в тюрьме за мошенничество."
+  en: "A young “Italian stallion” from a car-detailing studio, actually of Slavic origin. In prison for fraud."
+status: alive
+faction: living
+firstChapter: 1
+order: 50
+facts:
+  - label: { ru: "Работа", en: "Work" }
+    value: { ru: "Автодетейлинг", en: "Car detailing" }
+  - label: { ru: "Коронная фраза", en: "Catchphrase" }
+    value: { ru: "«Ciao, amore mio!»", en: "“Ciao, amore mio!”" }
+relations:
+  - id: mari
+    type: { ru: "Любовница", en: "Lover" }

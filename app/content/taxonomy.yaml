@@ -1,0 +1,103 @@
+# Classification lists used by entries. Ids are referenced from meta.yaml files.
+
+realms:
+  living:
+    code: "МЖ"
+    label: { ru: "Мир живых", en: "World of the living" }
+  purgatory:
+    code: "ЧСТ"
+    label: { ru: "Чистилище", en: "Purgatory" }
+  archive:
+    code: "АРХ"
+    label: { ru: "Архив", en: "The Archive" }
+
+chapterStatuses:
+  written:
+    label: { ru: "Написана", en: "Written" }
+    stamp: { ru: "Копия верна", en: "Certified copy" }
+  partial:
+    label: { ru: "Частично написана", en: "Partially written" }
+    stamp: { ru: "В работе", en: "In progress" }
+  outline:
+    label: { ru: "Черновой план", en: "Outline only" }
+    stamp: { ru: "Черновик", en: "Draft" }
+
+characterStatuses:
+  dead:
+    label: { ru: "Мёртв(а)", en: "Deceased" }
+    stamp: { ru: "Мёртв", en: "Deceased" }
+  immortal:
+    label: { ru: "Бессмертен", en: "Immortal" }
+    stamp: { ru: "Бессмертен", en: "Immortal" }
+  alive:
+    label: { ru: "Жив(а)", en: "Alive" }
+    stamp: { ru: "Жив", en: "Alive" }
+  unknown:
+    label: { ru: "Неизвестно", en: "Unknown" }
+    stamp: { ru: "Не установлен", en: "Unconfirmed" }
+
+factions:
+  - id: protagonists
+    label: { ru: "Семья Доберштейн", en: "The Doberstein family" }
+    description:
+      ru: "Мари и те, кого она потеряла. Семья, ради которой заключена сделка."
+      en: "Mari and those she lost — the family the deal was made for."
+  - id: administration
+    label: { ru: "Администрация Чистилища", en: "Purgatory Administration" }
+    description:
+      ru: "Официальная система Корпорации Универсалис: менеджеры, писари и сущности старше человечества."
+      en: "The official system of the Universalis Corporation: managers, scribes and entities older than mankind."
+  - id: opposition
+    label: { ru: "Фракция Харона", en: "Charon's faction" }
+    description:
+      ru: "Понижённые реформой. Собственная игра, собственные цели."
+      en: "Those demoted by the reform. Their own game, their own goals."
+  - id: staff
+    label: { ru: "Персонал", en: "Staff" }
+    description:
+      ru: "Бегунки, приёмщики и архивариусы — души, отрабатывающие грехи трудом."
+      en: "Runners, clerks and archivists — souls working off their sins."
+  - id: living
+    label: { ru: "Мир живых", en: "The living world" }
+    description:
+      ru: "Люди, чьи пути пересеклись с Мари — до и после её смерти."
+      en: "People whose paths crossed Mari's — before and after her death."
+
+glossaryCategories:
+  - id: organization
+    code: "ОРГ"
+    label: { ru: "Организация", en: "Organisation" }
+  - id: ranks
+    code: "ДОЛЖ"
+    label: { ru: "Должности и касты", en: "Ranks & castes" }
+  - id: documents
+    code: "ДОК"
+    label: { ru: "Документы и предметы", en: "Documents & objects" }
+  - id: places
+    code: "МЕСТ"
+    label: { ru: "Места", en: "Places" }
+  - id: mechanics
+    code: "МЕХ"
+    label: { ru: "Законы и механика", en: "Laws & mechanics" }
+
+clearance:
+  open:
+    label: { ru: "Открытый доступ", en: "Open access" }
+  restricted:
+    label: { ru: "Для служебного пользования", en: "Restricted" }
+  secret:
+    label: { ru: "Совершенно секретно", en: "Top secret" }
+
+imageKinds:
+  portrait:
+    label: { ru: "Портрет", en: "Portrait" }
+  moodboard:
+    label: { ru: "Мудборд", en: "Moodboard" }
+  sheet:
+    label: { ru: "Лист персонажа", en: "Character sheet" }
+  concept:
+    label: { ru: "Концепт", en: "Concept" }
+  reference:
+    label: { ru: "Референс", en: "Reference" }
+  location:
+    label: { ru: "Локация", en: "Location" }

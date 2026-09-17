@@ -1,0 +1,22 @@
+id: manarola
+category: places
+firstChapter: 8
+name: { ru: "Манарола", en: "Manarola" }
+aliases:
+  ru: ["Лигурия", "Италия"]
+  en: ["Liguria", "Italy"]
+summary:
+  ru: "Итальянская деревня на скалах Лигурии — место действия главы 8."
+  en: "An Italian cliffside village in Liguria — the setting of chapter 8."
+related: [polygraph, spirit-world]
+images:
+  - file: media/locations/manarola/view-2.png
+    focus: { x: 50, y: 50, zoom: 1 }
+    kind: location
+    caption: { ru: "Манарола: вид на деревню", en: "Manarola: view of the village" }
+  - file: media/locations/manarola/view-1.png
+    kind: location
+    caption: { ru: "Манарола", en: "Manarola" }
+  - file: media/locations/manarola/terrace.png
+    kind: concept
+    caption: { ru: "Концепт: терраса над морем", en: "Concept: terrace above the sea" }

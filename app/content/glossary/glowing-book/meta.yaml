@@ -1,0 +1,8 @@
+id: glowing-book
+category: documents
+firstChapter: 3
+name: { ru: "Светящаяся книга", en: "Glowing Book" }
+summary:
+  ru: "Предсказанная, но ещё не решённая судьба недавно умершего — с несколькими вариантами финала."
+  en: "The predicted but still undecided fate of the recently dead — holding several possible endings."
+related: [books-of-fates, altered-book]

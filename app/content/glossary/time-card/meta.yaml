@@ -1,0 +1,11 @@
+id: time-card
+category: documents
+firstChapter: 8
+name: { ru: "Табельная карточка", en: "Time Card" }
+aliases:
+  ru: ["Карточка"]
+  en: ["Punch card"]
+summary:
+  ru: "Карточка, которую ловцы пробивают в часах-компостере МОРД."
+  en: "The card catchers punch in the MORD time clock."
+related: [mord]

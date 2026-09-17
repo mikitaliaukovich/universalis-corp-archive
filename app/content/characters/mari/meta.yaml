@@ -1,0 +1,62 @@
+id: mari
+name: { ru: "Мари Доберштейн", en: "Mari Doberstein" }
+role: { ru: "Главная героиня. Исполнитель поручений Харона", en: "Protagonist. Charon's task executor" }
+summary:
+  ru: "36-летняя юристка из Кракова, погибшая вместе с семьёй. В Чистилище заключает сделку: семь спасённых душ в обмен на Рай для мужа и сына."
+  en: "A 36-year-old lawyer from Kraków who died along with her family. In Purgatory she strikes a deal: seven saved souls in exchange for Paradise for her husband and son."
+status: dead
+stamp: { ru: "Мертва", en: "Deceased" }
+faction: protagonists
+firstChapter: 1
+order: 1
+clearance: open
+quote:
+  ru: "«Иногда, чтобы найти себя, нужно потерять всё, во что ты верила.»"
+  en: "“Sometimes, to find yourself, you have to lose everything you believed in.”"
+reference:
+  ru: "Джульет Николс (Ребекка Фергюсон), сериал «Укрытие»"
+  en: "Juliette Nichols (Rebecca Ferguson), “Silo”"
+facts:
+  - label: { ru: "Полное имя", en: "Full name" }
+    value: { ru: "Мари Анна Доберштейн, урожд. Новак", en: "Mari Anna Doberstein, née Nowak" }
+  - label: { ru: "Возраст", en: "Age" }
+    value: { ru: "36 лет на момент смерти", en: "36 at the time of death" }
+  - label: { ru: "Место рождения", en: "Born" }
+    value: { ru: "Краков, Польша", en: "Kraków, Poland" }
+  - label: { ru: "Профессия", en: "Occupation" }
+    value: { ru: "Старший партнёр, корпоративное право", en: "Senior partner, corporate law" }
+  - label: { ru: "Автомобиль", en: "Car" }
+    value: { ru: "Розовый BMW Z4", en: "Pink BMW Z4" }
+  - label: { ru: "Черты", en: "Traits" }
+    value: { ru: "Циничная, саркастичная, наблюдательная, сломленная", en: "Cynical, sarcastic, observant, broken" }
+relations:
+  - id: mark
+    type: { ru: "Муж", en: "Husband" }
+  - id: viktor
+    type: { ru: "Сын", en: "Son" }
+  - id: rafael
+    type: { ru: "Любовник", en: "Lover" }
+  - id: charon
+    type: { ru: "Работодатель по сделке", en: "Employer under the deal" }
+  - id: reaper
+    type: { ru: "Владелец её пейджера", en: "Owner of her pager" }
+  - id: alba
+    type: { ru: "Подруга в Чистилище", en: "Friend in Purgatory" }
+images:
+  - file: media/characters/mari/moodboard.png
+    focus: { x: 0, y: 0, zoom: 2.7 }
+    kind: moodboard
+    caption: { ru: "Мудборд: Мари", en: "Moodboard: Mari" }
+  - file: media/characters/mari/moodboard-purgatory.png
+    focus: { x: 0, y: 0, zoom: 1.5 }
+    kind: moodboard
+    caption: { ru: "Мудборд: Мари в Чистилище", en: "Moodboard: Mari in Purgatory" }
+  - file: media/characters/mari/wardrobe-sheet.png
+    kind: sheet
+    caption: { ru: "Гардероб, причёски и детали", en: "Wardrobe, hairstyles and details" }
+  - file: media/characters/mari/wardrobe-sheet-2.png
+    kind: sheet
+    caption: { ru: "Гардероб, вариант 2", en: "Wardrobe, variant 2" }
+  - file: media/characters/mari/reference.png
+    kind: reference
+    caption: { ru: "Референс: Ребекка Фергюсон", en: "Reference: Rebecca Ferguson" }

@@ -1,0 +1,8 @@
+id: first-moment
+category: mechanics
+firstChapter: 8
+name: { ru: "Первый миг души", en: "A Soul's First Moment" }
+summary:
+  ru: "Образ, который душа видит, впервые попав в чистилище. Его задаёт ловец."
+  en: "The image a soul sees on first arriving in purgatory. It is shaped by the catcher."
+related: [reapers, manual, admissions-ward]

@@ -1,0 +1,1 @@
+**Senior purification and distribution manager** — [[morana]]. **Junior purification manager** — the demoted [[charon]]. Moving a soul from one manager to another requires transfer paperwork and a registry entry.

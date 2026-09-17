@@ -1,0 +1,8 @@
+id: soul-projection
+category: mechanics
+firstChapter: 9
+name: { ru: "Проекция души", en: "Soul Projection" }
+summary:
+  ru: "Тело в чистилище — то, каким ты себя представляешь. Сон не нужен."
+  en: "Your body in purgatory is how you picture yourself. No sleep is needed."
+related: [purgatory-time]

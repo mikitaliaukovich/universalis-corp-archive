@@ -1,0 +1,22 @@
+id: viktor
+name: { ru: "Виктор Доберштейн", en: "Viktor Doberstein" }
+role: { ru: "Сын Мари и Марка", en: "Son of Mari and Mark" }
+summary:
+  ru: "Школьник, талантливый картингист. Сам попросил отца о разводе — и погиб под машиной матери."
+  en: "A schoolboy and gifted karting driver. He asked his father to divorce — and died under his mother's car."
+status: dead
+faction: protagonists
+firstChapter: 1
+order: 3
+facts:
+  - label: { ru: "Возраст", en: "Age" }
+    value: { ru: "13–16 лет (в рукописи расходится)", en: "13–16 (inconsistent in the manuscript)" }
+  - label: { ru: "Увлечение", en: "Passion" }
+    value: { ru: "Картинг, лучший круг — 1:48", en: "Karting, best lap 1:48" }
+  - label: { ru: "Местонахождение", en: "Whereabouts" }
+    value: { ru: "Чистилище, неизвестно", en: "Purgatory, unknown" }
+relations:
+  - id: mari
+    type: { ru: "Мать", en: "Mother" }
+  - id: mark
+    type: { ru: "Отец", en: "Father" }

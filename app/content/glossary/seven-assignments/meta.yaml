@@ -1,0 +1,11 @@
+id: seven-assignments
+category: mechanics
+firstChapter: 4
+name: { ru: "Семь поручений", en: "Seven Assignments" }
+aliases:
+  ru: ["Сделка", "Семь душ"]
+  en: ["The deal", "Seven souls"]
+summary:
+  ru: "Сделка Харона: семь заданий — семь спасённых душ, по одной за каждый нарушенный пункт."
+  en: "Charon's deal: seven jobs — seven saved souls, one for each violated point."
+related: [charon, service-contract, paradise, trials]

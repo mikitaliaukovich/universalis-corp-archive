@@ -1,0 +1,11 @@
+id: pneumatic-tube
+category: documents
+firstChapter: 9
+name: { ru: "Пневмотруба", en: "Pneumatic Tube" }
+aliases:
+  ru: ["Пневмопочта"]
+  en: ["Pneumatic mail"]
+summary:
+  ru: "Пневмопочта, доставляющая агентам маяки и контракты."
+  en: "Pneumatic mail that delivers beacons and contracts to agents."
+related: [beacons, catch-contract]

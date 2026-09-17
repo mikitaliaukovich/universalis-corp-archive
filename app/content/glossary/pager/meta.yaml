@@ -1,0 +1,11 @@
+id: pager
+category: documents
+firstChapter: 4
+name: { ru: "Пейджер Ангела Смерти", en: "Reaper's Pager" }
+aliases:
+  ru: ["Пейджер"]
+  en: ["Pager"]
+summary:
+  ru: "Потрёпанный пейджер, дающий владельцу временные силы Ангела Смерти и доставляющий инструкции."
+  en: "A battered pager that grants its holder the temporary powers of an Angel of Death and delivers instructions."
+related: [reapers, reaper, charon]

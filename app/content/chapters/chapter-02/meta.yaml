@@ -1,0 +1,14 @@
+id: chapter-02
+number: 2
+name: { ru: "По ту сторону", en: "On the Other Side" }
+summary:
+  ru: "Мари просыпается в абсолютной тишине чёрной пустоты. Регистратор Морана сообщает, что она нарушила семь пунктов Устава и должна пройти испытания."
+  en: "Mari wakes in the absolute silence of a black void. Registrar Morana informs her that she has violated seven points of the Charter and must undergo trials."
+pov: mari
+realm: purgatory
+status: written
+setting:
+  ru: "Чистилище: Приёмный покой, регистратура"
+  en: "Purgatory: the Admissions Ward, the reception desk"
+characters: [mari, morana]
+terms: [admissions-ward, transition, universalis, purification-department, moral-evaluation-department, charter, trials, reports, distribution, case-file, typewriters, doors, transition-registrar, purification-manager]

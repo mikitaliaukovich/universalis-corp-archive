@@ -1,0 +1,8 @@
+id: coup
+category: organization
+firstChapter: 9
+name: { ru: "Военный переворот", en: "Coup" }
+summary:
+  ru: "Замысел Харона и его сообщников захватить власть в Чистилище."
+  en: "The plan of Charon and his accomplices to seize power in Purgatory."
+related: [charon, reaper, altered-book]

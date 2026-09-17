@@ -1,0 +1,8 @@
+id: color-corridors
+category: places
+firstChapter: 8
+name: { ru: "Цветные коридоры", en: "Colour-coded Corridors" }
+summary:
+  ru: "Система навигации: оранжевые, красные, синие и зелёные линии на бетонных стенах."
+  en: "The wayfinding system: orange, red, blue and green lines on concrete walls."
+related: [exit-room, computing-hall, archive]

@@ -1,0 +1,45 @@
+id: alba
+name: { ru: "Альба", en: "Alba" }
+role: { ru: "Бегунок. Сотрудница архива", en: "Runner. Archive courier" }
+summary:
+  ru: "Бегунок, родившаяся во Франции в 1913 году. Двадцать реальных лет отрабатывает грехи. Любит сплетни — и стала подругой Мари."
+  en: "A runner born in France in 1913, working off her sins for twenty real years. Loves gossip — and became Mari's friend."
+status: dead
+stamp: { ru: "Мертва", en: "Deceased" }
+faction: staff
+firstChapter: 8
+order: 31
+quote:
+  ru: "«Новости сами себя не принесут.»"
+  en: "“News won't deliver itself.”"
+facts:
+  - label: { ru: "Родилась", en: "Born" }
+    value: { ru: "Франция, 1913", en: "France, 1913" }
+  - label: { ru: "Стаж", en: "Service" }
+    value: { ru: "20 реальных лет", en: "20 real years" }
+  - label: { ru: "Черты", en: "Traits" }
+    value: { ru: "Общительная, наблюдательная, ироничная, преданная, вечно в движении", en: "Sociable, observant, ironic, loyal, always on the move" }
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Кудрявая блондинка, серый костюм с юбкой-карандашом, каблуки", en: "Curly blonde, grey suit with a pencil skirt, heels" }
+relations:
+  - id: mari
+    type: { ru: "Подруга («дорогая» / «старушка»)", en: "Friend (“darling” / “old lady”)" }
+  - id: peter
+    type: { ru: "Коллега-бегунок", en: "Fellow runner" }
+  - id: friedrich
+    type: { ru: "Приёмщик её книг", en: "Receives her books" }
+images:
+  - file: media/characters/alba/portrait-corridor.png
+    focus: { x: 49, y: 17, zoom: 1.7 }
+    kind: portrait
+    caption: { ru: "Альба в служебном коридоре", en: "Alba in a service corridor" }
+  - file: media/characters/alba/moodboard.png
+    focus: { x: 0, y: 0, zoom: 2.7 }
+    kind: moodboard
+    caption: { ru: "Мудборд: Альба", en: "Moodboard: Alba" }
+  - file: media/characters/alba/concept-corridor.png
+    kind: concept
+    caption: { ru: "Концепт: коридор сектора C", en: "Concept: Sector C corridor" }
+  - file: media/characters/alba/concept-office.png
+    kind: concept
+    caption: { ru: "Ранний концепт: офис", en: "Early concept: office" }

@@ -1,0 +1,11 @@
+id: reform
+category: organization
+firstChapter: 4
+name: { ru: "Реформа Чистилища", en: "Reform of Purgatory" }
+aliases:
+  ru: ["Реформы и оптимизации"]
+  en: ["Reforms and optimisations"]
+summary:
+  ru: "Преобразования, которые принесла «она» и которые лишили Харона власти над логистикой душ."
+  en: "The changes brought by “her” that stripped Charon of his power over soul logistics."
+related: [charon, morana, universalis]

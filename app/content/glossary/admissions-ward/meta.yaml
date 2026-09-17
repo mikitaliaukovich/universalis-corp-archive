@@ -1,0 +1,11 @@
+id: admissions-ward
+category: places
+firstChapter: 2
+name: { ru: "Приёмный покой", en: "Admissions Ward" }
+aliases:
+  ru: ["Пустота"]
+  en: ["The Void"]
+summary:
+  ru: "Чёрная пустота, где души впервые приходят в себя. Здесь ждут Марк и Виктор."
+  en: "The black void where souls first wake. Mark and Viktor wait here."
+related: [transition, first-moment, transition-registrar]

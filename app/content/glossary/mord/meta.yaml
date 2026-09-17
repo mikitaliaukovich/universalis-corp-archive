@@ -1,0 +1,11 @@
+id: mord
+category: places
+firstChapter: 8
+name: { ru: "МОРД", en: "MORD" }
+aliases:
+  ru: ["Место Окончательной Регистрации Душ"]
+  en: ["Place of Final Soul Registration"]
+summary:
+  ru: "Место Окончательной Регистрации Душ — нижний этаж с крошечными кабинетами, где ловцы пишут отчёты."
+  en: "The Place of Final Soul Registration — a lower floor of tiny offices where catchers write their reports."
+related: [reports, time-card, catch-contract]

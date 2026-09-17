@@ -1,0 +1,8 @@
+id: trials
+category: mechanics
+firstChapter: 2
+name: { ru: "Испытания", en: "Trials" }
+summary:
+  ru: "Проверки, соответствующие каждому нарушенному пункту Устава. Главы названы по ним."
+  en: "Tests matching each violated point of the Charter. Chapters are named after them."
+related: [charter, seven-assignments, reports]

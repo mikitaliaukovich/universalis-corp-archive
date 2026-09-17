@@ -1,0 +1,11 @@
+id: runners
+category: ranks
+firstChapter: 4
+name: { ru: "Бегунки", en: "Runners" }
+aliases:
+  ru: ["Курьеры"]
+  en: ["Couriers"]
+summary:
+  ru: "Местное название курьеров: носят бумаги между кабинками и книги в Архив. Низшая каста."
+  en: "The local name for couriers: they carry papers between cubicles and books to the Archive. The lowest caste."
+related: [transistors, computing-hall, alba]

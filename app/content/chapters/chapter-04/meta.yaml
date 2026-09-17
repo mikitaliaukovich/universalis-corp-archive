@@ -1,0 +1,14 @@
+id: chapter-04
+number: 4
+name: { ru: "Сделка", en: "The Deal" }
+summary:
+  ru: "Харон перехватывает Мари у Мораны, проводит экскурсию по Корпорации и предлагает сделку: семь поручений в обмен на Рай для её семьи."
+  en: "Charon intercepts Mari from Morana, gives her a tour of the Corporation and offers a deal: seven assignments in exchange for Paradise for her family."
+pov: mari
+realm: purgatory
+status: written
+setting:
+  ru: "Чистилище: кабинет Мораны, Вычислительная, Архив, каморка Харона"
+  en: "Purgatory: Morana's office, the Computing Hall, the Archive, Charon's closet"
+characters: [mari, morana, charon, mark, viktor]
+terms: [purgatory, case-file, purification-manager, computing-hall, archive, runners, reform, seven-assignments, paradise, admissions-ward, purgatory-time, service-contract, pager, distribution]

@@ -1,0 +1,18 @@
+id: jess
+name: { ru: "Джесс", en: "Jess" }
+role: { ru: "Первый носитель Мари", en: "Mari's first host" }
+summary:
+  ru: "Женщина из далласского бара, в чьё тело вселилась Мари. Очнулась в луже крови рядом с двумя телами."
+  en: "The woman in the Dallas bar whose body Mari possessed. Woke in a pool of blood beside two bodies."
+status: alive
+faction: living
+firstChapter: 6
+order: 55
+facts:
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Мулатка, пышные тёмные кудри, родинка над губой, шёлковая блузка и блейзер", en: "Mixed-race, voluminous dark curls, a mole above her lip, silk blouse and blazer" }
+relations:
+  - id: jasmine
+    type: { ru: "Подруга 20+ лет", en: "Friend of 20+ years" }
+  - id: mari
+    type: { ru: "Носитель", en: "Host" }

@@ -1,0 +1,14 @@
+id: chapter-09
+number: 9
+name: { ru: "Встреча", en: "The Meeting" }
+summary:
+  ru: "Новое задание приходит в папке бегунка Ли. Мари узнаёт о маяках — и отправляется на швейцарский поезд, где её судьба пересечётся с Архивариусом."
+  en: "A new job arrives in runner Li's folder. Mari learns about beacons — and heads for a Swiss train where her fate will cross the Archivist's."
+pov: mari
+realm: purgatory
+status: partial
+setting:
+  ru: "Чистилище: МОРД, выходная комната; мир живых: швейцарский поезд"
+  en: "Purgatory: MORD, the exit room; world of the living: a Swiss train"
+characters: [mari, li, archivist, charon]
+terms: [mord, exit-room, beacons, soul-projection, universal-language, pneumatic-tube, catch-contract, doors, restless-souls, coup]

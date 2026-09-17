@@ -1,0 +1,11 @@
+id: purification-department
+category: organization
+firstChapter: 2
+name: { ru: "Отдел Очистки", en: "Purification Department" }
+aliases:
+  ru: ["Очистка"]
+  en: ["Purification"]
+summary:
+  ru: "Отдел, в котором регистрируют новоприбывших и ведут очистку их душ."
+  en: "The department that registers new arrivals and oversees the purification of their souls."
+related: [transition-registrar, purification-manager, trials]

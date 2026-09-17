@@ -1,0 +1,8 @@
+id: possession
+category: mechanics
+firstChapter: 6
+name: { ru: "Вселение", en: "Possession" }
+summary:
+  ru: "Душа входит в живого человека или животное. Носитель потом помнит лишь провал."
+  en: "A soul enters a living person or an animal. The host later remembers only a blackout."
+related: [hosts, beacons, polygraph]

@@ -1,0 +1,11 @@
+id: archive
+category: places
+firstChapter: 3
+name: { ru: "Архив", en: "Archive" }
+aliases:
+  ru: ["Библиотека судеб"]
+  en: ["Library of Fates"]
+summary:
+  ru: "Бесконечная библиотека-лабиринт, где хранятся книги судеб всего человечества."
+  en: "An endless labyrinth-library holding the books of fate of all humankind."
+related: [books-of-fates, glowing-book, transfer-forms]

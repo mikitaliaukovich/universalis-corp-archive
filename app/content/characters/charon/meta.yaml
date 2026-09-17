@@ -1,0 +1,40 @@
+id: charon
+name: { ru: "Харон", en: "Charon" }
+role: { ru: "Младший менеджер по очистке", en: "Junior purification manager" }
+summary:
+  ru: "Бывший перевозчик душ, на котором держалась вся логистика загробного мира. После реформы понижен и теперь стремится вернуть влияние."
+  en: "The former ferryman of souls on whom all afterlife logistics once rested. Demoted after the reform, he now seeks to regain his influence."
+status: immortal
+faction: opposition
+firstChapter: 4
+order: 20
+quote:
+  ru: "«Логистика не умирает. Она лишь меняет маршрут.»"
+  en: "“Logistics never dies. It just changes route.”"
+reference:
+  ru: "Финеас Поршень, «Роботы»"
+  en: "Phineas T. Ratchet, “Robots”"
+facts:
+  - label: { ru: "Прежняя роль", en: "Former role" }
+    value: { ru: "Перевозчик душ, «сын Мрака и Ночи»", en: "Ferryman of souls, “son of Darkness and Night”" }
+  - label: { ru: "Кабинет", en: "Office" }
+    value: { ru: "Каморка без окон с «Пизанской башней» из папок", en: "A windowless closet with a “Leaning Tower of Pisa” of folders" }
+  - label: { ru: "Внешность", en: "Appearance" }
+    value: { ru: "Белая рубашка, серый галстук, подтяжки, иссиня-чёрные волосы; на вид от 30 до 50", en: "White shirt, grey tie, braces, blue-black hair; looks anywhere from 30 to 50" }
+  - label: { ru: "Слабость", en: "Weakness" }
+    value: { ru: "Ненавидит бумажную работу", en: "Hates paperwork" }
+relations:
+  - id: mari
+    type: { ru: "Наняла по сделке", en: "Hired under the deal" }
+  - id: reaper
+    type: { ru: "Сообщник", en: "Accomplice" }
+  - id: morana
+    type: { ru: "Начальница", en: "Superior" }
+images:
+  - file: media/characters/charon/moodboard.png
+    focus: { x: 0, y: 0, zoom: 3.1 }
+    kind: moodboard
+    caption: { ru: "Мудборд: Харон и его каморка", en: "Moodboard: Charon and his closet office" }
+  - file: media/characters/charon/reference.png
+    kind: reference
+    caption: { ru: "Референс: Финеас Т. Ратчет", en: "Reference: Phineas T. Ratchet" }

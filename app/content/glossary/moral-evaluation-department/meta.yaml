@@ -1,0 +1,8 @@
+id: moral-evaluation-department
+category: organization
+firstChapter: 2
+name: { ru: "Отдел Моральной Оценки", en: "Moral Evaluation Department" }
+summary:
+  ru: "Проводит юридический, этический и духовный анализ поступков души по отчётам об испытаниях."
+  en: "Performs the legal, ethical and spiritual analysis of a soul's deeds based on trial reports."
+related: [reports, distribution]

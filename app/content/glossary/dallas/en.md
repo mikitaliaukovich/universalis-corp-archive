@@ -1,0 +1,1 @@
+[[mari]]'s first assignment. A dirty bar near Dallas where the Dallas Bulls are celebrating, and the Margaret Hunt Hill Bridge, where Mari talks [[jay-abrams]] out of jumping. There she also meets the [[reaper]] ([[chapter-06]]).

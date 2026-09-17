@@ -1,0 +1,11 @@
+id: spirit-world
+category: places
+firstChapter: 8
+name: { ru: "Мир духов", en: "Spirit World" }
+aliases:
+  ru: ["Изнанка"]
+  en: ["The Underside"]
+summary:
+  ru: "Серая, вывернутая изнанка реальности, где наслаиваются следы истории."
+  en: "The grey, inside-out twin of reality where the traces of history pile up."
+related: [doors, possession]

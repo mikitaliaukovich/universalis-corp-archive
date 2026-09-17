@@ -1,0 +1,11 @@
+id: computing-hall
+category: organization
+firstChapter: 4
+name: { ru: "Вычислительная", en: "Computing Hall" }
+aliases:
+  ru: ["Отдел прогнозирования"]
+  en: ["Forecasting Department"]
+summary:
+  ru: "Бесконечный зал кабинок, где предсказывают и записывают судьбы. Красная секция."
+  en: "An endless hall of cubicles where fates are forecast and written down. The red section."
+related: [transistors, runners, chief-scribe, books-of-fates]

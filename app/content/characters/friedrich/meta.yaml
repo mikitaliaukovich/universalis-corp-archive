@@ -1,0 +1,16 @@
+id: friedrich
+name: { ru: "Фридрих", en: "Friedrich" }
+role: { ru: "Приёмщик Архива", en: "Archive reception clerk" }
+summary:
+  ru: "Огромный мужчина с детским голосом за окошком приёмной Архива. Заполняет формуляры и обожает сплетни."
+  en: "A huge man with a childlike voice behind the Archive reception hatch. Fills in forms and loves gossip."
+status: dead
+faction: staff
+firstChapter: 8
+order: 40
+facts:
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Голова будто сидит прямо на воротнике голубой рубашки; толстые очки", en: "Head seemingly set straight on the collar of a blue shirt; thick glasses" }
+relations:
+  - id: alba
+    type: { ru: "Принимает её книги", en: "Receives her books" }

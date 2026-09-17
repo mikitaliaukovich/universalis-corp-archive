@@ -1,0 +1,11 @@
+id: doors
+category: mechanics
+firstChapter: 2
+name: { ru: "Двери-порталы", en: "Portal Doors" }
+aliases:
+  ru: ["Двери"]
+  en: ["Doors"]
+summary:
+  ru: "Любая дверь может стать порталом между мирами — если представить место назначения."
+  en: "Any door can become a portal between worlds — if you picture the destination."
+related: [exit-room, beacons, spirit-world]

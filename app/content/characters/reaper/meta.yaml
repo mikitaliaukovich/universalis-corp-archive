@@ -1,0 +1,38 @@
+id: reaper
+name: { ru: "Жнец", en: "Reaper" }
+role: { ru: "Ангел Смерти. Сообщник Харона", en: "Angel of Death. Charon's accomplice" }
+summary:
+  ru: "Худой англичанин в чёрном с ярким британским акцентом. Очень стар. Когда-то забрал родителей Мари. Его пейджер теперь у неё."
+  en: "A gaunt Englishman in black with a strong British accent. Very old. He once collected Mari's parents. His pager is now hers."
+status: immortal
+faction: opposition
+firstChapter: 6
+order: 21
+quote:
+  ru: "«Владеющий инструментами Смерти — сам есть Смерть.»"
+  en: "“Whoever holds the tools of Death is Death.”"
+reference:
+  ru: "Смерть (Джулиан Ричингс), «Сверхъестественное»"
+  en: "Death (Julian Richings), “Supernatural”"
+facts:
+  - label: { ru: "Акцент", en: "Accent" }
+    value: { ru: "Яркий британский", en: "Strong British" }
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Чёрный шерстяной плащ, кожаные перчатки, начищенные туфли, зализанное длинное каре", en: "Black wool coat, leather gloves, polished shoes, a long slicked-back bob" }
+  - label: { ru: "Инструмент", en: "Tool" }
+    value: { ru: "Пейджер", en: "Pager" }
+relations:
+  - id: charon
+    type: { ru: "Сообщник", en: "Accomplice" }
+  - id: mari
+    type: { ru: "Забрал её родителей", en: "Collected her parents" }
+  - id: jay-abrams
+    type: { ru: "Увёл его душу", en: "Led his soul away" }
+images:
+  - file: media/characters/reaper/moodboard.png
+    focus: { x: 0, y: 0, zoom: 2.4 }
+    kind: moodboard
+    caption: { ru: "Мудборд: Жнец в Далласе", en: "Moodboard: the Reaper in Dallas" }
+  - file: media/characters/reaper/reference.png
+    kind: reference
+    caption: { ru: "Референс: Джулиан Ричингс", en: "Reference: Julian Richings" }

@@ -1,0 +1,8 @@
+id: distribution
+category: mechanics
+firstChapter: 2
+name: { ru: "Распределение", en: "Distribution" }
+summary:
+  ru: "Окончательное назначение души после анализа."
+  en: "A soul's final placement after analysis."
+related: [moral-evaluation-department, paradise, purification-manager]

@@ -1,0 +1,11 @@
+id: beacons
+category: documents
+firstChapter: 9
+name: { ru: "Маяк", en: "Beacon" }
+aliases:
+  ru: ["Маяки"]
+  en: ["Beacons"]
+summary:
+  ru: "Предмет, связанный с человеком (крестик, чётки, кольцо, ошейник, старый ключ), позволяющий не-жнецу вселиться в него."
+  en: "An object linked to a person (a cross, rosary, ring, dog collar, old key) that lets a non-reaper possess them."
+related: [possession, hosts, pneumatic-tube]

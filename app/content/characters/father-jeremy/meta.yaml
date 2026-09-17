@@ -1,0 +1,18 @@
+id: father-jeremy
+name: { ru: "Отец Джереми", en: "Father Jeremy" }
+role: { ru: "Священник церкви Святого Павла", en: "Priest of St. Paul's" }
+summary:
+  ru: "Бывший военный врач, пьющий пиво «ближе к пастве». Спорит с Мари о чистилище и честно признаётся: «Я не знаю»."
+  en: "A former army doctor who drinks beer “closer to the flock”. Debates purgatory with Mari and honestly admits: “I don't know.”"
+status: alive
+faction: living
+firstChapter: 6
+order: 52
+facts:
+  - label: { ru: "Возраст", en: "Age" }
+    value: { ru: "40+", en: "40+" }
+  - label: { ru: "Прошлое", en: "Past" }
+    value: { ru: "Пять лет военным врачом, два года — Афганистан", en: "Five years as an army doctor, two in Afghanistan" }
+relations:
+  - id: mari
+    type: { ru: "Собеседник в баре", en: "Bar companion" }

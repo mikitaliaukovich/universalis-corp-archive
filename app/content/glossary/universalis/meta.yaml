@@ -1,0 +1,11 @@
+id: universalis
+category: organization
+firstChapter: 2
+name: { ru: "Корпорация Универсалис", en: "Universalis Corporation" }
+aliases:
+  ru: ["Универсалис", "Корпорация"]
+  en: ["Universalis", "the Corporation"]
+summary:
+  ru: "Корпоративное имя Чистилища — «ребрендинг библейского чистилища», укомплектованный богами и мифическими сущностями разных религий."
+  en: "The corporate name of Purgatory — a “rebranding of the biblical purgatory” staffed by gods and mythical beings of many faiths."
+related: [purgatory, purification-department, reform]

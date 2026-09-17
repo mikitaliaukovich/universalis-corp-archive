@@ -1,0 +1,14 @@
+id: chapter-03
+number: 3
+name: { ru: "Архивариус", en: "The Archivist" }
+summary:
+  ru: "Хранитель Архива рассказывает о вечной работе — чтении книг судеб — и находит в разделе глобальных катастроф светящуюся книгу Мари."
+  en: "The Keeper of the Archive describes his eternal work — reading the books of fate — and finds Mari's glowing book in the section on global catastrophes."
+pov: archivist
+realm: archive
+status: written
+setting:
+  ru: "Чистилище: бесконечная библиотека Архива"
+  en: "Purgatory: the endless library of the Archive"
+characters: [archivist, mari]
+terms: [archive, books-of-fates, glowing-book]

@@ -1,0 +1,8 @@
+id: transfer-forms
+category: documents
+firstChapter: 8
+name: { ru: "Формуляры передачи документов", en: "Document Transfer Forms" }
+summary:
+  ru: "Бланки под копирку со штампами, которыми оформляют сдачу книг в Архив."
+  en: "Carbon-copy forms with stamps used to log books handed in to the Archive."
+related: [archive]

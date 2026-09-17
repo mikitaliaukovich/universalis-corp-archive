@@ -1,0 +1,137 @@
+# ─────────────────────────────────────────────────────────────
+#  Global site configuration. Every visible label lives in /content.
+# ─────────────────────────────────────────────────────────────
+languages:
+  - { id: ru, label: "РУС" }
+  - { id: en, label: "ENG" }
+defaultLanguage: ru
+# If true, first-time visitors get their browser's language when it is in the list above.
+detectBrowserLanguage: true
+
+org: { ru: "УНИВЕРСАЛИС", en: "UNIVERSALIS" }
+title: { ru: "Искупление", en: "Redemption" }
+terminal:
+  ru: "Терминал ОТК-7 · Отдел Очистки · Архив судеб · 1979"
+  en: "Terminal OTK-7 · Purification Dept. · Archive of Fates · 1979"
+
+# Top-level sections. `view` picks the page layout; `path` is the URL slug.
+sections:
+  - id: chronicle
+    path: chronicle
+    view: chronicle
+    hotkey: "1"
+    code: "ХРН"
+    label: { ru: "Хроника", en: "Chronicle" }
+    description:
+      ru: "Поглавная хронология событий и лора"
+      en: "Chapter-by-chapter chronology of events and lore"
+  - id: personnel
+    path: personnel
+    view: personnel
+    hotkey: "2"
+    code: "ЛД"
+    label: { ru: "Личные дела", en: "Personnel files" }
+    description:
+      ru: "Досье, предыстории и дизайн персонажей"
+      en: "Dossiers, backstories and character designs"
+  - id: glossary
+    path: glossary
+    view: glossary
+    hotkey: "3"
+    code: "КРТ"
+    label: { ru: "Картотека", en: "Card index" }
+    description:
+      ru: "Глоссарий терминов, учреждений и законов"
+      en: "Glossary of terms, institutions and laws"
+
+boot:
+  lines:
+    ru:
+      - "УНИВЕРСАЛИС ЭВМ-БИОС v.7.19 · (С) КОРПОРАЦИЯ УНИВЕРСАЛИС"
+      - "ПРОВЕРКА ОЗУ ........ 640 К ... НОРМА"
+      - "ПОДКЛЮЧЕНИЕ К ПНЕВМОПОЧТЕ ... НОРМА"
+      - "СИНХРОНИЗАЦИЯ С ВЫЧИСЛИТЕЛЬНОЙ ... 4015 ТРАНЗИСТОРОВ ОТВЕЧАЮТ"
+      - "ПЕЙДЖЕРНАЯ СЕТЬ ... СИГНАЛ ИЗ ЧИСТИЛИЩА СЛАБЫЙ"
+      - "МОНТИРОВАНИЕ АРХИВА СУДЕБ ... ∞ ТОМОВ"
+      - "ЗАГРУЗКА УСТАВА ... 7 ПУНКТОВ НАРУШЕНИЙ ОБНАРУЖЕНО"
+      - "ВРЕМЯ: НЕЛИНЕЙНОЕ. КОЭФФИЦИЕНТ 1:60"
+      - "КАЖДЫЙ ЧИХ ЗАПИСЫВАЕТСЯ."
+    en:
+      - "UNIVERSALIS COMPUTER BIOS v.7.19 · (C) UNIVERSALIS CORPORATION"
+      - "MEMORY TEST ........ 640 K ... OK"
+      - "PNEUMATIC MAIL LINK ... OK"
+      - "SYNCING WITH THE COMPUTING HALL ... 4015 TRANSISTORS RESPONDING"
+      - "PAGER NETWORK ... SIGNAL FROM PURGATORY IS WEAK"
+      - "MOUNTING ARCHIVE OF FATES ... ∞ VOLUMES"
+      - "LOADING THE CHARTER ... 7 VIOLATIONS ON FILE"
+      - "TIME: NON-LINEAR. RATIO 1:60"
+      - "EVERY SNEEZE IS RECORDED."
+  final: { ru: "ДОСТУП РАЗРЕШЁН", en: "ACCESS GRANTED" }
+
+# Header clock: one real minute = `ratio` purgatory minutes.
+clock:
+  label: { ru: "Время чистилища", en: "Purgatory time" }
+  ratio: 60
+
+pager:
+  enabled: true
+  firstDelaySeconds: 20
+  intervalSeconds: [70, 150]
+  displaySeconds: 9
+  messages:
+    ru:
+      - "СЕЙЧАС ПРОИЗОЙДЁТ. НЕ ДАЙ ЕМУ УЙТИ. ТЫ ДОЛЖНА…"
+      - "НЕ ТЕРЯЙ МОЙ ПЕЙДЖЕР."
+      - "ОТЧЁТ ПО ДЕЛУ СДАТЬ ДО 8:00. МОРД."
+      - "ТРАНЗИСТОР 4015 СГОРЕЛ. ДЕЛА ПЕРЕДАТЬ В 1001."
+      - "ВРЕМЯ НЕ ТЕРПИТ."
+      - "НЕ ЗАДЕРЖИВАЙТЕ ОЧЕРЕДЬ."
+      - "КОНТРАКТ НА ОТЛОВ — ПНЕВМОТРУБОЙ. ВЕРНУТЬ ПОДПИСАННЫМ."
+    en:
+      - "IT'S ABOUT TO HAPPEN. DON'T LET HIM LEAVE. YOU MUST…"
+      - "DON'T LOSE MY PAGER."
+      - "CASE REPORT DUE BY 8:00. MORD."
+      - "TRANSISTOR 4015 BURNED OUT. REASSIGN CASES TO 1001."
+      - "TIME WON'T WAIT."
+      - "DO NOT HOLD UP THE QUEUE."
+      - "CATCH CONTRACT VIA PNEUMATIC TUBE. RETURN SIGNED."
+
+# Rotating quotes on the home screen ("From the Charter").
+quotes:
+  ru:
+    - "Каждый чих записывается и влияет на распределение."
+    - "Владеющий инструментами Смерти — сам есть Смерть."
+    - "Время в чистилище эфемерно и нелинейно."
+    - "Не задерживайте очередь."
+    - "Жизнь на Земле — лишь ясли для души."
+    - "Отчёт составляется по шаблону. Отклонения от шаблона отправляются на доработку."
+  en:
+    - "Every sneeze is recorded and affects distribution."
+    - "Whoever holds the tools of Death is Death."
+    - "Time in purgatory is ephemeral and non-linear."
+    - "Do not hold up the queue."
+    - "Life on Earth is merely a nursery for the soul."
+    - "Reports follow the template. Deviations are returned for revision."
+
+home:
+  intro:
+    ru: "Добро пожаловать в справочный терминал Корпорации Универсалис. Здесь хранятся материалы по делу Мари Анны Доберштейн: хроника событий, личные дела фигурантов и картотека терминов. Материалы выше вашего уровня допуска засекречены."
+    en: "Welcome to the reference terminal of the Universalis Corporation. It holds the materials of the Mari Anna Doberstein case: a chronicle of events, personnel files and a card index of terms. Materials above your clearance level are classified."
+  forcesTitle: { ru: "Кратко о действующих силах", en: "The forces at play" }
+  forces:
+    - id: morana
+      text:
+        ru: "[[morana]] — официальная система."
+        en: "[[morana]] — the official system."
+    - id: charon
+      text:
+        ru: "[[charon]] — собственная фракция, оппозиция. :redact[Силовой переворот.]{ch=9}"
+        en: "[[charon]] — his own faction, the opposition. :redact[A coup by force.]{ch=9}"
+    - id: archivist
+      text:
+        ru: "[[archivist]] — существо, которое начинает сомневаться в самой системе."
+        en: "[[archivist]] — a being who begins to doubt the system itself."
+    - id: mari
+      text:
+        ru: "[[mari]] — случайный инструмент, который постепенно превращается в самостоятельного игрока."
+        en: "[[mari]] — an accidental instrument slowly becoming a player in her own right."

@@ -1,0 +1,11 @@
+id: paradise
+category: mechanics
+firstChapter: 4
+name: { ru: "Рай", en: "Paradise" }
+aliases:
+  ru: ["Ясли души"]
+  en: ["Nursery of the soul"]
+summary:
+  ru: "«Мы его так не называем». Настоящая, вечная жизнь — в отличие от земных «яслей души»."
+  en: "“We don't call it that.” The real, eternal life — as opposed to the earthly “nursery of the soul”."
+related: [distribution, seven-assignments]

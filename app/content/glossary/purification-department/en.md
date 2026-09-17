@@ -1,0 +1,1 @@
+The first thing a soul hears: “Welcome to the Universalis Corporation, Purification Department.” Purification comprises trials for each violated point of the [[charter]], a report, and handing the case to the [[moral-evaluation-department]].

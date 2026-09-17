@@ -1,0 +1,8 @@
+id: transition
+category: mechanics
+firstChapter: 2
+name: { ru: "Переход", en: "Transition" }
+summary:
+  ru: "Смена пространства: белая точка или чёрная звезда, которая несётся навстречу и заливает всё собой."
+  en: "A change of space: a white point or black star that rushes at you and floods everything."
+related: [admissions-ward, doors]

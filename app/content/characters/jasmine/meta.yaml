@@ -1,0 +1,14 @@
+id: jasmine
+name: { ru: "Жасмин", en: "Jasmine" }
+role: { ru: "Подруга Джесс", en: "Jess's friend" }
+summary:
+  ru: "Пьяная подруга Джесс, которая хохочет над словами о «муже и сыне»."
+  en: "Jess's drunk friend, who laughs at the words “husband and son”."
+status: alive
+faction: living
+firstChapter: 6
+order: 56
+facts: []
+relations:
+  - id: jess
+    type: { ru: "Подруга", en: "Friend" }

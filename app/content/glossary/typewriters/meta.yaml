@@ -1,0 +1,8 @@
+id: typewriters
+category: documents
+firstChapter: 2
+name: { ru: "Печатные машинки", en: "Typewriters" }
+summary:
+  ru: "«Странные» печатные машинки, на которых работает всё Чистилище."
+  en: "The “odd” typewriters on which all of Purgatory runs."
+related: [computing-hall, reports]

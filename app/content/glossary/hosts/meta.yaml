@@ -1,0 +1,11 @@
+id: hosts
+category: mechanics
+firstChapter: 6
+name: { ru: "Носитель", en: "Host" }
+aliases:
+  ru: ["Носители"]
+  en: ["Hosts"]
+summary:
+  ru: "Живое тело, в которое вселилась душа."
+  en: "A living body possessed by a soul."
+related: [possession, beacons]

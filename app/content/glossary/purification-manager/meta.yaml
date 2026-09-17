@@ -1,0 +1,11 @@
+id: purification-manager
+category: ranks
+firstChapter: 2
+name: { ru: "Менеджер по очистке", en: "Purification Manager" }
+aliases:
+  ru: ["Старший менеджер", "Младший менеджер"]
+  en: ["Senior manager", "Junior manager"]
+summary:
+  ru: "Ведёт очистку души и тем самым определяет её распределение. Бывает старшим и младшим."
+  en: "Runs a soul's purification and so determines its distribution. Comes in senior and junior grades."
+related: [morana, charon, distribution]

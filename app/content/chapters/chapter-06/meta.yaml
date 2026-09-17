@@ -1,0 +1,15 @@
+id: chapter-06
+number: 6
+name: { ru: "Гордыня", en: "Pride" }
+summary:
+  ru: "Первое задание. Вселившись в чужое тело в далласском баре, Мари пытается спасти квотербека по прозвищу «Отец» — и встречает Ангела Смерти, чей пейджер носит."
+  en: "The first assignment. Possessing a stranger in a Dallas bar, Mari tries to save a quarterback nicknamed “Father” — and meets the Angel of Death whose pager she carries."
+pov: mari
+realm: living
+status: written
+trial: { ru: "Гордыня", en: "Pride" }
+setting:
+  ru: "Мир живых: бар под Далласом, Техас; мост Маргарет Хилл"
+  en: "World of the living: a bar near Dallas, Texas; the Margaret Hunt Hill Bridge"
+characters: [mari, jess, derek, jasmine, father-jeremy, jay-abrams, ron, reaper]
+terms: [dallas, possession, pager, universal-language, reapers, restless-souls, trials, seven-assignments]

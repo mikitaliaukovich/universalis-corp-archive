@@ -1,0 +1,11 @@
+id: transistors
+category: ranks
+firstChapter: 8
+name: { ru: "Транзисторы", en: "Transistors" }
+aliases:
+  ru: ["Транзистор"]
+  en: ["Transistor"]
+summary:
+  ru: "Сотрудники, просчитывающие судьбы в нумерованных кабинках. Могут «сгореть»."
+  en: "Workers who compute fates in numbered cubicles. They can “burn out”."
+related: [computing-hall, runners]

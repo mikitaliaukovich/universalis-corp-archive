@@ -1,0 +1,16 @@
+id: peter
+name: { ru: "Питер", en: "Peter" }
+role: { ru: "Бегунок", en: "Runner" }
+summary:
+  ru: "Молодой бегунок с дредами, два дня гонявший по отделам инженеров."
+  en: "A young runner with dreadlocks who spent two days being sent around the engineering departments."
+status: dead
+faction: staff
+firstChapter: 8
+order: 41
+facts:
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Спортивный, длинные дреды в пучке", en: "Athletic, long dreadlocks in a bun" }
+relations:
+  - id: alba
+    type: { ru: "Коллега", en: "Colleague" }

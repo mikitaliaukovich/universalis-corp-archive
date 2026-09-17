@@ -1,0 +1,11 @@
+id: universal-language
+category: mechanics
+firstChapter: 6
+name: { ru: "Всеобщий язык", en: "Universal Language" }
+aliases:
+  ru: ["Вавилон"]
+  en: ["Babel"]
+summary:
+  ru: "Каждый говорит на своём языке, но все друг друга понимают. Акценты технически не существуют."
+  en: "Everyone speaks their own language, yet all understand each other. Accents technically don't exist."
+related: [li]

@@ -1,0 +1,11 @@
+id: dallas
+category: places
+firstChapter: 6
+name: { ru: "Даллас", en: "Dallas" }
+aliases:
+  ru: ["Техас"]
+  en: ["Texas"]
+summary:
+  ru: "Место действия главы 6: дешёвый бар и мост на рассвете."
+  en: "Setting of chapter 6: a cheap bar and a bridge at dawn."
+related: [jay-abrams, reaper]

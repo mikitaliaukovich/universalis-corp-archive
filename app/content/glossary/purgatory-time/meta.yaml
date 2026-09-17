@@ -1,0 +1,11 @@
+id: purgatory-time
+category: mechanics
+firstChapter: 1
+name: { ru: "Время в чистилище", en: "Time in Purgatory" }
+aliases:
+  ru: ["Нелинейное время"]
+  en: ["Non-linear time"]
+summary:
+  ru: "Эфемерно и нелинейно. По подсчётам Мари: 1 минута реальности = 1 час чистилища."
+  en: "Ephemeral and non-linear. By Mari's reckoning: 1 real minute = 1 purgatory hour."
+related: [admissions-ward, seven-assignments]

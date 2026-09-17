@@ -1,0 +1,8 @@
+id: exit-room
+category: places
+firstChapter: 8
+name: { ru: "Выходная комната", en: "Exit Room" }
+summary:
+  ru: "Бетонная комната с дверями в реальный мир и узким окном в белое ничто."
+  en: "A concrete room with doors to the real world and a narrow window onto white nothingness."
+related: [doors, color-corridors]

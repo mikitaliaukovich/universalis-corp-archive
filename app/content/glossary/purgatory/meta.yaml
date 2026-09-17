@@ -1,0 +1,8 @@
+id: purgatory
+category: organization
+firstChapter: 4
+name: { ru: "Чистилище", en: "Purgatory" }
+summary:
+  ru: "Вечная бюрократия нелинейного времени, где души очищаются и распределяются."
+  en: "An eternal bureaucracy of non-linear time where souls are purified and distributed."
+related: [universalis, purgatory-time, distribution]

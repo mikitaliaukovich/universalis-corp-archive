@@ -1,0 +1,8 @@
+id: altered-book
+category: documents
+firstChapter: 5
+name: { ru: "Изменённая книга", en: "Altered Book" }
+summary:
+  ru: "Книга судьбы Мари — первая в истории, исправленная от руки после написания."
+  en: "Mari's book of fate — the first in history to be edited by hand after it was written."
+related: [glowing-book, archivist, coup]

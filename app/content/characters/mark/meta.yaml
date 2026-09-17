@@ -1,0 +1,24 @@
+id: mark
+name: { ru: "Марк Доберштейн", en: "Mark Doberstein" }
+role: { ru: "Муж Мари", en: "Mari's husband" }
+summary:
+  ru: "Высокий, бородатый, добрый и уставший. Подал на развод ради сына и погиб, пытаясь его спасти."
+  en: "Tall, bearded, kind and tired. Filed for divorce for his son's sake and died trying to save him."
+status: dead
+faction: protagonists
+firstChapter: 1
+order: 2
+facts:
+  - label: { ru: "Возраст", en: "Age" }
+    value: { ru: "Неизвестен, предположительно на несколько лет старше Мари", en: "Unknown, presumably a few years older than Mari" }
+  - label: { ru: "Работа", en: "Work" }
+    value: { ru: "Офисная позиция высокого уровня", en: "Senior office position" }
+  - label: { ru: "Автомобиль", en: "Car" }
+    value: { ru: "Чёрный BMW X5", en: "Black BMW X5" }
+  - label: { ru: "Местонахождение", en: "Whereabouts" }
+    value: { ru: "Чистилище, Приёмный покой", en: "Purgatory, Admissions Ward" }
+relations:
+  - id: mari
+    type: { ru: "Жена", en: "Wife" }
+  - id: viktor
+    type: { ru: "Сын", en: "Son" }

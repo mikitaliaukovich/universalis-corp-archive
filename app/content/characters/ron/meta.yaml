@@ -1,0 +1,14 @@
+id: ron
+name: { ru: "Рон", en: "Ron" }
+role: { ru: "Товарищ Джея по команде", en: "Jay's teammate" }
+summary:
+  ru: "«Номер два» и заводила команды. Отравил Джея и погиб от его рук."
+  en: "The team's “number two” and ringleader. Poisoned Jay and died at his hands."
+status: dead
+faction: living
+firstChapter: 6
+order: 54
+facts: []
+relations:
+  - id: jay-abrams
+    type: { ru: "Жертва и убийца", en: "Victim and killer" }

@@ -1,0 +1,14 @@
+id: derek
+name: { ru: "Дерек", en: "Derek" }
+role: { ru: "Завсегдатай бара", en: "Bar regular" }
+summary:
+  ru: "Мужчина лет сорока с зачёсом на лысину, вручивший Мари «Субмарину»."
+  en: "A forty-something man with a comb-over who hands Mari a “Submarine”."
+status: alive
+faction: living
+firstChapter: 6
+order: 57
+facts:
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Гранатовая рубашка, пышные усы, залакированный зачёс", en: "Pomegranate-red shirt, a thick moustache, a lacquered comb-over" }
+relations: []

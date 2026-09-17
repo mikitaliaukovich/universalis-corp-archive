@@ -1,0 +1,36 @@
+id: morana
+name: { ru: "Морана", en: "Morana" }
+role: { ru: "Регистратор перехода · старший менеджер по очистке и распределению", en: "Transition registrar · Senior purification & distribution manager" }
+summary:
+  ru: "Высшая многоликая сущность. Одновременно играет несколько ролей и, похоже, находится в нескольких местах сразу. Олицетворение системы."
+  en: "A higher, many-faced entity. She plays several roles at once and seems to be in several places simultaneously. The system incarnate."
+status: immortal
+faction: administration
+firstChapter: 2
+order: 10
+quote:
+  ru: "«Порядок в переходе — забота обо всех.»"
+  en: "“Order in transition is care for all.”"
+reference:
+  ru: "Роз, «Корпорация монстров»"
+  en: "Roz, “Monsters, Inc.”"
+facts:
+  - label: { ru: "Должности", en: "Positions" }
+    value: { ru: "Регистратор перехода; старший менеджер по очистке и распределению", en: "Transition registrar; senior purification & distribution manager" }
+  - label: { ru: "Внешность", en: "Appearance" }
+    value: { ru: "Предпенсионный возраст, роговые очки, тёмное каре, бордовая помада, бородавка над губой", en: "Near retirement age, horn-rimmed glasses, dark bob, burgundy lipstick, a wart above her lip" }
+  - label: { ru: "Голос", en: "Voice" }
+    value: { ru: "Тягучий, скучающий", en: "Drawling, bored" }
+relations:
+  - id: charon
+    type: { ru: "Подчинённый, понижен реформой", en: "Subordinate, demoted by the reform" }
+  - id: mari
+    type: { ru: "Регистрировала переход", en: "Registered her transition" }
+images:
+  - file: media/characters/morana/moodboard.png
+    focus: { x: 0, y: 0, zoom: 2.9 }
+    kind: moodboard
+    caption: { ru: "Мудборд: Морана и регистратура", en: "Moodboard: Morana and the reception desk" }
+  - file: media/characters/morana/reference.png
+    kind: reference
+    caption: { ru: "Референс: Роз", en: "Reference: Roz" }

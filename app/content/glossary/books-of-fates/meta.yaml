@@ -1,0 +1,8 @@
+id: books-of-fates
+category: documents
+firstChapter: 3
+name: { ru: "Книги судеб", en: "Books of Fate" }
+summary:
+  ru: "Книги, в которых записана жизнь, смерть и посмертие каждого человека. Возможно, написаны самим Временем."
+  en: "Books recording the life, death and afterlife of every person. Perhaps written by Time itself."
+related: [archive, glowing-book, chief-scribe]

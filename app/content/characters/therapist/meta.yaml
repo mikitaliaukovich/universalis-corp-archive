@@ -1,0 +1,16 @@
+id: therapist
+name: { ru: "Александра, психотерапевт", en: "Alexandra, the therapist" }
+role: { ru: "Психотерапевт по назначению суда", en: "Court-appointed therapist" }
+summary:
+  ru: "Женщина средних лет в строгих очках. Говорит с Мари о контроле и искуплении — и получает в ответ прозвище «психичка»."
+  en: "A middle-aged woman in severe glasses. Talks to Mari about control and atonement — and gets nicknamed “the psycho” for it."
+status: alive
+faction: living
+firstChapter: 1
+order: 51
+facts:
+  - label: { ru: "Назначена", en: "Appointed by" }
+    value: { ru: "Решением суда", en: "Court order" }
+relations:
+  - id: mari
+    type: { ru: "Пациентка", en: "Patient" }

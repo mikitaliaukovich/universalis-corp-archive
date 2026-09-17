@@ -1,0 +1,18 @@
+id: polygraph
+name: { ru: "Полиграф / Йохан Линдстрём", en: "Polygraph / Johan Lindström" }
+role: { ru: "Бродячий пёс и душа туриста", en: "A stray dog and a tourist's soul" }
+summary:
+  ru: "Пёс из Манаролы, в которого Мари поместила душу шведского туриста Йохана Линдстрёма."
+  en: "A dog in Manarola into which Mari placed the soul of Swedish tourist Johan Lindström."
+status: dead
+faction: living
+firstChapter: 8
+order: 58
+facts:
+  - label: { ru: "Турист", en: "Tourist" }
+    value: { ru: "Йохан Линдстрём, Гётеборг", en: "Johan Lindström, Gothenburg" }
+  - label: { ru: "Причина смерти", en: "Cause of death" }
+    value: { ru: "Падение со скалы в море", en: "Fall from a cliff into the sea" }
+relations:
+  - id: mari
+    type: { ru: "Поймала душу", en: "Caught the soul" }

@@ -1,0 +1,85 @@
+# ─────────────────────────────────────────────────────────────
+#  Terminal appearance. Colours become CSS variables at runtime.
+#  bg     – screen background        panel  – panel fill
+#  fg     – phosphor (main text)     dim    – secondary text
+#  faint  – barely-lit elements      accent – links / highlights
+#  danger – stamps, secrets          ink    – text on filled bars
+# ─────────────────────────────────────────────────────────────
+defaultPalette: amber
+
+palettes:
+  amber:
+    label: { ru: "Янтарь", en: "Amber" }
+    bg: "#0c0803"
+    panel: "#140d04"
+    fg: "#ffb000"
+    dim: "#b07a10"
+    faint: "#4a3304"
+    accent: "#ffd98a"
+    danger: "#ff5a2a"
+    ink: "#0c0803"
+  red:
+    label: { ru: "Тревога", en: "Alarm red" }
+    bg: "#0d0303"
+    panel: "#160505"
+    fg: "#ff3b30"
+    dim: "#a8322b"
+    faint: "#4a0f0c"
+    accent: "#ff9a8f"
+    danger: "#ffd23f"
+    ink: "#0d0303"
+  green:
+    label: { ru: "Фосфор P1", en: "P1 phosphor" }
+    bg: "#030a04"
+    panel: "#061208"
+    fg: "#39ff6a"
+    dim: "#2a9a45"
+    faint: "#0d3b18"
+    accent: "#b8ffc9"
+    danger: "#ff5a3c"
+    ink: "#030a04"
+  corridor:
+    label: { ru: "Коридор (оранж.)", en: "Corridor orange" }
+    bg: "#0b0806"
+    panel: "#15100c"
+    fg: "#ff6a1a"
+    dim: "#a85a2a"
+    faint: "#46240f"
+    accent: "#ffc2a0"
+    danger: "#e8e8e8"
+    ink: "#0b0806"
+  archive:
+    label: { ru: "Архив (фисташк.)", en: "Archive pistachio" }
+    bg: "#050a07"
+    panel: "#0a130d"
+    fg: "#9ee6b0"
+    dim: "#5f9a70"
+    faint: "#1d3a26"
+    accent: "#e2ffe9"
+    danger: "#ff7a59"
+    ink: "#050a07"
+
+fonts:
+  ui: "'IBM Plex Mono', ui-monospace, monospace"
+  heading: "'Oswald', 'Arial Narrow', sans-serif"
+  typewriter: "'PT Mono', 'Courier New', monospace"
+
+crt:
+  # Barrel distortion of the picture tube (0 = flat). Applied when the "curvature" effect is on,
+  # on desktop browsers except Safari. Higher values look rounder, but clicks near the screen
+  # edges drift further from what you see (the browser hit-tests the undistorted layout).
+  curvature: 0.02
+  # Slight blur applied with the curvature (px). Hides pixel seams from the distortion; 0 = razor sharp.
+  softness: 0.4
+
+# Defaults for new visitors; each visitor can change them in the settings panel.
+effects:
+  boot: true
+  scanlines: true
+  flicker: true
+  curvature: true
+  noise: true
+  glow: true
+  typewriter: true
+  pager: true
+  sound: false

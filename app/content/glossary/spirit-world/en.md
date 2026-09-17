@@ -1,0 +1,1 @@
+Cracks, moss, the litter of many eras — down to a faded anti-fascist leaflet. Things grow pale as people forget them. Through the spirit world [[mari]] leads Johan's soul to a [[doors|door]] ([[chapter-08]]).

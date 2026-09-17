@@ -1,0 +1,11 @@
+id: case-file
+category: documents
+firstChapter: 2
+name: { ru: "Дело", en: "Case File" }
+aliases:
+  ru: ["Папка", "Копия дела"]
+  en: ["Folder", "Copy of the file"]
+summary:
+  ru: "Папка на каждого человека. Копию получает сама душа — со штампами «Мертва» и «Копия верна»."
+  en: "A folder for every person. The soul receives its own copy — stamped “Dead” and “Certified true copy”."
+related: [transition-registrar, computing-hall]

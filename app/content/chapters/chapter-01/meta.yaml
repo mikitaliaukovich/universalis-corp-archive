@@ -1,0 +1,14 @@
+id: chapter-01
+number: 1
+name: { ru: "Красавец и чудовище", en: "The Handsome One and the Monster" }
+summary:
+  ru: "Жизнь Мари рушится: терапия по решению суда, наркотики, любовник, развод. Она направляет машину сквозь стену парковки — и убивает себя, мужа и сына."
+  en: "Mari's life collapses: court-ordered therapy, drugs, a lover, divorce. She drives through a parking-garage wall — killing herself, her husband and her son."
+pov: mari
+realm: living
+status: written
+setting:
+  ru: "Мир живых: богатый пригород, парк, многоуровневая парковка"
+  en: "World of the living: a wealthy suburb, a park, a multi-storey car park"
+characters: [mari, therapist, rafael, mark, viktor]
+terms: [purgatory-time]

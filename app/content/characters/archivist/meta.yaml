@@ -1,0 +1,24 @@
+id: archivist
+name: { ru: "Архивариус", en: "Archivist" }
+role: { ru: "Хранитель Архива судеб", en: "Keeper of the Archive of Fates" }
+summary:
+  ru: "Вечный читатель книг судеб. Находит светящуюся книгу Мари — и впервые начинает сомневаться в самой системе."
+  en: "The eternal reader of the books of fate. He finds Mari's glowing book — and for the first time begins to doubt the system itself."
+status: unknown
+faction: staff
+firstChapter: 3
+order: 30
+facts:
+  - label: { ru: "Срок службы", en: "Term of service" }
+    value: { ru: "Века; осталось «ещё пара столетий»", en: "Centuries; “a couple more centuries” left" }
+  - label: { ru: "Особенность", en: "Peculiarity" }
+    value: { ru: "Всегда находит дорогу к своему столу", en: "Always finds his way back to his desk" }
+  - label: { ru: "Носит книги", en: "Carries books" }
+    value: { ru: "В клатче", en: "In a clutch bag" }
+  - label: { ru: "Прошлое", en: "Past" }
+    value: { ru: "Не помнит, как попал сюда и кем был", en: "Does not remember how he got here or who he was" }
+relations:
+  - id: mari
+    type: { ru: "Читает её судьбу", en: "Reads her fate" }
+  - id: charon
+    type: { ru: "Раскрывает его замысел", en: "Uncovers his scheme" }

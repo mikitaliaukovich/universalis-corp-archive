@@ -1,0 +1,8 @@
+id: service-contract
+category: documents
+firstChapter: 4
+name: { ru: "Договор возмездного служения", en: "Contract of Paid Service" }
+summary:
+  ru: "Договор между Администрацией Чистилища и душой, с пустыми строками для предмета и вознаграждения."
+  en: "A contract between the Administration of Purgatory and a soul, with blank lines for the subject and the reward."
+related: [seven-assignments, charon]

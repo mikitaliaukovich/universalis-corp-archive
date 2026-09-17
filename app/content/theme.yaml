@@ -38,16 +38,6 @@ palettes:
     accent: "#b8ffc9"
     danger: "#ff5a3c"
     ink: "#030a04"
-  corridor:
-    label: { ru: "Коридор (оранж.)", en: "Corridor orange" }
-    bg: "#0b0806"
-    panel: "#15100c"
-    fg: "#ff6a1a"
-    dim: "#a85a2a"
-    faint: "#46240f"
-    accent: "#ffc2a0"
-    danger: "#e8e8e8"
-    ink: "#0b0806"
   archive:
     label: { ru: "Архив (фисташк.)", en: "Archive pistachio" }
     bg: "#050a07"
@@ -57,6 +47,16 @@ palettes:
     faint: "#1d3a26"
     accent: "#e2ffe9"
     danger: "#ff7a59"
+    ink: "#050a07"
+  test:
+    label: { ru: "Цветная (экспериментальная)", en: "Colorful (experimental)" }
+    bg: "#050a07"
+    panel: "#0a130d"
+    fg: "#ff3b30"
+    dim: "#5bc0be"
+    faint: "#1d3a26"
+    accent: "#5bc0be"
+    danger: "#d7263d"
     ink: "#050a07"
 
 fonts:
@@ -77,9 +77,9 @@ effects:
   boot: true
   scanlines: true
   flicker: true
-  curvature: true
+  curvature: false
   noise: true
   glow: true
   typewriter: true
   pager: true
-  sound: false
+  sound: true

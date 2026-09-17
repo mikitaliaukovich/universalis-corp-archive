@@ -2,7 +2,6 @@
 .crt {
   position: relative;
   height: 100%;
-  padding: clamp(0px, 1.4vw, 22px);
   background:
     radial-gradient(120% 90% at 50% 50%, #1a1712 0%, #0a0907 60%, #000 100%);
 }
@@ -75,13 +74,35 @@ html.fx-flicker .crt__content {
 }
 
 @keyframes flicker {
-  0%, 100% { opacity: 1; }
-  41% { opacity: 0.985; }
-  42% { opacity: 0.94; }
-  43% { opacity: 0.99; }
-  77% { opacity: 1; }
-  78% { opacity: 0.965; }
-  79% { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  41% {
+    opacity: 0.985;
+  }
+
+  42% {
+    opacity: 0.94;
+  }
+
+  43% {
+    opacity: 0.99;
+  }
+
+  77% {
+    opacity: 1;
+  }
+
+  78% {
+    opacity: 0.965;
+  }
+
+  79% {
+    opacity: 1;
+  }
 }
 
 #overlay-root {
@@ -90,7 +111,8 @@ html.fx-flicker .crt__content {
   z-index: 40;
   pointer-events: none;
 }
-#overlay-root > * {
+
+#overlay-root>* {
   pointer-events: auto;
 }
 
@@ -117,8 +139,13 @@ html.fx-scanlines .crt__roll {
 }
 
 @keyframes roll {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(560%); }
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(560%);
+  }
 }
 
 html.fx-noise .crt__noise {
@@ -129,10 +156,21 @@ html.fx-noise .crt__noise {
 }
 
 @keyframes noise {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(-30px, 20px); }
-  50% { transform: translate(20px, -35px); }
-  75% { transform: translate(-15px, -10px); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-30px, 20px);
+  }
+
+  50% {
+    transform: translate(20px, -35px);
+  }
+
+  75% {
+    transform: translate(-15px, -10px);
+  }
 }
 
 html.fx-curvature .crt__vignette {

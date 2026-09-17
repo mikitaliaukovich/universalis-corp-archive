@@ -53,15 +53,8 @@ interface Ctx {
 
 const SettingsContext = createContext<Ctx | null>(null)
 
-const reducedMotion =
-  typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
-
 export function SettingsProvider({ children }: { children: ReactNode }) {
-  const [settings, setSettings] = useState<Settings>(() => {
-    const s = load()
-    if (reducedMotion) s.effects = { ...s.effects, flicker: false, typewriter: false }
-    return s
-  })
+  const [settings, setSettings] = useState<Settings>(load)
   const [declassified, setDeclassified] = useState<Set<string>>(() => new Set())
 
   useEffect(() => {

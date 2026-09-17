@@ -127,7 +127,7 @@ html.fx-flicker .crt__content {
 
 html.fx-scanlines .crt__scanlines {
   display: block;
-  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0 2px, rgba(0, 0, 0, 0.28) 2px 3px);
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0 2px, rgba(0, 0, 0, 0.28) 3px 2px);
   mix-blend-mode: multiply;
 }
 

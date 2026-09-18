@@ -15,6 +15,7 @@ import { PagerToast } from './components/shell/PagerToast'
 import { SearchOverlay } from './components/shell/SearchOverlay'
 import { SettingsOverlay } from './components/shell/SettingsOverlay'
 import { ClearanceOverlay } from './components/shell/ClearanceOverlay'
+import { GuideTour } from './components/shell/GuideTour'
 import { Lightbox } from './components/ui/Lightbox'
 import { Home } from './pages/Home'
 import { Chronicle } from './pages/Chronicle'
@@ -154,6 +155,7 @@ function Shell() {
             </main>
             <HotkeyBar />
             <PagerToast />
+            <GuideTour />
           </motion.div>
         )}
       </AnimatePresence>

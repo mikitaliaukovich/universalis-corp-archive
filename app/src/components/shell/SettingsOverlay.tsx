@@ -65,6 +65,18 @@ export function SettingsOverlay() {
         <button type="button" className="key-btn" onClick={() => setOverlay('clearance')}>
           {t('clearance.title')}
         </button>
+        {content.site.tour.enabled && content.site.tour.steps.length > 0 && (
+          <button
+            type="button"
+            className="key-btn"
+            onClick={() => {
+              update({ tourSeen: false })
+              setOverlay(null)
+            }}
+          >
+            {t('settings.tour')}
+          </button>
+        )}
         <button type="button" className="key-btn key-btn--danger" onClick={reset}>
           {t('settings.reset')}
         </button>

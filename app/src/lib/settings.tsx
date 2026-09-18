@@ -9,13 +9,15 @@ export interface Settings {
   effects: Effects
   /** last chapter the reader has finished; null = not asked yet */
   progress: number | null
+  /** newcomer tips (site.yaml → tour) were shown or dismissed */
+  tourSeen: boolean
 }
 
 function defaults(): Settings {
   const { site, theme } = content
   const browser = typeof navigator !== 'undefined' ? navigator.language.slice(0, 2) : ''
   const lang = site.detectBrowserLanguage && site.languages.some((l) => l.id === browser) ? browser : site.defaultLanguage
-  return { lang, palette: theme.defaultPalette, effects: { ...theme.effects }, progress: null }
+  return { lang, palette: theme.defaultPalette, effects: { ...theme.effects }, progress: null, tourSeen: false }
 }
 
 function load(): Settings {
@@ -29,6 +31,7 @@ function load(): Settings {
       palette: s.palette && content.theme.palettes[s.palette] ? s.palette : d.palette,
       effects: { ...d.effects, ...(s.effects ?? {}) },
       progress: typeof s.progress === 'number' ? s.progress : null,
+      tourSeen: s.tourSeen === true,
     }
   } catch {
     return d

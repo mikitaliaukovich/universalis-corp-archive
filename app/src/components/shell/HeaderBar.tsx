@@ -32,13 +32,14 @@ export function HeaderBar() {
       </Link>
       <div className="topbar__terminal">{l(content.site.terminal)}</div>
       <div className="topbar__right">
-        <button type="button" className="chip" onClick={() => setOverlay('search')} title={t('search.title')}>
+        <button type="button" className="chip" data-tour="search" onClick={() => setOverlay('search')} title={t('search.title')}>
           <kbd>/</kbd>
           <span className="hide-sm">{t('search.short')}</span>
         </button>
         <button
           type="button"
           className="chip"
+          data-tour="clearance"
           onClick={() => setOverlay('clearance')}
           title={t('clearance.title')}
         >
@@ -47,7 +48,7 @@ export function HeaderBar() {
             {settings.progress == null ? '∞' : String(readTo).padStart(2, '0')}/{String(content.maxChapter).padStart(2, '0')}
           </span>
         </button>
-        <div className="langswitch" role="group" aria-label={t('settings.language')}>
+        <div className="langswitch" data-tour="language" role="group" aria-label={t('settings.language')}>
           {langs.map((lg) => (
             <button
               key={lg.id}
@@ -59,7 +60,7 @@ export function HeaderBar() {
             </button>
           ))}
         </div>
-        <button type="button" className="chip" onClick={() => setOverlay('settings')} title={t('settings.title')}>
+        <button type="button" className="chip" data-tour="settings" onClick={() => setOverlay('settings')} title={t('settings.title')}>
           <kbd>S</kbd>
           <span className="hide-sm">{t('settings.short')}</span>
         </button>

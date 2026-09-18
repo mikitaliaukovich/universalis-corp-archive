@@ -17,7 +17,7 @@ Everything the site shows lives in [`content/`](content):
 
 | Path | What it controls |
 |---|---|
-| `site.yaml` | Title, header line, sections (menu, hotkeys, URLs), boot lines, pager messages, Charter quotes, home screen |
+| `site.yaml` | Title, header line, sections (menu, hotkeys, URLs), boot lines, password gate, newcomer tips, pager messages, Charter quotes, home screen |
 | `theme.yaml` | Phosphor palettes, fonts, default effects (scanlines, flicker, sound…) |
 | `taxonomy.yaml` | Realms, chapter/character statuses and stamps, factions, glossary categories, image kinds |
 | `i18n/<lang>.yaml` | Every interface string |

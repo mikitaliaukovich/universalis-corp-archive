@@ -1087,6 +1087,92 @@ button.redacted:hover {
   width: min(760px, 100%);
 }
 
+/* ================================================================ newcomer tips */
+.tour {
+  position: absolute;
+  inset: 0;
+  z-index: 48;
+  pointer-events: none;
+}
+
+.tour__spot {
+  position: absolute;
+  border: 2px solid var(--fg);
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 9999px color-mix(in srgb, var(--bg) 72%, transparent),
+    0 0 18px color-mix(in srgb, var(--fg) 60%, transparent);
+  animation: tour-pulse 1.6s ease-in-out infinite;
+  transition:
+    left 0.3s ease-out,
+    top 0.3s ease-out,
+    width 0.3s ease-out,
+    height 0.3s ease-out;
+}
+
+@keyframes tour-pulse {
+  50% {
+    box-shadow:
+      0 0 0 9999px color-mix(in srgb, var(--bg) 72%, transparent),
+      0 0 4px color-mix(in srgb, var(--fg) 30%, transparent);
+  }
+}
+
+.tour__card {
+  position: absolute;
+  display: grid;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--bg);
+  border: 1.5px solid var(--fg);
+  border-radius: 6px;
+  box-shadow: 0 0 22px color-mix(in srgb, var(--fg) 25%, transparent), 0 10px 30px rgba(0, 0, 0, 0.8);
+  pointer-events: auto;
+}
+
+.tour__arrow {
+  position: absolute;
+  top: -8px;
+  width: 14px;
+  height: 14px;
+  background: var(--bg);
+  border-left: 1.5px solid var(--fg);
+  border-top: 1.5px solid var(--fg);
+  transform: rotate(45deg);
+}
+
+.tour__step {
+  color: var(--dim);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tour__title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tour__text {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.tour__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tour__next {
+  border-color: var(--fg);
+}
+
 .modal__footer {
   display: flex;
   justify-content: space-between;

@@ -43,6 +43,13 @@ export const SiteSchema = z.object({
     })
     .refine((a) => !a.enabled || a.passwordHash, 'access.passwordHash is required when access.enabled is true')
     .default({ enabled: false }),
+  tour: z
+    .object({
+      enabled: z.boolean().default(true),
+      /** each step points at an element marked data-tour="<target>" */
+      steps: z.array(z.object({ target: z.string(), title: L10n, text: L10n })).default([]),
+    })
+    .default({ enabled: false, steps: [] }),
   clock: z.object({ label: L10n, ratio: z.number().positive().default(60) }),
   pager: z.object({
     enabled: z.boolean().default(true),

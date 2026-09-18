@@ -76,6 +76,28 @@ access:
   enabled: true
   passwordHash: "49e0868d24b4e8f85a82855304beaeef842c6fa84293dd96df4e26859acfc2e4"
 
+# Newcomer tips: shown once, after the first clearance choice. Steps run in order;
+# `target` is an element marked data-tour="…" in the interface (available: search, clearance, language, settings).
+# Settings → "Show tips again" replays them.
+tour:
+  enabled: true
+  steps:
+    - target: search
+      title: { ru: "Запрос в архив", en: "Archive query" }
+      text:
+        ru: "Здесь можно найти любое личное дело, главу или термин по имени. Быстрый вызов — клавиша /."
+        en: "Here you can find any personnel file, chapter or term by name. Shortcut: the / key."
+    - target: clearance
+      title: { ru: "Выбор уровня доступа", en: "Clearance level selection" }
+      text:
+        ru: "Здесь можно указать последнюю прочитанную главу."
+        en: "Here you can specify the last read chapter."
+    - target: settings
+      title: { ru: "Настройка терминала", en: "Terminal setup" }
+      text:
+        ru: "Здесь можно сменить цвет фосфора и язык, отключить эффекты кинескопа и звук. Быстрый вызов — клавиша S."
+        en: "Here you can change the phosphor colour and language, and switch off the tube effects and sound. Shortcut: the S key."
+
 # Header clock: one real minute = `ratio` purgatory minutes.
 clock:
   label: { ru: "Время чистилища", en: "Purgatory time" }

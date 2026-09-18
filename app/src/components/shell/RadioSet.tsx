@@ -198,12 +198,7 @@ export function RadioSet() {
         {playing ? <PauseIcon /> : <PlayIcon />}
       </button>
       <Readout text={readout} scroll={status === 'playing' || status === 'paused'} />
-      <span className="radio__meter" aria-hidden="true">
-        <i />
-        <i />
-        <i />
-        <i />
-      </span>
+      <LevelMeter active={status === 'playing'} />
       <button
         type="button"
         className="radio__btn"
@@ -227,6 +222,48 @@ export function RadioSet() {
       />
       {createPortal(<div ref={hostRef} className="radio__host" aria-hidden="true" />, document.body)}
     </div>
+  )
+}
+
+/** relative loudness of each band, bass → treble */
+const BANDS = [0.95, 0.85, 0.75, 0.62, 0.5]
+
+/**
+ * Simulated equaliser. The music plays inside YouTube's cross-origin frame, so the real signal can't be
+ * analysed; the bars follow a random walk with fast attack and slow decay, like a VU meter.
+ * Driven from JS (not CSS animation) so it keeps moving under reduced motion, which base.css freezes.
+ */
+function LevelMeter({ active }: { active: boolean }) {
+  const ref = useRef<HTMLSpanElement>(null)
+
+  useEffect(() => {
+    const bars = [...(ref.current?.children ?? [])] as HTMLElement[]
+    const levels = BANDS.map(() => 0.2)
+    const paint = () => bars.forEach((b, i) => (b.style.height = `${Math.round(levels[i] * 100)}%`))
+    if (!active) {
+      levels.fill(0.15)
+      paint()
+      return
+    }
+    let beat = 0
+    const id = setInterval(() => {
+      // an occasional "beat" lifts all bands together, so the bars don't look independent noise
+      beat = Math.random() < 0.18 ? 1 : beat * 0.6
+      BANDS.forEach((weight, i) => {
+        const target = Math.min(1, weight * (0.35 + Math.random() * 0.55) + beat * 0.3 * weight)
+        levels[i] = target > levels[i] ? target : Math.max(target, levels[i] - 0.12)
+      })
+      paint()
+    }, 90)
+    return () => clearInterval(id)
+  }, [active])
+
+  return (
+    <span ref={ref} className="radio__meter" aria-hidden="true">
+      {BANDS.map((_, i) => (
+        <i key={i} />
+      ))}
+    </span>
   )
 }
 

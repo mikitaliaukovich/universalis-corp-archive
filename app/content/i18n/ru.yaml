@@ -1,5 +1,10 @@
 # Interface strings. {placeholders} are substituted at runtime.
 boot.skip: "Нажмите любую клавишу, чтобы пропустить"
+access.prompt: "Введите пароль допуска"
+access.submit: "Ввод"
+access.checking: "ПРОВЕРКА…"
+access.denied: "ДОСТУП ЗАПРЕЩЁН. ПОПЫТКА ЗАПИСАНА."
+access.hint: "Пароль выдаётся в Приёмном покое. ENTER — подтвердить."
 
 nav.home: "Главное меню"
 nav.sections: "Разделы"

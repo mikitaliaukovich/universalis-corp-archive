@@ -1,5 +1,10 @@
 # Interface strings. {placeholders} are substituted at runtime.
 boot.skip: "Press any key to skip"
+access.prompt: "Enter clearance password"
+access.submit: "Enter"
+access.checking: "VERIFYING…"
+access.denied: "ACCESS DENIED. ATTEMPT RECORDED."
+access.hint: "Passwords are issued at Reception. ENTER to confirm."
 
 nav.home: "Main menu"
 nav.sections: "Sections"

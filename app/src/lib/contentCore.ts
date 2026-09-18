@@ -36,6 +36,13 @@ export const SiteSchema = z.object({
     )
     .min(1),
   boot: z.object({ lines: L10nList, final: L10n }),
+  access: z
+    .object({
+      enabled: z.boolean().default(false),
+      passwordHash: z.string().regex(/^[0-9a-f]{64}$/, 'passwordHash must be a SHA-256 hex digest').optional(),
+    })
+    .refine((a) => !a.enabled || a.passwordHash, 'access.passwordHash is required when access.enabled is true')
+    .default({ enabled: false }),
   clock: z.object({ label: L10n, ratio: z.number().positive().default(60) }),
   pager: z.object({
     enabled: z.boolean().default(true),

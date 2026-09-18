@@ -254,6 +254,70 @@ html.fx-curvature .crt__vignette {
   color: var(--accent);
 }
 
+.boot__gate {
+  display: grid;
+  gap: 10px;
+  max-width: 520px;
+}
+
+.boot__gateLabel {
+  font-family: var(--font-heading);
+  font-size: clamp(16px, 2.6vw, 20px);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.boot__gateRow {
+  display: flex;
+  gap: 10px;
+}
+
+.boot__gateInput {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--fg) 6%, transparent);
+  color: var(--fg);
+  font: inherit;
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  caret-color: var(--fg);
+}
+
+.boot__gateInput:focus {
+  outline: 1px solid var(--fg);
+  outline-offset: 2px;
+}
+
+.boot__gateStatus {
+  min-height: 1.4em;
+  color: var(--dim);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.boot__gate--denied .boot__gateStatus {
+  color: var(--danger);
+}
+
+.boot__gate--denied .boot__gateRow {
+  animation: gate-denied 0.35s ease-out;
+}
+
+@keyframes gate-denied {
+  20%,
+  60% {
+    transform: translateX(-6px);
+  }
+  40%,
+  80% {
+    transform: translateX(6px);
+  }
+}
+
 .boot__skip {
   margin-top: auto;
   color: var(--dim);

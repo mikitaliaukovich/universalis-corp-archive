@@ -30,6 +30,18 @@ Everything the site shows lives in [`content/`](content):
 
 **Add a language:** add it to `languages` in `site.yaml`, create `i18n/<lang>.yaml`, add `<lang>` values to the `{ ru, en }` fields and a `<lang>.md` per entry — the validator lists everything missing.
 
+### Password gate
+
+`access` in `site.yaml` makes the boot sequence stop at a password prompt. Only its SHA-256 hash is stored — don't write the password itself into `content/`, every file there ships with the site. A device that entered the right password isn't asked again until the password changes.
+
+```yaml
+access:
+  enabled: true        # false + redeploy = archive open to everyone
+  passwordHash: "…"    # SHA-256 of the password
+```
+
+To change the password, run `npm run hash-password -- "new password"` and paste the printed line into `site.yaml`. This is a courtesy gate for sharing a preview, not real protection: the site is static, so all its content is still downloadable by anyone with the URL.
+
 ### Markdown extensions
 
 | Syntax | Result |

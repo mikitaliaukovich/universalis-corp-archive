@@ -68,6 +68,14 @@ boot:
       - "EVERY SNEEZE IS RECORDED."
   final: { ru: "ДОСТУП РАЗРЕШЁН", en: "ACCESS GRANTED" }
 
+# Password gate at the end of the boot sequence. Set `enabled: false` and redeploy to open the archive to everyone.
+# The password is stored only as a SHA-256 hash — keep the password itself out of this file (it ships with the site).
+# To change it: npm run hash-password -- "new password"   → paste the printed line below.
+# This is a courtesy gate, not real security: the whole archive is still downloadable by anyone who knows the URL.
+access:
+  enabled: true
+  passwordHash: "49e0868d24b4e8f85a82855304beaeef842c6fa84293dd96df4e26859acfc2e4"
+
 # Header clock: one real minute = `ratio` purgatory minutes.
 clock:
   label: { ru: "Время чистилища", en: "Purgatory time" }

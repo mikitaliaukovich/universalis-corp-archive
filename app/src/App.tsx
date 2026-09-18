@@ -8,6 +8,7 @@ import { isTypingTarget } from './lib/routes'
 import { setSoundEnabled, sfx } from './lib/sound'
 import { CrtFrame } from './components/shell/CrtFrame'
 import { BootSequence } from './components/shell/BootSequence'
+import { accessRequired } from './lib/access'
 import { HeaderBar } from './components/shell/HeaderBar'
 import { HotkeyBar } from './components/shell/HotkeyBar'
 import { PagerToast } from './components/shell/PagerToast'
@@ -83,7 +84,10 @@ function Shell() {
   const { settings } = useSettings()
   const { overlay, setOverlay } = useUi()
   const location = useLocation()
+  // the password gate (site.yaml → access) runs inside the boot screen, even when the boot effect is off
+  const [gate] = useState(accessRequired)
   const [booting, setBooting] = useState(() => {
+    if (gate) return true
     try {
       return settings.effects.boot && !sessionStorage.getItem(BOOT_KEY)
     } catch {
@@ -120,7 +124,7 @@ function Shell() {
     <CrtFrame>
       <AnimatePresence mode="wait">
         {booting ? (
-          <BootSequence key="boot" onDone={finishBoot} />
+          <BootSequence key="boot" onDone={finishBoot} gate={gate} instant={!settings.effects.boot} />
         ) : (
           <motion.div
             key="app"

@@ -4,6 +4,7 @@ import { content } from '../../lib/content'
 import { useSettings } from '../../lib/settings'
 import { useUi } from '../../lib/ui'
 import { sfx } from '../../lib/sound'
+import { MOBILE_QUERY, useMediaQuery } from '../../lib/useMediaQuery'
 import { TypewriterText } from '../ui/TypewriterText'
 
 /** Occasionally a transmission arrives on the Reaper's pager. */
@@ -12,7 +13,9 @@ export function PagerToast() {
   const { setLastPager } = useUi()
   const cfg = content.site.pager
   const [msg, setMsg] = useState<string | null>(null)
-  const enabled = cfg.enabled && settings.effects.pager
+  // on phones the pager would land below the fold, so it stays silent there
+  const mobile = useMediaQuery(MOBILE_QUERY)
+  const enabled = cfg.enabled && settings.effects.pager && !mobile
 
   useEffect(() => {
     if (!enabled) return
@@ -40,6 +43,10 @@ export function PagerToast() {
       clearTimeout(hideTimer)
     }
   }, [enabled, settings.lang, cfg, setLastPager])
+
+  useEffect(() => {
+    if (!enabled) setMsg(null)
+  }, [enabled])
 
   return (
     <AnimatePresence>

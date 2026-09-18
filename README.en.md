@@ -21,7 +21,7 @@
 
 **The official artbook, lore archive and glossary of the novel _«Искупление»_ (_Redemption_) by Mikita Liaukovich**
 
-### [▶ Open the Archive](https://mikitaliaukovich.github.io/universalis-corp-archive/)
+### [▶ Open the Archive](https://universaliscorp.com)
 
 </div>
 

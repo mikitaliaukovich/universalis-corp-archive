@@ -9,7 +9,7 @@ npm run check    # validate content
 npm run build    # check + type-check + static build into dist/ (works from any folder / static host)
 ```
 
-**Deployment:** pushes to `main` that touch `app/` are built and published to GitHub Pages by [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml). The build uses relative asset paths and hash routing, so it works under `https://<user>.github.io/<repo>/` without extra configuration. Run `npm run optimize-media` before committing new images; the workflow does not generate the web-sized copies.
+**Deployment:** pushes to `main` that touch `app/` are built and published to GitHub Pages by [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml), and served at [universaliscorp.com](https://universaliscorp.com). The build uses relative asset paths and hash routing, so it works both at a domain root and under `https://<user>.github.io/<repo>/` without extra configuration. The custom domain is set in Settings → Pages; a workflow-based deployment needs no `CNAME` file in `dist/`. Run `npm run optimize-media` before committing new images; the workflow does not generate the web-sized copies.
 
 ## Editing content — no code changes needed
 

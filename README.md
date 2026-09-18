@@ -21,7 +21,7 @@
 
 **Официальный цифровой артбук, хроника и картотека романа «Искупление» Никиты Левковича**
 
-### [▶ Открыть архив](https://mikitaliaukovich.github.io/universalis-corp-archive/)
+### [▶ Открыть архив](https://universaliscorp.com)
 
 </div>
 

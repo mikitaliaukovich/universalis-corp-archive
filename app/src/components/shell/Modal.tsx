@@ -8,10 +8,12 @@ interface Props {
   onClose: () => void
   children: ReactNode
   wide?: boolean
+  /** extra class for the body, e.g. to scroll only part of it */
+  bodyClassName?: string
 }
 
 /** Terminal "window" that unfolds from a line. Rendered inside the CRT screen. */
-export function Modal({ title, code, onClose, children, wide }: Props) {
+export function Modal({ title, code, onClose, children, wide, bodyClassName = '' }: Props) {
   const { t } = useSettings()
   const ref = useRef<HTMLDivElement>(null)
 
@@ -53,7 +55,7 @@ export function Modal({ title, code, onClose, children, wide }: Props) {
             </button>
           </div>
         </header>
-        <div className="panel__body panel__body--scroll">{children}</div>
+        <div className={`panel__body panel__body--scroll ${bodyClassName}`}>{children}</div>
       </motion.div>
     </motion.div>
   )

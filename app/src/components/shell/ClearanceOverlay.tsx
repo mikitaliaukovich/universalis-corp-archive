@@ -17,7 +17,7 @@ export function ClearanceOverlay() {
   }
 
   return (
-    <Modal title={t('clearance.title')} code="SEC" onClose={() => choose(settings.progress ?? 0)}>
+    <Modal title={t('clearance.title')} code="SEC" bodyClassName="clearance-body" onClose={() => choose(settings.progress ?? 0)}>
       {langs.length > 1 && (
         <div className="clearance__lang" role="group" aria-label={t('settings.language')}>
           {/* each language names itself, so a first-time visitor can find theirs */}

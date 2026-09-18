@@ -1343,6 +1343,23 @@ button.redacted:hover {
   text-transform: uppercase;
 }
 
+/* intro, language and note stay put; only the chapter list scrolls */
+.clearance-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.clearance-body > * {
+  flex-shrink: 0;
+}
+
+.clearance-body > .clearance {
+  flex: 0 1 auto;
+  min-height: 120px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
 .clearance {
   list-style: none;
   margin: 12px 0;

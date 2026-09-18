@@ -679,6 +679,13 @@
   .modal {
     position: fixed;
   }
+  .modal__window {
+    max-height: calc(100dvh - 32px);
+  }
+  /* page panels grow with the page on phones, but modal windows keep their own scroll */
+  .modal .panel__body--scroll {
+    overflow: auto;
+  }
   .app {
     height: auto;
     min-height: 100dvh;

@@ -70,7 +70,7 @@ export function SettingsOverlay() {
             type="button"
             className="key-btn"
             onClick={() => {
-              update({ tourSeen: false })
+              update({ tourSeen: [] })
               setOverlay(null)
             }}
           >

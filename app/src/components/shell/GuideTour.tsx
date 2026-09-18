@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { AnimatePresence, motion } from 'motion/react'
 import { content } from '../../lib/content'
@@ -19,23 +19,29 @@ const PAD = 6
 
 /**
  * Newcomer tips (site.yaml → tour): spotlights interface elements marked data-tour="…" one by one.
- * Runs once, after the first clearance choice; pauses while any overlay is open.
+ * Each tip is shown once (remembered by target), so tips added later still reach returning readers.
+ * Starts after the first clearance choice; pauses while any overlay is open.
  */
 export function GuideTour() {
   const { t, l, settings, update } = useSettings()
   const { overlay, lightbox } = useUi()
-  const steps = content.site.tour.enabled ? content.site.tour.steps : []
+  const seen = settings.tourSeen
+  const steps = useMemo(
+    () => (content.site.tour.enabled ? content.site.tour.steps.filter((s) => !seen.includes(s.target)) : []),
+    [seen],
+  )
   const [index, setIndex] = useState(0)
   const [spot, setSpot] = useState<Spot | null>(null)
 
-  const active = steps.length > 0 && !settings.tourSeen && settings.progress != null && !overlay && !lightbox
+  const active = steps.length > 0 && settings.progress != null && !overlay && !lightbox
   const step = active ? steps[index] : undefined
 
+  // finishing or skipping marks every tip of this round as seen
   const finish = useCallback(() => {
-    update({ tourSeen: true })
+    update({ tourSeen: [...seen, ...steps.map((s) => s.target)] })
     setIndex(0)
     setSpot(null)
-  }, [update])
+  }, [update, seen, steps])
   const next = useCallback(() => {
     sfx.blip()
     setIndex((i) => i + 1)

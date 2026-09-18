@@ -2,6 +2,8 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { content, type Effects, type L10n } from './content'
 
 const KEY = 'universalis.settings.v1'
+/** tips that existed while tourSeen was a single flag; readers who saw those still get tips added later */
+const LEGACY_TOUR = ['search', 'clearance', 'language', 'settings']
 
 export interface Settings {
   lang: string
@@ -9,8 +11,8 @@ export interface Settings {
   effects: Effects
   /** last chapter the reader has finished; null = not asked yet */
   progress: number | null
-  /** newcomer tips (site.yaml → tour) were shown or dismissed */
-  tourSeen: boolean
+  /** targets of the newcomer tips (site.yaml → tour) already shown or dismissed */
+  tourSeen: string[]
   /** header radio volume, 0–100 */
   radioVolume: number
 }
@@ -19,7 +21,7 @@ function defaults(): Settings {
   const { site, theme } = content
   const browser = typeof navigator !== 'undefined' ? navigator.language.slice(0, 2) : ''
   const lang = site.detectBrowserLanguage && site.languages.some((l) => l.id === browser) ? browser : site.defaultLanguage
-  return { lang, palette: theme.defaultPalette, effects: { ...theme.effects }, progress: null, tourSeen: false, radioVolume: site.radio.volume }
+  return { lang, palette: theme.defaultPalette, effects: { ...theme.effects }, progress: null, tourSeen: [], radioVolume: site.radio.volume }
 }
 
 function load(): Settings {
@@ -33,7 +35,11 @@ function load(): Settings {
       palette: s.palette && content.theme.palettes[s.palette] ? s.palette : d.palette,
       effects: { ...d.effects, ...(s.effects ?? {}) },
       progress: typeof s.progress === 'number' ? s.progress : null,
-      tourSeen: s.tourSeen === true,
+      tourSeen: Array.isArray(s.tourSeen)
+        ? s.tourSeen.filter((x): x is string => typeof x === 'string')
+        : (s.tourSeen as unknown) === true
+          ? LEGACY_TOUR
+          : [],
       radioVolume: typeof s.radioVolume === 'number' ? Math.min(100, Math.max(0, s.radioVolume)) : d.radioVolume,
     }
   } catch {

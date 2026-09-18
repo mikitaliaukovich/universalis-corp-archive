@@ -87,7 +87,8 @@ radio:
 
 # Newcomer tips: shown once, after the first clearance choice. Steps run in order;
 # `target` is an element marked data-tour="…" in the interface (available: search, clearance, language, settings, radio).
-# Settings → "Show tips again" replays them.
+# Each tip is shown once per reader; a newly added step reaches returning readers on their next visit.
+# Settings → "Show tips again" replays them all.
 tour:
   enabled: true
   steps:

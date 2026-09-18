@@ -9,6 +9,7 @@ import { setSoundEnabled, sfx } from './lib/sound'
 import { CrtFrame } from './components/shell/CrtFrame'
 import { BootSequence } from './components/shell/BootSequence'
 import { accessRequired } from './lib/access'
+import { radioControl } from './lib/youtube'
 import { HeaderBar } from './components/shell/HeaderBar'
 import { HotkeyBar } from './components/shell/HotkeyBar'
 import { PagerToast } from './components/shell/PagerToast'
@@ -62,6 +63,8 @@ function useGlobalKeys() {
         setOverlay('search')
       } else if (e.code === 'KeyS') {
         setOverlay('settings')
+      } else if (e.code === 'KeyM') {
+        radioControl.toggle?.()
       } else if (e.key === 'Tab') {
         e.preventDefault()
         const current = sections.findIndex((s) => location.pathname.startsWith(`/${s.path}`))

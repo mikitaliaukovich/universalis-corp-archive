@@ -29,6 +29,11 @@ export function HotkeyBar() {
         <span>
           <kbd>ESC</kbd> {t('keys.esc')}
         </span>
+        {content.site.radio.enabled && (
+          <span>
+            <kbd>M</kbd> {t('keys.radio')}
+          </span>
+        )}
       </div>
     </footer>
   )

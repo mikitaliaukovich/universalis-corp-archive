@@ -17,7 +17,7 @@ Everything the site shows lives in [`content/`](content):
 
 | Path | What it controls |
 |---|---|
-| `site.yaml` | Title, header line, sections (menu, hotkeys, URLs), boot lines, password gate, newcomer tips, pager messages, Charter quotes, home screen |
+| `site.yaml` | Title, header line, sections (menu, hotkeys, URLs), boot lines, password gate, header radio, newcomer tips, pager messages, Charter quotes, home screen |
 | `theme.yaml` | Phosphor palettes, fonts, default effects (scanlines, flicker, sound…) |
 | `taxonomy.yaml` | Realms, chapter/character statuses and stamps, factions, glossary categories, image kinds |
 | `i18n/<lang>.yaml` | Every interface string |
@@ -41,6 +41,20 @@ access:
 ```
 
 To change the password, run `npm run hash-password -- "new password"` and paste the printed line into `site.yaml`. This is a courtesy gate for sharing a preview, not real protection: the site is static, so all its content is still downloadable by anyone with the URL.
+
+### Radio
+
+`radio` in `site.yaml` puts a radio set in the header that plays a YouTube / YouTube Music playlist. Listeners see only the current track, play/pause, next and volume, never the track list. `M` toggles it.
+
+```yaml
+radio:
+  enabled: true                  # false + redeploy removes the radio
+  playlistId: "PLFh8MxUSUPVA"    # the part after list= in the playlist URL (music.youtube.com or youtube.com)
+  shuffle: true                  # random start and order
+  volume: 60                     # default volume; each listener's own setting is remembered
+```
+
+The playlist must be public or unlisted. Tracks whose owners forbid embedding are skipped automatically; after five unplayable tracks in a row the readout shows NO SIGNAL. The page contacts YouTube only after a visitor reaches for the radio, and then through `youtube-nocookie.com`. The player runs hidden, so only its sound is used.
 
 ### Markdown extensions
 

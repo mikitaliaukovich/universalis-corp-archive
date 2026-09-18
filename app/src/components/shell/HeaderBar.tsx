@@ -4,6 +4,7 @@ import { content } from '../../lib/content'
 import { useSettings } from '../../lib/settings'
 import { useUi } from '../../lib/ui'
 import { Logo } from '../ui/Logo'
+import { RadioSet } from './RadioSet'
 
 /** "Purgatory time": the clock runs `ratio` times faster than real time. */
 function usePurgatoryClock(ratio: number) {
@@ -32,6 +33,7 @@ export function HeaderBar() {
       </Link>
       <div className="topbar__terminal">{l(content.site.terminal)}</div>
       <div className="topbar__right">
+        {content.site.radio.enabled && <RadioSet />}
         <button type="button" className="chip" data-tour="search" onClick={() => setOverlay('search')} title={t('search.title')}>
           <kbd>/</kbd>
           <span className="hide-sm">{t('search.short')}</span>

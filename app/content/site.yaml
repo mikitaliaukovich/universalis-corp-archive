@@ -76,8 +76,17 @@ access:
   enabled: true
   passwordHash: "49e0868d24b4e8f85a82855304beaeef842c6fa84293dd96df4e26859acfc2e4"
 
+# Header radio: plays a YouTube / YouTube Music playlist through a hidden player; listeners see only the current track.
+# playlistId = the part after "list=" in the playlist URL. `enabled: false` + redeploy removes the radio.
+# YouTube is contacted only after a visitor reaches for the radio. Tracks whose owners forbid embedding are skipped.
+radio:
+  enabled: true
+  playlistId: "PLFh8MxUSUPVA"
+  shuffle: true      # start at a random track and play in random order
+  volume: 60         # default volume, 0–100
+
 # Newcomer tips: shown once, after the first clearance choice. Steps run in order;
-# `target` is an element marked data-tour="…" in the interface (available: search, clearance, language, settings).
+# `target` is an element marked data-tour="…" in the interface (available: search, clearance, language, settings, radio).
 # Settings → "Show tips again" replays them.
 tour:
   enabled: true
@@ -97,6 +106,11 @@ tour:
       text:
         ru: "Здесь можно сменить цвет фосфора и язык, отключить эффекты кинескопа и звук. Быстрый вызов — клавиша S."
         en: "Here you can change the phosphor colour and language, and switch off the tube effects and sound. Shortcut: the S key."
+    - target: radio
+      title: { ru: "Радиоточка", en: "Radio" }
+      text:
+        ru: "Здесь можно послушать музыку, под которую писалась книга. Быстрый вызов — клавиша M."
+        en: "Here you can listen to the music the book was written to. Shortcut: the M key."
 
 # Header clock: one real minute = `ratio` purgatory minutes.
 clock:

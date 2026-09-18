@@ -50,6 +50,15 @@ export const SiteSchema = z.object({
       steps: z.array(z.object({ target: z.string(), title: L10n, text: L10n })).default([]),
     })
     .default({ enabled: false, steps: [] }),
+  radio: z
+    .object({
+      enabled: z.boolean().default(false),
+      playlistId: z.string().regex(/^[A-Za-z0-9_-]{10,}$/, 'playlistId must be the part after "list=" in the playlist URL').optional(),
+      shuffle: z.boolean().default(true),
+      volume: z.number().min(0).max(100).default(60),
+    })
+    .refine((r) => !r.enabled || r.playlistId, 'radio.playlistId is required when radio.enabled is true')
+    .default({ enabled: false, shuffle: true, volume: 60 }),
   clock: z.object({ label: L10n, ratio: z.number().positive().default(60) }),
   pager: z.object({
     enabled: z.boolean().default(true),

@@ -633,6 +633,19 @@
 }
 
 /* ================================================================ responsive */
+/* the header radio takes the terminal line's room earlier */
+@media (min-width: 761px) and (max-width: 1440px) {
+  .topbar:has(.radio) {
+    grid-template-columns: auto 1fr;
+  }
+  .topbar:has(.radio) .topbar__terminal {
+    display: none;
+  }
+  .topbar:has(.radio) .topbar__right {
+    justify-content: flex-end;
+  }
+}
+
 @media (max-width: 1180px) {
   .layout3 {
     grid-template-columns: minmax(210px, 28%) minmax(0, 1fr);
@@ -739,6 +752,15 @@
   }
   .pagerclock {
     display: none;
+  }
+  /* the radio gets its own row under the buttons */
+  .radio {
+    order: 1;
+    flex: 1 1 100%;
+  }
+  .radio__lcd {
+    flex: 1;
+    width: auto;
   }
   .hotkeys {
     position: sticky;

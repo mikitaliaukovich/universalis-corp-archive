@@ -169,6 +169,217 @@
   text-shadow: none;
 }
 
+/* header radio set ("радиоточка") */
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 6px 0 3px;
+  border: 1px solid var(--line-faint);
+  border-radius: 5px;
+  min-width: 0;
+}
+
+.radio__btn {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+.radio__btn:hover:not(:disabled),
+.radio__btn:focus-visible {
+  background: var(--fg);
+  color: var(--ink);
+}
+
+.radio__btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.radio__btn svg {
+  filter: drop-shadow(0 0 3px color-mix(in srgb, currentColor 60%, transparent));
+}
+
+.radio__lcd {
+  display: block;
+  width: 180px;
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--font-type);
+  font-size: 12px;
+  line-height: 22px;
+  height: 22px;
+  padding: 0 6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: color-mix(in srgb, var(--fg) 88%, #000);
+  color: var(--ink);
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.55);
+}
+
+.radio__text {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.radio__text > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.radio__lcd--ticker .radio__text {
+  max-width: none;
+  animation: radio-ticker linear infinite;
+}
+
+.radio__lcd--ticker .radio__text > span {
+  overflow: visible;
+  padding-right: 3em;
+}
+
+@keyframes radio-ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* animations are switched off by reduced motion (base.css): fall back to a truncated title */
+@media (prefers-reduced-motion: reduce) {
+  .radio__lcd--ticker .radio__text {
+    max-width: 100%;
+  }
+  .radio__lcd--ticker .radio__text > span {
+    overflow: hidden;
+    padding-right: 0;
+  }
+  .radio__lcd--ticker .radio__text > span + span {
+    display: none;
+  }
+}
+
+.radio--paused .radio__lcd,
+.radio--off .radio__lcd {
+  background: color-mix(in srgb, var(--fg) 45%, #000);
+}
+
+.radio--paused .radio__text {
+  animation-play-state: paused;
+}
+
+.radio--tuning .radio__lcd {
+  animation: radio-static 0.35s steps(2) infinite;
+}
+
+@keyframes radio-static {
+  50% {
+    background: color-mix(in srgb, var(--fg) 70%, #000);
+  }
+}
+
+.radio__meter {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.radio__meter i {
+  width: 3px;
+  height: 25%;
+  background: var(--fg);
+  opacity: 0.35;
+}
+
+.radio--playing .radio__meter i {
+  opacity: 1;
+  animation: radio-level 0.9s ease-in-out infinite alternate;
+}
+
+.radio--playing .radio__meter i:nth-child(2) {
+  animation-duration: 0.6s;
+  animation-delay: -0.3s;
+}
+
+.radio--playing .radio__meter i:nth-child(3) {
+  animation-duration: 1.1s;
+  animation-delay: -0.5s;
+}
+
+.radio--playing .radio__meter i:nth-child(4) {
+  animation-duration: 0.75s;
+  animation-delay: -0.2s;
+}
+
+@keyframes radio-level {
+  from {
+    height: 20%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.radio__volume {
+  width: 64px;
+  height: 16px;
+  margin: 0;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+.radio__volume::-webkit-slider-runnable-track {
+  height: 4px;
+  background: var(--line-faint);
+  border-radius: 2px;
+}
+
+.radio__volume::-moz-range-track {
+  height: 4px;
+  background: var(--line-faint);
+  border-radius: 2px;
+}
+
+.radio__volume::-webkit-slider-thumb {
+  appearance: none;
+  width: 8px;
+  height: 14px;
+  margin-top: -5px;
+  background: var(--fg);
+  border-radius: 1px;
+}
+
+.radio__volume::-moz-range-thumb {
+  width: 8px;
+  height: 14px;
+  border: 0;
+  background: var(--fg);
+  border-radius: 1px;
+}
+
+/* the YouTube player itself: rendered (so it plays) but out of sight and out of reach */
+.radio__host {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 200px; /* YouTube may refuse to play in a smaller player; it sits off-screen instead */
+  height: 200px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .pagerclock {
   display: flex;
   align-items: center;

@@ -150,7 +150,8 @@ html.fx-scanlines .crt__roll {
 
 html.fx-noise .crt__noise {
   display: block;
-  opacity: 0.05;
+  opacity: 0.1;
+  margin: -50px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation: noise 0.6s steps(4) infinite;
 }
@@ -308,10 +309,12 @@ html.fx-curvature .crt__vignette {
 }
 
 @keyframes gate-denied {
+
   20%,
   60% {
     transform: translateX(-6px);
   }
+
   40%,
   80% {
     transform: translateX(6px);

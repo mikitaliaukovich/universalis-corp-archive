@@ -6,4 +6,4 @@ She carries books of fate to the [[archive]] and hears about everything happenin
 
 ## Friendship with Mari
 
-They tease each other as “darling” and “old lady”. Alba knows nothing of [[charon]]'s rebellion: Mari keeps the deal secret even from her only friend.
+They tease each other as “darling” and “old lady”. Mari doesn't hide the deal with [[charon]], but she doesn't tell the whole of what her work involves either, keeping back the details that would raise questions; of Charon's “little rebellion” nobody at all seems to know.

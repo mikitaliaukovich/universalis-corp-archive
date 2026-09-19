@@ -6,7 +6,11 @@ A fox. Charming, flattering, unnaturally strong. Constantly checks his watch. Ha
 
 ## The deal
 
-In [[chapter-04]] Charon all but drags Mari out of [[morana]]'s office, promising to handle the “transfer paperwork”. He offers her [[seven-assignments]] instead of trials, hands her a blank [[service-contract]] and tosses her a battered [[pager]]. “There are things here worse than death.”
+In [[chapter-04]] Charon all but drags Mari out of [[morana]]'s office, promising to handle the “transfer paperwork”. He offers her [[seven-assignments]] instead of trials and promises that if she succeeds all three of them go to Paradise. The blank [[service-contract]] is never signed — “I'll write on the way” — but Mari does get a battered [[pager]]. “There are things here worse than death.”
+
+## The boss
+
+After Dallas he meets Mari in a corridor and waves her complaints away: they were in a hurry, the technology hadn't been tested. Her [[reports]] go to him, carried by runners. Charon can move between worlds at will and has already shown Mari as much, while openly ignoring the [[charter]] — which is why she chased a footballer around Dallas with no briefing at all.
 
 ## Plans
 

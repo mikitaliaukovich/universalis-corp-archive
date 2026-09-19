@@ -6,11 +6,11 @@ summary:
   en: "A gossiping runner with a greasy fringe and an absurdly wide tie. His accent survives even the universal translation."
 status: dead
 faction: staff
-firstChapter: 9
+firstChapter: 8
 order: 42
 facts:
   - label: { ru: "Облик", en: "Look" }
-    value: { ru: "Рубашка с коротким рукавом, широкий серый галстук", en: "Short-sleeved shirt, wide grey tie" }
+    value: { ru: "Рубашка с коротким рукавом, заправленная в брюки, широкий пёстрый галстук с абстрактным рисунком", en: "A short-sleeved shirt tucked into his trousers, a wide, loud tie with an abstract pattern" }
 relations:
   - id: mari
     type: { ru: "Зовёт её «Мери»", en: "Calls her “Meri”" }

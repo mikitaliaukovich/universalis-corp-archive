@@ -1,1 +1,3 @@
-[[charon]] hands [[mari]] a blank form. She refuses to sign an empty sheet; Charon, who hates paperwork, promises to fill it in later ([[chapter-04]]).
+*“CONTRACT OF PAID SERVICE. Concluded between the Administration of Purgatory, represented by \_\_\_, and the soul \_\_\_. Subject of the contract: \_\_\_. Payment: \_\_\_”* — this is the form [[charon]] holds out to [[mari]], with blank lines where everything essential should be.
+
+Spoken aloud, the payment is “granting the Contractor the right to distribution to Paradise upon fulfilment of obligations”; Mari catches on the word “right”. She refuses to sign an empty sheet, and Charon has neither the time nor the patience: “I can't stand this place's love of paperwork anyway. Here, I'll write on the way.” The contract is left unfilled and unsigned ([[chapter-04]]).

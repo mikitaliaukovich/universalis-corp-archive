@@ -2,8 +2,8 @@ id: mari
 name: { ru: "Мари Доберштейн", en: "Mari Doberstein" }
 role: { ru: "Главная героиня. Исполнитель поручений Харона", en: "Protagonist. Charon's task executor" }
 summary:
-  ru: "36-летняя юристка из Кракова, погибшая вместе с семьёй. В Чистилище заключает сделку: семь спасённых душ в обмен на Рай для мужа и сына."
-  en: "A 36-year-old lawyer from Kraków who died along with her family. In Purgatory she strikes a deal: seven saved souls in exchange for Paradise for her husband and son."
+  ru: "36-летняя юристка из Кракова, погибшая вместе с семьёй. В Чистилище заключает сделку: семь спасённых душ в обмен на Рай для мужа и сына — а по обещанию Харона и для себя самой."
+  en: "A 36-year-old lawyer from Kraków who died along with her family. In Purgatory she strikes a deal: seven saved souls in exchange for Paradise for her husband and son — and, as Charon promises, for herself."
 status: dead
 stamp: { ru: "Мертва", en: "Deceased" }
 faction: protagonists
@@ -27,6 +27,8 @@ facts:
     value: { ru: "Старший партнёр, корпоративное право", en: "Senior partner, corporate law" }
   - label: { ru: "Автомобиль", en: "Car" }
     value: { ru: "Розовый BMW Z4", en: "Pink BMW Z4" }
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Светловолосая; в Чистилище — белое платье-сарафан и босые ноги", en: "Blonde; in Purgatory — a white sundress and bare feet" }
   - label: { ru: "Черты", en: "Traits" }
     value: { ru: "Циничная, саркастичная, наблюдательная, сломленная", en: "Cynical, sarcastic, observant, broken" }
 relations:

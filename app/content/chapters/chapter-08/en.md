@@ -9,8 +9,8 @@
 7. Through the portal — into the offices. A minute of crying alone.
 8. Time maths: [[purgatory-time|1 real minute = 1 purgatory hour]]. A half-hour dinner cost 30 hours; each job allows 3 days — 72 real minutes.
 9. The concrete [[exit-room]] with five doors; the orange lines of the [[color-corridors|corridors]] lead to the red [[computing-hall]].
-10. Runner [[alba]] joins her. They meet [[peter]], sent around by the [[engineers]] for two days; the gossip: the [[transistors|transistor]] in cubicle 4015 “burned out”, his cases will go to 1001.
-11. Down the blue “To the Archive” corridor to the green door. [[friedrich]] takes Alba's books and fills in [[transfer-forms]]. No one knows of Charon's rebellion.
+10. Runner [[alba]] joins her — and steers her clear of [[li]], who has spent two days retelling the same story: a reaper who got to pull souls one after another out of a sunken bathyscaphe, with the nearest door on a ship four kilometres from the dead. They meet [[peter]], sent around by the [[engineers]] for two days; the gossip: the [[transistors|transistor]] in cubicle 4015 “burned out” with only a couple of months left to serve — his cases will go to 1001.
+11. Down the blue “To the Archive” corridor to the green door. [[friedrich]] takes Alba's books (she delivers them every three days) and fills in [[transfer-forms]]. Nobody seems to know about Charon's “little rebellion”; Mari does not hide the deal itself, but keeps the details from Alba.
 12. Down to [[mord]]: Mari punches her [[time-card]] at exactly 8:00, sits in an office the size of a mop closet and writes a [[reports|report]] on catching Johan Lindström from Gothenburg.
 
 ## What we learn about the world

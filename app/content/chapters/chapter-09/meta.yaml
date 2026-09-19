@@ -2,13 +2,13 @@ id: chapter-09
 number: 9
 name: { ru: "Встреча", en: "The Meeting" }
 summary:
-  ru: "Новое задание приходит в папке бегунка Ли. Мари узнаёт о маяках — и отправляется на швейцарский поезд, где её судьба пересечётся с Архивариусом."
-  en: "A new job arrives in runner Li's folder. Mari learns about beacons — and heads for a Swiss train where her fate will cross the Archivist's."
+  ru: "Новое задание приходит в папке бегунка Ли. Мари узнаёт о маяках и выходит в скорый поезд Милан — Цюрих: впервые в мужском теле, с чужой пятилетней дочкой на руках."
+  en: "A new job arrives in runner Li's folder. Mari learns about beacons and steps out onto the Milan–Zurich express: in a man's body for the first time, with someone else's five-year-old daughter in tow."
 pov: mari
 realm: purgatory
 status: partial
 setting:
-  ru: "Чистилище: МОРД, выходная комната; мир живых: швейцарский поезд"
-  en: "Purgatory: MORD, the exit room; world of the living: a Swiss train"
-characters: [mari, li, archivist, charon]
-terms: [mord, exit-room, beacons, soul-projection, universal-language, pneumatic-tube, catch-contract, doors, restless-souls, coup]
+  ru: "Чистилище: МОРД, выходная комната; мир живых: скорый поезд Милан — Цюрих в заснеженных Альпах"
+  en: "Purgatory: MORD, the exit room; world of the living: the Milan–Zurich express in the snowbound Alps"
+characters: [mari, li, markus, nora, archivist, charon]
+terms: [mord, exit-room, beacons, soul-projection, universal-language, pneumatic-tube, catch-contract, doors, restless-souls, coup, hosts, possession, purgatory-time, time-card, milan-zurich-train]

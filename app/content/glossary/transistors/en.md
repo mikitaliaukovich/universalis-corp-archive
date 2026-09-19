@@ -1,1 +1,1 @@
-The same low caste as the [[runners]], but the work is psychologically gruelling. The transistor in cubicle 4015 “burned out” — his cases will be passed to 1001 ([[chapter-08]]).
+The same low caste as the [[runners]], but the work is psychologically gruelling. The transistor in cubicle 4015 “burned out” with only a couple of months of his term left; his cases will be passed to 1001. What becomes of the burned-out even [[alba]] doesn't know: “I'd pray for him, but it wouldn't help” ([[chapter-08]]).

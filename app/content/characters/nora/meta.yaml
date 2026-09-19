@@ -1,0 +1,22 @@
+id: nora
+name: { ru: "Нора Келлер", en: "Nora Keller" }
+role: { ru: "Дочь носителя", en: "The host's daughter" }
+summary:
+  ru: "Пятилетняя девочка в поезде Милан — Цюрих, принявшая вселившуюся в её отца Мари за папу."
+  en: "A five-year-old girl on the Milan–Zurich train who takes the Mari inside her father for her dad."
+status: alive
+faction: living
+firstChapter: 9
+order: 60
+facts:
+  - label: { ru: "Возраст", en: "Age" }
+    value: { ru: "Пять лет («но я и есть взрослая, папа!»)", en: "Five (“but I *am* grown up, daddy!”)" }
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Сиреневые колготки, лимонное платьишко, полосатый свитер, плюшевый мишка с кармашком", en: "Lilac tights, a lemon-yellow dress, a striped jumper, a teddy bear with a pocket" }
+  - label: { ru: "Мать", en: "Mother" }
+    value: { ru: "Умерла: «на облачке, с бабушкой»", en: "Dead: “on a cloud, with grandma”" }
+relations:
+  - id: markus
+    type: { ru: "Отец", en: "Father" }
+  - id: mari
+    type: { ru: "Вселилась в её отца", en: "Possessed her father" }

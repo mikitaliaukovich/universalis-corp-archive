@@ -6,9 +6,9 @@
 4. A tour: the endless open-plan [[computing-hall|forecasting department]] where fates are predicted and written, then the [[archive]].
 5. Charon introduces himself as a junior [[purification-manager]] and doesn't hide his bitterness: “Son of Darkness and Night, ferryman of souls, all logistics rested on me… then *she* came. [[reform|Reforms, optimisations]].”
 6. In his broom-closet office he offers a deal — [[seven-assignments]]: instead of atoning for her seven points, Mari will save seven souls. “There are things here worse than death.”
-7. Mari's condition: her family goes to [[paradise]]. “We don't call it that,” — but Charon agrees.
+7. Mari's condition: her family goes to [[paradise]]. “We don't call it that,” — but Charon agrees, and raises the stakes: if she succeeds, **all three** of them go, Mari included.
 8. Life on Earth is only a “nursery for the soul”. The family will wait in the [[admissions-ward]], where [[purgatory-time|time is non-linear]].
-9. The [[service-contract]] is blank. Mari refuses to sign an empty sheet; Charon, who hates paperwork, promises to fill it in later, tosses her a battered [[pager]] and shoves her through a door.
+9. The [[service-contract]] is blank — subject and payment are empty lines. Spoken aloud, the payment is “granting the Contractor the right to distribution to Paradise”; Mari catches on the word “right” and refuses to sign an empty sheet. There is no time, and Charon hates paperwork: “I'll write it on the way.” He tosses her a battered [[pager]] and shoves her through a door — the contract is never signed.
 
 ## What we learn about the world
 

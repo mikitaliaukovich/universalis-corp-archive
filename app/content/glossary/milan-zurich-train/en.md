@@ -1,0 +1,3 @@
+A white-and-red arrow from Milan to Zurich, eleven cars long. Freak weather has closed the Gotthard base tunnel, so the train is sent along the old mountain line of the panoramic route and will reach Zürich HB an hour late. Outside — a blizzard and black-and-white cliffs that erase the line between sky and ground.
+
+This is where [[mari]] arrives by way of the key-[[beacons|beacon]], inside the body of [[markus|Markus Keller]] ([[chapter-09]]). Walking the whole train takes five to ten minutes; :redact[the doors between carriages will become a problem of their own once the soul has to be chased.]{ch=9}

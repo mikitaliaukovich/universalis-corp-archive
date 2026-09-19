@@ -1,0 +1,22 @@
+id: markus
+name: { ru: "Маркус Келлер", en: "Markus Keller" }
+role: { ru: "Носитель Мари в пятом задании", en: "Mari's host on the fifth assignment" }
+summary:
+  ru: "Седеющий мужчина лет пятидесяти, отец-одиночка. Первое мужское тело, в которое вселилась Мари."
+  en: "A greying man of about fifty, a single father. The first male body Mari possessed."
+status: alive
+faction: living
+firstChapter: 9
+order: 59
+facts:
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Белёсая щетина, седые волосы при тёмных бровях, зелёные глаза, бордовый свитшот и синие джинсы", en: "Pale stubble, grey hair over still-dark brows, green eyes, a burgundy sweatshirt and blue jeans" }
+  - label: { ru: "Маяк", en: "Beacon" }
+    value: { ru: "Старый потёртый ключ", en: "An old worn key" }
+  - label: { ru: "Маршрут", en: "Route" }
+    value: { ru: "Скорый поезд Милан — Цюрих", en: "The Milan–Zurich express" }
+relations:
+  - id: nora
+    type: { ru: "Дочь", en: "Daughter" }
+  - id: mari
+    type: { ru: "Носитель", en: "Host" }

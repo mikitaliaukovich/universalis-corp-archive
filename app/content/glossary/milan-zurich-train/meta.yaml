@@ -1,0 +1,11 @@
+id: milan-zurich-train
+category: places
+firstChapter: 9
+name: { ru: "Поезд Милан — Цюрих", en: "The Milan–Zurich Express" }
+aliases:
+  ru: ["Готард", "Альпы"]
+  en: ["Gotthard", "The Alps"]
+summary:
+  ru: "Одиннадцативагонный скорый поезд в заснеженных Альпах — место пятого задания Мари."
+  en: "An eleven-car express through the snowbound Alps — the setting of Mari's fifth assignment."
+related: [beacons, hosts, doors]

@@ -1,0 +1,7 @@
+# Install torch from the CPU index — the default wheel drags in ~2.5 GB of CUDA:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch
+torch>=2.2
+numpy>=1.24
+
+# Only needed to read .docx manuscripts
+python-docx>=1.1 ; extra == "docx"

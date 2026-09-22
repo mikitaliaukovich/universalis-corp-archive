@@ -44,3 +44,9 @@ coverage/
 # TypeScript incremental build cache
 *.tsbuildinfo
 Искупление.md
+
+# Voiceover tool: venv, downloaded models and generated audio
+__pycache__/
+tools/voiceover/.venv/
+tools/voiceover/audio/
+tools/voiceover/**/*.pt

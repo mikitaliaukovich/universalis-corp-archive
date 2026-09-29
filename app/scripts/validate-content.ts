@@ -46,7 +46,7 @@ const used = new Set(content.entities.flatMap((e) => e.images.flatMap((i) => [i.
 const unused = Object.keys(media).filter((m) => !used.has(m) && !m.endsWith('.web.webp'))
 
 console.log(
-  `content: ${content.chapters.length} chapters, ${content.characters.length} characters, ${content.terms.length} terms, ${Object.keys(media).length} images`,
+  `content: ${content.chapters.length} chapters, ${content.characters.length} characters, ${content.terms.length} terms, ${content.releases.length} releases, ${Object.keys(media).length} images`,
 )
 for (const u of unused) console.warn(`\x1b[33mwarning: unused image ${u}\x1b[0m`)
 if (errors.length) {

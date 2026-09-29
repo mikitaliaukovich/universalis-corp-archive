@@ -1,0 +1,10 @@
+# PLACEHOLDER — replace the name, date, summary and texts with the real plan.
+id: book-2
+order: 2
+format: book
+status: concept
+name: { ru: "Книга II", en: "Book II" }
+summary:
+  ru: "Черновая запись. Замените описанием проекта."
+  en: "Placeholder entry. Replace with a description of the project."
+related: [redemption]

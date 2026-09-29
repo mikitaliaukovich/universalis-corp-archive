@@ -19,11 +19,12 @@ Everything the site shows lives in [`content/`](content):
 |---|---|
 | `site.yaml` | Title, header line, sections (menu, hotkeys, URLs), boot lines, password gate, header radio, newcomer tips, pager messages, Charter quotes, home screen |
 | `theme.yaml` | Phosphor palettes, fonts, default effects (scanlines, flicker, sound…) |
-| `taxonomy.yaml` | Realms, chapter/character statuses and stamps, factions, glossary categories, image kinds |
+| `taxonomy.yaml` | Realms, chapter/character statuses and stamps, factions, glossary categories, release formats and statuses, image kinds |
 | `i18n/<lang>.yaml` | Every interface string |
 | `chapters/<id>/` | One chapter: `meta.yaml` + `ru.md` + `en.md` |
 | `characters/<id>/` | One personnel file |
 | `glossary/<id>/` | One glossary card (places live here too, category `places`) |
+| `releases/<id>/` | One card on the release plan (book, series, film, game…) |
 | `media/` | Images referenced from `meta.yaml` |
 
 **Add an entry:** copy an existing folder, rename it (the folder name is the id: lowercase latin, digits, dashes), change `id` inside `meta.yaml`, edit the texts. It appears automatically. Run `npm run check` to catch typos in ids, missing translations or images.
@@ -55,6 +56,32 @@ radio:
 ```
 
 The playlist must be public or unlisted. Tracks whose owners forbid embedding are skipped automatically; after five unplayable tracks in a row the readout shows NO SIGNAL. The page contacts YouTube only after a visitor reaches for the radio, and then through `youtube-nocookie.com`. The player runs hidden, so only its sound is used.
+
+### Release plan
+
+The **Release plan** tab (hotkey `4`) shows the order in which the books, series, films and games come out. Each entry is a folder in `releases/`, and clicking its card opens the full description.
+
+```yaml
+id: redemption
+order: 1                     # position on the timeline (lowest first)
+format: book                 # book | novella | series | movie | game  (taxonomy.yaml → releaseFormats)
+status: production           # released | production | planned | concept  (taxonomy.yaml → releaseStatuses)
+name: { ru: "…", en: "…" }
+date: { ru: "Осень 2027", en: "Autumn 2027" }   # optional, free-form; left out = "to be announced"
+summary: { ru: "…", en: "…" }                   # the text on the timeline card
+facts:                       # any extra rows for the fact table: author, pages, platform, cast…
+  - label: { ru: "Автор", en: "Author" }
+    value: { ru: "…", en: "…" }
+links:                       # optional buttons to outside pages: store, pre-order, trailer…
+  - label: { ru: "Предзаказ", en: "Pre-order" }
+    url: "https://…"
+related: [mari, charon]      # characters, chapters, terms or other releases
+images:
+  - file: media/releases/redemption/cover.jpg
+    kind: cover
+```
+
+The longer description goes into `ru.md` / `en.md`, with the same Markdown extensions as everywhere else. New formats or statuses are added in `taxonomy.yaml`.
 
 ### Markdown extensions
 

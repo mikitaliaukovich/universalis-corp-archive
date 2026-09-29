@@ -1,0 +1,23 @@
+id: redemption
+order: 1
+format: book
+status: production
+name: { ru: "Искупление", en: "Redemption" }
+# Free-form release date; leave it out while unknown ("to be announced" is shown).
+# date: { ru: "Осень 2027", en: "Autumn 2027" }
+summary:
+  ru: "Мари погибает и попадает в Корпорацию «Универсалис» — чистилище, устроенное как бесконечная бюрократия. Харон предлагает сделку: помоги ему прийти к власти — и её семья попадёт в Рай."
+  en: "Mari dies and wakes in the Universalis Corporation — a purgatory run as an endless bureaucracy. Charon offers a deal: help him seize power, and her family goes to Paradise."
+# Anything else worth showing in the fact table: add label/value pairs.
+facts:
+  - label: { ru: "Автор", en: "Author" }
+    value: { ru: "Никита Левкович", en: "Mikita Liaukovich" }
+  - label: { ru: "Язык оригинала", en: "Original language" }
+    value: { ru: "Русский", en: "Russian" }
+  - label: { ru: "Жанр", en: "Genre" }
+    value: { ru: "Мистическая драма, бюрократическая фантасмагория", en: "Mystical drama, bureaucratic phantasmagoria" }
+# Buttons to external pages (store, pre-order, trailer…):
+# links:
+#   - label: { ru: "Предзаказ", en: "Pre-order" }
+#     url: "https://example.com"
+related: [mari, charon, archivist, morana]

@@ -1,0 +1,10 @@
+# PLACEHOLDER — replace the name, date, summary and texts with the real plan.
+id: redemption-game
+order: 4
+format: game
+status: concept
+name: { ru: "«Искупление»: игра", en: "Redemption: the game" }
+summary:
+  ru: "Черновая запись. Замените описанием проекта."
+  en: "Placeholder entry. Replace with a description of the project."
+related: [redemption]

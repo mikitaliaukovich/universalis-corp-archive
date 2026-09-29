@@ -22,9 +22,10 @@ import { Home } from './pages/Home'
 import { Chronicle } from './pages/Chronicle'
 import { Personnel } from './pages/Personnel'
 import { Glossary } from './pages/Glossary'
+import { Releases } from './pages/Releases'
 import { NotFound } from './pages/NotFound'
 
-const VIEWS = { chronicle: Chronicle, personnel: Personnel, glossary: Glossary }
+const VIEWS = { chronicle: Chronicle, personnel: Personnel, glossary: Glossary, releases: Releases }
 const BOOT_KEY = 'universalis.booted'
 
 function SectionRoute() {

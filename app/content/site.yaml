@@ -43,6 +43,15 @@ sections:
     description:
       ru: "Глоссарий терминов, учреждений и законов"
       en: "Glossary of terms, institutions and laws"
+  - id: releases
+    path: timeline
+    view: releases
+    hotkey: "4"
+    code: "ПЛН"
+    label: { ru: "План выпуска", en: "Release plan" }
+    description:
+      ru: "Книги, сериалы, фильмы и игры — в порядке выхода"
+      en: "Books, series, films and games — in order of release"
 
 boot:
   lines:

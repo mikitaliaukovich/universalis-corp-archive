@@ -27,7 +27,7 @@ export const SiteSchema = z.object({
       z.object({
         id: z.string(),
         path: z.string(),
-        view: z.enum(['chronicle', 'personnel', 'glossary']),
+        view: z.enum(['chronicle', 'personnel', 'glossary', 'releases']),
         hotkey: z.string().optional(),
         label: L10n,
         code: z.string().optional(),
@@ -78,6 +78,12 @@ export const TaxonomySchema = z.object({
   characterStatuses: z.record(z.string(), Labeled.extend({ stamp: L10n })),
   factions: z.array(z.object({ id: z.string(), label: L10n, description: L10n.default({}) })),
   glossaryCategories: z.array(z.object({ id: z.string(), label: L10n, code: z.string().default('') })),
+  /** story lines of the release timeline; the first one is the trunk, others may branch off an earlier line */
+  releaseLines: z
+    .array(z.object({ id: z.string(), label: L10n, code: z.string().default(''), description: L10n.default({}), branchFrom: z.string().optional() }))
+    .min(1),
+  releaseFormats: z.array(z.object({ id: z.string(), label: L10n, code: z.string().default('') })),
+  releaseStatuses: z.record(z.string(), Labeled.extend({ stamp: L10n.optional() })),
   clearance: z.record(z.string(), Labeled),
   imageKinds: z.record(z.string(), Labeled),
 })
@@ -179,18 +185,33 @@ export const TermMeta = BaseMeta.extend({
   related: z.array(Id).default([]),
 })
 
+export const ReleaseMeta = BaseMeta.extend({
+  /** position on the release timeline, across all lines */
+  order: z.number(),
+  line: z.string(),
+  format: z.string(),
+  status: z.string(),
+  /** free-form release date: "2027", "Autumn 2027", "TBA"… */
+  date: L10n.optional(),
+  facts: z.array(z.object({ label: L10n, value: L10n })).default([]),
+  links: z.array(z.object({ label: L10n, url: z.url() })).default([]),
+  related: z.array(Id).default([]),
+})
+
 export type Image = z.infer<typeof ImageSchema> & { url: string; original: string }
 type Bodies = { body: L10n; kind: EntityKind }
 export type Character = Omit<z.infer<typeof CharacterMeta>, 'images'> & Bodies & { kind: 'character'; images: Image[] }
 export type Chapter = Omit<z.infer<typeof ChapterMeta>, 'images'> & Bodies & { kind: 'chapter'; images: Image[] }
 export type Term = Omit<z.infer<typeof TermMeta>, 'images'> & Bodies & { kind: 'term'; images: Image[] }
-export type Entity = Character | Chapter | Term
-export type EntityKind = 'character' | 'chapter' | 'term'
+export type Release = Omit<z.infer<typeof ReleaseMeta>, 'images'> & Bodies & { kind: 'release'; images: Image[] }
+export type Entity = Character | Chapter | Term | Release
+export type EntityKind = 'character' | 'chapter' | 'term' | 'release'
 
 const FOLDERS: Record<string, { kind: EntityKind; schema: z.ZodTypeAny }> = {
   characters: { kind: 'character', schema: CharacterMeta },
   chapters: { kind: 'chapter', schema: ChapterMeta },
   glossary: { kind: 'term', schema: TermMeta },
+  releases: { kind: 'release', schema: ReleaseMeta },
 }
 
 export interface Content {
@@ -203,6 +224,8 @@ export interface Content {
   chapters: Chapter[]
   characters: Character[]
   terms: Term[]
+  /** in timeline order */
+  releases: Release[]
   /** id -> ids of entities that reference it */
   backlinks: Map<string, Set<string>>
   maxChapter: number
@@ -291,6 +314,7 @@ export function buildContent(files: Record<string, string>, media: Record<string
   for (const c of chapters) c.firstChapter = c.number
   const characters = entities.filter((e): e is Character => e.kind === 'character').sort(byOrder)
   const terms = entities.filter((e): e is Term => e.kind === 'term').sort(byOrder)
+  const releases = entities.filter((e): e is Release => e.kind === 'release').sort(byOrder)
   const maxChapter = chapters.reduce((m, c) => Math.max(m, c.number), 0)
 
   // ---- cross references & validation
@@ -306,6 +330,12 @@ export function buildContent(files: Record<string, string>, media: Record<string
   }
   const factionIds = new Set(taxonomy.factions.map((f) => f.id))
   const categoryIds = new Set(taxonomy.glossaryCategories.map((c) => c.id))
+  const formatIds = new Set(taxonomy.releaseFormats.map((f) => f.id))
+  const lineIds = taxonomy.releaseLines.map((x) => x.id)
+  taxonomy.releaseLines.forEach((x, i) => {
+    if (x.branchFrom && !lineIds.slice(0, i).includes(x.branchFrom))
+      errors.push(`taxonomy.yaml: release line "${x.id}" branches from "${x.branchFrom}", which must be a line listed above it`)
+  })
 
   for (const e of entities) {
     for (const lang of langs) {
@@ -327,6 +357,11 @@ export function buildContent(files: Record<string, string>, media: Record<string
       if (e.pov) ref(e, e.pov, 'pov')
       e.characters.forEach((id) => ref(e, id, 'characters'))
       e.terms.forEach((id) => ref(e, id, 'terms'))
+    } else if (e.kind === 'release') {
+      if (!lineIds.includes(e.line)) errors.push(`release "${e.id}": unknown line "${e.line}"`)
+      if (!formatIds.has(e.format)) errors.push(`release "${e.id}": unknown format "${e.format}"`)
+      if (!taxonomy.releaseStatuses[e.status]) errors.push(`release "${e.id}": unknown status "${e.status}"`)
+      e.related.forEach((id) => ref(e, id, 'related'))
     } else {
       if (!categoryIds.has(e.category)) errors.push(`term "${e.id}": unknown category "${e.category}"`)
       e.related.forEach((id) => ref(e, id, 'related'))
@@ -342,7 +377,7 @@ export function buildContent(files: Record<string, string>, media: Record<string
     for (const k of Object.keys(i18n[lang])) if (!(k in i18n[first])) errors.push(`i18n/${first}.yaml: missing key "${k}"`)
   }
 
-  return { site, theme, taxonomy, i18n, entities, byId, chapters, characters, terms, backlinks, maxChapter, errors }
+  return { site, theme, taxonomy, i18n, entities, byId, chapters, characters, terms, releases, backlinks, maxChapter, errors }
 }
 
 function byOrder(a: { order: number; id: string }, b: { order: number; id: string }) {

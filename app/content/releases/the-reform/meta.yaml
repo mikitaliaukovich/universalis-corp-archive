@@ -1,0 +1,10 @@
+id: the-reform
+order: 4
+line: side
+format: book
+status: concept
+name: { ru: "Реформа", en: "The Reform" }
+summary:
+  ru: "Мятеж и реформа Чистилища: как Корпорация стала такой, какой её застаёт Мари, и кто оказался у руля."
+  en: "The mutiny and the reform of Purgatory: how the Corporation became what Mari finds, and who ended up in charge."
+related: [reform, morana, charon, universalis]

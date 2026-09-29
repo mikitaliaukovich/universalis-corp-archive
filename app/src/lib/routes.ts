@@ -1,6 +1,6 @@
 import { content, type Entity } from './content'
 
-const VIEW_FOR_KIND = { chapter: 'chronicle', character: 'personnel', term: 'glossary' } as const
+const VIEW_FOR_KIND = { chapter: 'chronicle', character: 'personnel', term: 'glossary', release: 'releases' } as const
 
 export function sectionForKind(kind: Entity['kind']) {
   return content.site.sections.find((s) => s.view === VIEW_FOR_KIND[kind])

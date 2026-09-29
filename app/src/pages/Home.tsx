@@ -27,6 +27,7 @@ export function Home() {
     chronicle: content.chapters.length,
     personnel: content.characters.length,
     glossary: content.terms.length,
+    releases: content.releases.length,
   }
 
   return (

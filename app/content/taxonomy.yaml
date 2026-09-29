@@ -80,6 +80,54 @@ glossaryCategories:
     code: "МЕХ"
     label: { ru: "Законы и механика", en: "Laws & mechanics" }
 
+# Release timeline: the story lines, what kind of work each entry is, and how far along it is.
+# The first line is the trunk; `branchFrom` makes a line split off another one listed above it.
+releaseLines:
+  - id: main
+    code: "ОСН"
+    label: { ru: "Основная история", en: "Main story" }
+    description:
+      ru: "Искупление Мари — от Чистилища до Рая и дальше."
+      en: "Mari's redemption — from Purgatory to Heaven and beyond."
+  - id: side
+    code: "ОТВ"
+    label: { ru: "Побочные истории", en: "Side stories" }
+    branchFrom: main
+    description:
+      ru: "Другие судьбы и другие эпохи Корпорации Универсалис."
+      en: "Other fates and other eras of the Universalis Corporation."
+
+releaseFormats:
+  - id: book
+    code: "КН"
+    label: { ru: "Книга", en: "Book" }
+  - id: novella
+    code: "ПВ"
+    label: { ru: "Повесть", en: "Novella" }
+  - id: series
+    code: "СЕР"
+    label: { ru: "Сериал", en: "Series" }
+  - id: movie
+    code: "ФИЛ"
+    label: { ru: "Фильм", en: "Film" }
+  - id: game
+    code: "ИГР"
+    label: { ru: "Игра", en: "Game" }
+
+releaseStatuses:
+  released:
+    label: { ru: "Выпущено", en: "Released" }
+    stamp: { ru: "Выпущено", en: "Released" }
+  production:
+    label: { ru: "В производстве", en: "In production" }
+    stamp: { ru: "В работе", en: "In progress" }
+  planned:
+    label: { ru: "Запланировано", en: "Planned" }
+    stamp: { ru: "В плане", en: "Scheduled" }
+  concept:
+    label: { ru: "Замысел", en: "Concept" }
+    stamp: { ru: "Замысел", en: "Concept" }
+
 clearance:
   open:
     label: { ru: "Открытый доступ", en: "Open access" }
@@ -89,6 +137,8 @@ clearance:
     label: { ru: "Совершенно секретно", en: "Top secret" }
 
 imageKinds:
+  cover:
+    label: { ru: "Обложка", en: "Cover" }
   portrait:
     label: { ru: "Портрет", en: "Portrait" }
   moodboard:

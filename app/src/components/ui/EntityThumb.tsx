@@ -1,8 +1,8 @@
 import type { CSSProperties } from 'react'
-import type { Entity, Image } from '../../lib/content'
+import { content, type Entity, type Image } from '../../lib/content'
 import { Silhouette } from './Silhouette'
 
-const PREFERRED = ['portrait', 'moodboard', 'concept', 'sheet', 'location', 'reference']
+const PREFERRED = ['cover', 'portrait', 'moodboard', 'concept', 'sheet', 'location', 'reference']
 
 export function primaryImage(e: Entity) {
   for (const kind of PREFERRED) {
@@ -33,8 +33,14 @@ export function EntityThumb({ entity, size = 'md' }: { entity: Entity; size?: 's
       ) : entity.kind === 'character' ? (
         <Silhouette compact />
       ) : (
-        <span className="thumb__glyph">{entity.kind === 'chapter' ? String(entity.number).padStart(2, '0') : '§'}</span>
+        <span className="thumb__glyph">{thumbGlyph(entity)}</span>
       )}
     </span>
   )
+}
+
+function thumbGlyph(e: Entity) {
+  if (e.kind === 'chapter') return String(e.number).padStart(2, '0')
+  if (e.kind === 'release') return content.taxonomy.releaseFormats.find((f) => f.id === e.format)?.code || '§'
+  return '§'
 }

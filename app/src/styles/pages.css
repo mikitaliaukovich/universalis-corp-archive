@@ -308,6 +308,181 @@
   font-size: 13.5px;
 }
 
+/* ================================================================ releases */
+/* status markers: shared by the timeline nodes and the legend */
+.release-node {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--fg);
+  background: var(--bg);
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+.release-node--released {
+  background: var(--fg);
+}
+
+.release-node--production {
+  background: var(--fg);
+  box-shadow: 0 0 10px var(--fg);
+  animation: release-pulse 1.6s ease-in-out infinite;
+}
+
+.release-node--concept {
+  border-style: dashed;
+  border-radius: 50%;
+  transform: none;
+}
+
+@keyframes release-pulse {
+  50% {
+    box-shadow: 0 0 2px var(--fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .release-node--production {
+    animation: none;
+  }
+}
+
+/* branch graph: one row per release, one lane per story line */
+.rgraph {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rgraph__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--graph-w) minmax(0, 1fr);
+  padding-bottom: 12px;
+}
+
+.rgraph__lanes {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--graph-w);
+}
+
+.rgraph__rail {
+  position: absolute;
+  width: 3px;
+  margin-left: -1.5px;
+  background: var(--fg);
+}
+
+.rgraph__rail.is-branch {
+  width: 2px;
+  margin-left: -1px;
+  background: repeating-linear-gradient(to bottom, var(--fg) 0 6px, transparent 6px 10px);
+}
+
+.rgraph__rail--top {
+  top: 0;
+  height: var(--node-y);
+}
+
+.rgraph__rail--bottom {
+  top: var(--node-y);
+  bottom: 0;
+}
+
+.rgraph__fork {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.rgraph__fork path {
+  fill: none;
+  stroke: var(--fg);
+  stroke-width: 3;
+}
+
+.rgraph__fork.is-branch path {
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+
+/* dotted lead from the point on the line to its card */
+.rgraph__tick {
+  position: absolute;
+  top: var(--node-y);
+  right: 0;
+  border-top: 1px dashed var(--dim);
+}
+
+.rgraph__node {
+  position: absolute;
+  top: var(--node-y);
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  z-index: 1;
+}
+
+.rgraph__card {
+  grid-column: 2;
+}
+
+.rgraph__sample {
+  display: inline-block;
+  width: 22px;
+  height: 3px;
+  margin-right: 2px;
+  background: var(--fg);
+  vertical-align: middle;
+}
+
+.rgraph__sample.is-branch {
+  height: 2px;
+  background: repeating-linear-gradient(to right, var(--fg) 0 6px, transparent 6px 10px);
+}
+
+.legend .subhead + ul {
+  margin-bottom: 14px;
+}
+
+.release-card {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.release-card__text {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.release-card .timeline__meta {
+  flex-wrap: wrap;
+  row-gap: 2px;
+}
+
+.release-card .thumb__glyph {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  letter-spacing: 0.06em;
+}
+
+.release-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.catstats span.catstats__item:hover {
+  border-color: var(--line-faint);
+}
+
 /* ================================================================ personnel */
 .dossier__top {
   display: grid;
@@ -769,8 +944,21 @@
     z-index: 5;
     padding: 4px;
   }
+  /* all section tabs stay visible: equal columns, long labels wrap */
+  .hotkeys__nav {
+    flex: 1;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+  }
   .hotkeys__tab {
-    padding: 5px 8px;
+    justify-content: center;
+    padding: 5px 4px;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    line-height: 1.15;
+    text-align: center;
+    white-space: normal;
   }
   .hotkeys__tab kbd {
     display: none;
@@ -794,6 +982,10 @@
   }
   .roster {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .release-card .thumb--md {
+    width: 48px;
+    height: 60px;
   }
   .bigmenu__item {
     grid-template-columns: 1fr auto;

@@ -78,6 +78,10 @@ export const TaxonomySchema = z.object({
   characterStatuses: z.record(z.string(), Labeled.extend({ stamp: L10n })),
   factions: z.array(z.object({ id: z.string(), label: L10n, description: L10n.default({}) })),
   glossaryCategories: z.array(z.object({ id: z.string(), label: L10n, code: z.string().default('') })),
+  /** story lines of the release timeline; the first one is the trunk, others may branch off an earlier line */
+  releaseLines: z
+    .array(z.object({ id: z.string(), label: L10n, code: z.string().default(''), description: L10n.default({}), branchFrom: z.string().optional() }))
+    .min(1),
   releaseFormats: z.array(z.object({ id: z.string(), label: L10n, code: z.string().default('') })),
   releaseStatuses: z.record(z.string(), Labeled.extend({ stamp: L10n.optional() })),
   clearance: z.record(z.string(), Labeled),
@@ -182,8 +186,9 @@ export const TermMeta = BaseMeta.extend({
 })
 
 export const ReleaseMeta = BaseMeta.extend({
-  /** position on the release timeline */
+  /** position on the release timeline, across all lines */
   order: z.number(),
+  line: z.string(),
   format: z.string(),
   status: z.string(),
   /** free-form release date: "2027", "Autumn 2027", "TBA"… */
@@ -326,6 +331,11 @@ export function buildContent(files: Record<string, string>, media: Record<string
   const factionIds = new Set(taxonomy.factions.map((f) => f.id))
   const categoryIds = new Set(taxonomy.glossaryCategories.map((c) => c.id))
   const formatIds = new Set(taxonomy.releaseFormats.map((f) => f.id))
+  const lineIds = taxonomy.releaseLines.map((x) => x.id)
+  taxonomy.releaseLines.forEach((x, i) => {
+    if (x.branchFrom && !lineIds.slice(0, i).includes(x.branchFrom))
+      errors.push(`taxonomy.yaml: release line "${x.id}" branches from "${x.branchFrom}", which must be a line listed above it`)
+  })
 
   for (const e of entities) {
     for (const lang of langs) {
@@ -348,6 +358,7 @@ export function buildContent(files: Record<string, string>, media: Record<string
       e.characters.forEach((id) => ref(e, id, 'characters'))
       e.terms.forEach((id) => ref(e, id, 'terms'))
     } else if (e.kind === 'release') {
+      if (!lineIds.includes(e.line)) errors.push(`release "${e.id}": unknown line "${e.line}"`)
       if (!formatIds.has(e.format)) errors.push(`release "${e.id}": unknown format "${e.format}"`)
       if (!taxonomy.releaseStatuses[e.status]) errors.push(`release "${e.id}": unknown status "${e.status}"`)
       e.related.forEach((id) => ref(e, id, 'related'))

@@ -59,11 +59,12 @@ The playlist must be public or unlisted. Tracks whose owners forbid embedding ar
 
 ### Release plan
 
-The **Release plan** tab (hotkey `4`) shows the order in which the books, series, films and games come out. Each entry is a folder in `releases/`, and clicking its card opens the full description.
+The **Release plan** tab (hotkey `4`) shows the order in which the books, series, films and games come out, drawn as a branching line: the main story is the trunk and the side stories split off it. Each release is a point on its line; clicking its card opens the full description. Each entry is a folder in `releases/`.
 
 ```yaml
 id: redemption
-order: 1                     # position on the timeline (lowest first)
+order: 1                     # position on the timeline across all lines (lowest first)
+line: main                   # main | side  (taxonomy.yaml → releaseLines)
 format: book                 # book | novella | series | movie | game  (taxonomy.yaml → releaseFormats)
 status: production           # released | production | planned | concept  (taxonomy.yaml → releaseStatuses)
 name: { ru: "…", en: "…" }
@@ -81,7 +82,7 @@ images:
     kind: cover
 ```
 
-The longer description goes into `ru.md` / `en.md`, with the same Markdown extensions as everywhere else. New formats or statuses are added in `taxonomy.yaml`.
+The longer description goes into `ru.md` / `en.md`, with the same Markdown extensions as everywhere else. Story lines, formats and statuses are listed in `taxonomy.yaml`. The first line in `releaseLines` is the trunk. A line with `branchFrom: <line id>` splits off that line just above its own first release. Within a line, releases are numbered in `order`.
 
 ### Markdown extensions
 

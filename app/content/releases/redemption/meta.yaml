@@ -1,5 +1,6 @@
 id: redemption
 order: 1
+line: main
 format: book
 status: production
 name: { ru: "Искупление", en: "Redemption" }

@@ -80,7 +80,23 @@ glossaryCategories:
     code: "МЕХ"
     label: { ru: "Законы и механика", en: "Laws & mechanics" }
 
-# Release timeline: what kind of work each entry is, and how far along it is.
+# Release timeline: the story lines, what kind of work each entry is, and how far along it is.
+# The first line is the trunk; `branchFrom` makes a line split off another one listed above it.
+releaseLines:
+  - id: main
+    code: "ОСН"
+    label: { ru: "Основная история", en: "Main story" }
+    description:
+      ru: "Искупление Мари — от Чистилища до Рая и дальше."
+      en: "Mari's redemption — from Purgatory to Heaven and beyond."
+  - id: side
+    code: "ОТВ"
+    label: { ru: "Побочные истории", en: "Side stories" }
+    branchFrom: main
+    description:
+      ru: "Другие судьбы и другие эпохи Корпорации Универсалис."
+      en: "Other fates and other eras of the Universalis Corporation."
+
 releaseFormats:
   - id: book
     code: "КН"

@@ -1,0 +1,10 @@
+id: redemption-2
+order: 3
+line: main
+format: book
+status: concept
+name: { ru: "Искупление. Часть 2", en: "Redemption, Part 2" }
+summary:
+  ru: "Продолжение истории Мари: последняя схватка с Хароном и поиски семьи, которую она обещала спасти."
+  en: "Mari's story continues: a final reckoning with Charon and a search for the family she swore to save."
+related: [redemption, mari, charon, paradise, mark, viktor]

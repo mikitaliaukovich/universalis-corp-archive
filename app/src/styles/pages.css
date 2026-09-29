@@ -348,14 +348,106 @@
   }
 }
 
-.timeline--releases .timeline__node {
-  top: 20px;
-  width: 14px;
-  height: 14px;
+/* branch graph: one row per release, one lane per story line */
+.rgraph {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.timeline--releases .release-node--concept {
-  transform: none;
+.rgraph__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--graph-w) minmax(0, 1fr);
+  padding-bottom: 12px;
+}
+
+.rgraph__lanes {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--graph-w);
+}
+
+.rgraph__rail {
+  position: absolute;
+  width: 3px;
+  margin-left: -1.5px;
+  background: var(--fg);
+}
+
+.rgraph__rail.is-branch {
+  width: 2px;
+  margin-left: -1px;
+  background: repeating-linear-gradient(to bottom, var(--fg) 0 6px, transparent 6px 10px);
+}
+
+.rgraph__rail--top {
+  top: 0;
+  height: var(--node-y);
+}
+
+.rgraph__rail--bottom {
+  top: var(--node-y);
+  bottom: 0;
+}
+
+.rgraph__fork {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.rgraph__fork path {
+  fill: none;
+  stroke: var(--fg);
+  stroke-width: 3;
+}
+
+.rgraph__fork.is-branch path {
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+
+/* dotted lead from the point on the line to its card */
+.rgraph__tick {
+  position: absolute;
+  top: var(--node-y);
+  right: 0;
+  border-top: 1px dashed var(--dim);
+}
+
+.rgraph__node {
+  position: absolute;
+  top: var(--node-y);
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  z-index: 1;
+}
+
+.rgraph__card {
+  grid-column: 2;
+}
+
+.rgraph__sample {
+  display: inline-block;
+  width: 22px;
+  height: 3px;
+  margin-right: 2px;
+  background: var(--fg);
+  vertical-align: middle;
+}
+
+.rgraph__sample.is-branch {
+  height: 2px;
+  background: repeating-linear-gradient(to right, var(--fg) 0 6px, transparent 6px 10px);
+}
+
+.legend .subhead + ul {
+  margin-bottom: 14px;
 }
 
 .release-card {

@@ -1,0 +1,10 @@
+id: project-adam
+order: 5
+line: side
+format: book
+status: concept
+name: { ru: "Проект «Адам»", en: "Project Adam" }
+summary:
+  ru: "Эксперименты Корпорации: работа над идеальной душой «Адам» и другие проекты, о которых не пишут в отчётах."
+  en: "The Corporation's experiments: the work on “Adam”, the ideal soul, and other projects that never make it into the reports."
+related: [universalis]

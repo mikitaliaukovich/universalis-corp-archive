@@ -1,0 +1,10 @@
+id: the-runner
+order: 2
+line: side
+format: book
+status: concept
+name: { ru: "Курьер", en: "The Courier" }
+summary:
+  ru: "Курьер из мира живых погибает и получает в Чистилище ту же работу — бегунком. Его путь идёт параллельно пути Мари."
+  en: "A courier from the world of the living dies and lands the same job in Purgatory — as a runner. His path runs parallel to Mari's."
+related: [runners, charon, mari, pneumatic-tube]

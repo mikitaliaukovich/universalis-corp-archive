@@ -8,3 +8,7 @@ summary:
   ru: "Продолжение истории Мари: последняя схватка с Хароном и поиски семьи, которую она обещала спасти."
   en: "Mari's story continues: a final reckoning with Charon and a search for the family she swore to save."
 related: [redemption, mari, charon, paradise, mark, viktor]
+images:
+  - file: media/releases/redemption-2/cover.png
+    kind: cover
+    caption: { ru: "Обложка «Искупления. Части 2»", en: "Cover of Redemption, Part 2" }

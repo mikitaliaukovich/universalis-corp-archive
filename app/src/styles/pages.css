@@ -882,8 +882,9 @@
   .app {
     height: auto;
     min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-    padding: 8px;
+    grid-template-rows: auto 1fr;
+    /* room for the floating hotkey bar */
+    padding: 8px 8px calc(72px + env(safe-area-inset-bottom));
   }
   .app__main {
     min-height: auto;
@@ -942,12 +943,21 @@
     flex: 1;
     width: auto;
   }
+  /* section tabs float over the page, pinned to the bottom of the screen */
   .hotkeys {
-    position: sticky;
-    bottom: 0;
-    background: var(--bg);
-    z-index: 5;
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    bottom: calc(8px + env(safe-area-inset-bottom));
+    z-index: 30;
     padding: 4px;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(6px);
+    box-shadow:
+      inset 0 0 0 3px var(--bg),
+      inset 0 0 0 4px var(--line-faint),
+      0 6px 24px rgba(0, 0, 0, 0.7),
+      0 0 18px color-mix(in srgb, var(--fg) 12%, transparent);
   }
   /* all section tabs stay visible: equal columns, long labels wrap */
   .hotkeys__nav {
@@ -1000,7 +1010,7 @@
   }
   .pager {
     position: fixed;
-    bottom: 60px;
+    bottom: calc(72px + env(safe-area-inset-bottom));
   }
   .lightbox__stage {
     padding: 8px;

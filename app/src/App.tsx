@@ -135,7 +135,8 @@ function Shell() {
             key="app"
             className="app"
             initial={{ opacity: 0, filter: 'brightness(3)' }}
-            animate={{ opacity: 1, filter: 'brightness(1)' }}
+            // drop the filter once faded in: a filtered .app would trap the fixed hotkey bar and pager on phones
+            animate={{ opacity: 1, filter: 'brightness(1)', transitionEnd: { filter: 'none' } }}
             transition={{ duration: 0.4 }}
           >
             <HeaderBar />

@@ -11,11 +11,29 @@
 9. Again no briefing: the report must be filed in detail, but who to look for is her problem. Mari has seventy-two minutes to find the soon-to-be-dead, wait for the death, catch the soul and return. She must not interfere: any action changes a fate. She heads for the rear of the train.
 10. “Daddy!” — five-year-old [[nora|Nora Keller]] has hold of her finger. The girl's mother is “on a cloud, with grandma”; her father [[markus|Markus]] is her only parent, and the child cannot simply be abandoned in a carriage: every option would pull a chain of events after it.
 11. Mari remembers Viktor at that age — Disneyland, the mountains, weekends in Italy — and takes Nora along, first rehearsing what she is to tell the conductor. This is the fifth soul of seven.
+12. In the dining car Mari realises that walking the train is not enough: the target, 47-year-old [[lukas-frei|Lukas Frei]], is meant to die of suffocation, and his fate must not be scared off. She invents a bank card “found in the toilet”, and the barman calls the train manager on the intercom.
+13. Train manager [[mayer|D. Mayer]] is in the family car, papered with cartoon characters; the Kellers' seats are there too, with Markus's laptop and Nora's penguin backpack. He offers to take the card, but Mari insists on handing it over in person — and learns there is no passenger called Lukas Frei on board: he is the driver.
+14. Mayer leads “Herr Keller” and his daughter through the business car to the “quiet” car at the head. Nobody answers the knock; the cab door bursts open on its own — Lukas, blue in the face and clutching his throat, knocks Mari over and drops dead in the aisle.
+15. Mari leaps out of Markus's body, but the soul is gone: fighting for life, the driver's soul has [[possession|jumped]] into the screaming Nora — and the girl runs off down the train. The bodiless Mari hits the glass door: spirits cannot press a button; for that you need a body.
+16. The train enters a double-loop tunnel — a figure of eight inside the mountain. Mari returns to Markus and chases Nora from car to car, cracking her head on the bends.
+17. On the last loop the train derails, scraping its side along the tunnel walls; at the exit someone pulls the emergency brake — too late: the train smashes through the bridge parapet and the cars tumble down one after another. Mari's car is left hanging vertically over the drop.
+18. Nora comes to — Lukas is no longer in her. A falling man grabs her ankle and drags her towards the abyss; the girl kicks out his eye, and Mari catches her at the last moment and pushes her up, barely holding onto a handrail herself.
+19. A stranger in a black suit grabs her hand: “Mari, hold on!” — “Save the girl, not me!” — “I'm sorry, I can't.” He pulls Mari out of the body; Markus comes to already falling and the last thing he sees is his screaming daughter. In the [[spirit-world]] the car is overgrown with blood-red moss that feeds on death and pain.
+20. Through the small door of a service compartment the stranger drags Mari into a corridor of doors with a little window. He is a man of about forty in grey overalls embroidered “Archive”, a leather satchel across his shoulder.
+21. He leads her through a [[doors|door]] onto a snowy slope. Below, the Giruno hangs half off the bridge — and then a freight train bursts out of the tunnel. Blinded by the blizzard, its driver cannot brake in time: the blow to the rear shoves the whole train into the gorge. Everyone dies.
+22. “While we were in purgatory, less than a second passed here.” Had Mari stayed in the body, an [[reapers|Angel of Death]] would have taken Markus's soul and left her walled up in the dead body for good, until it rotted away together with her soul. That is where the stories of the walking dead come from.
+23. The stranger takes from his satchel a book with her name in silver on the cover: “I am the Archivist…” Of all the fates he has read, only one made him leave the Archive. Hers was [[altered-book|rewritten]]: neither Mari nor Mark and Viktor were supposed to die like that — and neither were the people on the train.
+24. Mari's whole life — from her first cry to the sobering-up cell and her parents' death — is in the book. The last legible episode is the car falling onto Mark and Viktor; after that the pages are covered in black bars.
+25. The Archivist has been following Mari. According to his book, [[jay-abrams]] was to become captain of the national team, a star with endorsement deals — and die in a helicopter crash in Brazil five years later. His early death is not in the plan, and Purgatory does not know about the new soul. Mari's death was the first domino.
+26. Mari remembers: [[charon]] wants to seize power in Purgatory, and the seven assignments are meant to help him. She signed the [[service-contract|contract]] after returning from Dallas.
+27. The Archivist's conclusion: it is not an employment contract but a one-off arrangement. Mari is in no system, and to [[morana]], through whom hundreds of thousands of souls pass every day, she is just a record in the archive, handed over to Charon. Mari's [[reports]] go to Charon — and are destroyed without a trace.
+28. Without precise computation the system will collapse: wars, epidemics, famine, millions of deaths — [[coup|“an apocalypse, I suppose”]]. Charon probably planned the failure of the fifth assignment in advance, to write Mari off. The Archivist has no idea how to find Morana; that leaves one option — to kill Charon.
+29. “How do you kill a god?” — “There is someone who can help us.” Mari takes the Archivist's hand, and together they return to Purgatory.
 
-:::classified{ch=9 title="Outline for the rest of the chapter"}
-- A freak spring storm moves across the region — the weather forecast on the on-board screen says so. The target dies of anaphylactic shock, suffocating.
-- Having died fighting for life, the soul won't be taken: it runs and [[possession|possesses]] another person on the way. Mari has to switch bodies to get through the carriage doors, while the runaway climbs through a hatch onto the roof and runs along it through the blizzard.
-- The rule of [[doors]]: a passage opens wherever you want to go, but you need an object from that place or a description of it. The object arrives by [[pneumatic-tube]] and is returned when the job is filed; the signed [[catch-contract]] goes back the same way.
-- The [[archivist]] reads the book alongside the events and wants to intervene, but the small turbulences of fate smooth themselves out. So he reveals himself to Mari and helps her.
-- What he knows completes the picture: [[charon]] and some of his followers are preparing a [[coup|military coup]] in Purgatory — and they are what must be opposed.
-:::
+## What we learn about the world
+
+- A soul that dies fighting for life can run and possess a living person; a bodiless spirit cannot even press a button.
+- If a host dies with a possessing soul inside, that soul stays walled up in the body forever — the origin of legends about the walking dead.
+- The spirit world reflects disasters: blood-red moss spreads around death and pain.
+- Books of fate can be rewritten — and the world adjusts to them: people die who were never meant to.
+- Charon steers Mari past all of Morana's systems: a one-off arrangement instead of a contract, reports that go nowhere.

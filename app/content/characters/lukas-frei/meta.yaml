@@ -1,0 +1,24 @@
+id: lukas-frei
+name: { ru: "Лукас Фрай", en: "Lukas Frei" }
+role: { ru: "Машинист поезда Милан — Цюрих. Цель пятого задания", en: "Driver of the Milan–Zurich train. Target of the fifth assignment" }
+summary:
+  ru: "47-летний машинист, задохнувшийся в кабине. Его душа сбежала и вселилась в пятилетнюю Нору."
+  en: "A 47-year-old train driver who suffocated in his cab. His soul escaped and possessed five-year-old Nora."
+status: dead
+faction: living
+firstChapter: 9
+order: 61
+facts:
+  - label: { ru: "Возраст", en: "Age" }
+    value: { ru: "47 лет", en: "47" }
+  - label: { ru: "Причина смерти", en: "Cause of death" }
+    value: { ru: "Удушье", en: "Suffocation" }
+  - label: { ru: "Задание", en: "Assignment" }
+    value: { ru: "Пятое из семи — провалено", en: "The fifth of seven — failed" }
+relations:
+  - id: mari
+    type: { ru: "Охотилась за его душой", en: "Hunted his soul" }
+  - id: nora
+    type: { ru: "Вселился в неё", en: "Possessed her" }
+  - id: mayer
+    type: { ru: "Коллега по поезду", en: "Fellow crew member" }

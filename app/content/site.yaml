@@ -179,8 +179,8 @@ home:
         en: "[[morana]] — the official system."
     - id: charon
       text:
-        ru: "[[charon]] — собственная фракция, оппозиция. :redact[Силовой переворот.]{ch=9}"
-        en: "[[charon]] — his own faction, the opposition. :redact[A coup by force.]{ch=9}"
+        ru: "[[charon]] — собственная фракция, оппозиция. :redact[Захват власти — или апокалипсис.]{ch=9}"
+        en: "[[charon]] — his own faction, the opposition. :redact[A power grab — or an apocalypse.]{ch=9}"
     - id: archivist
       text:
         ru: "[[archivist]] — существо, которое начинает сомневаться в самой системе."

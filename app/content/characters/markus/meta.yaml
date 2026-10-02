@@ -2,9 +2,9 @@ id: markus
 name: { ru: "Маркус Келлер", en: "Markus Keller" }
 role: { ru: "Носитель Мари в пятом задании", en: "Mari's host on the fifth assignment" }
 summary:
-  ru: "Седеющий мужчина лет пятидесяти, отец-одиночка. Первое мужское тело, в которое вселилась Мари."
-  en: "A greying man of about fifty, a single father. The first male body Mari possessed."
-status: alive
+  ru: "Седеющий мужчина лет пятидесяти, отец-одиночка. Первое мужское тело, в которое вселилась Мари. Погиб, когда поезд сорвался с моста."
+  en: "A greying man of about fifty, a single father. The first male body Mari possessed. Died when the train plunged off a bridge."
+status: dead
 faction: living
 firstChapter: 9
 order: 59
@@ -15,6 +15,8 @@ facts:
     value: { ru: "Старый потёртый ключ", en: "An old worn key" }
   - label: { ru: "Маршрут", en: "Route" }
     value: { ru: "Скорый поезд Милан — Цюрих", en: "The Milan–Zurich express" }
+  - label: { ru: "Гибель", en: "Death" }
+    value: { ru: "Крушение поезда в Альпах", en: "The train crash in the Alps" }
 relations:
   - id: nora
     type: { ru: "Дочь", en: "Daughter" }

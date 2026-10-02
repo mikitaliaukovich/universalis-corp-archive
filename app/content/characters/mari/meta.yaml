@@ -44,6 +44,8 @@ relations:
     type: { ru: "Владелец её пейджера", en: "Owner of her pager" }
   - id: alba
     type: { ru: "Подруга в Чистилище", en: "Friend in Purgatory" }
+  - id: archivist
+    type: { ru: "Спаситель и союзник", en: "Rescuer and ally" }
 images:
   - file: media/characters/mari/moodboard.png
     focus: { x: 0, y: 0, zoom: 2.7 }

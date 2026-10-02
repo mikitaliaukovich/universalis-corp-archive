@@ -1,1 +1,1 @@
-Arrives with each assignment. :redact[The signed contract is sent back via [[pneumatic-tube]].]{ch=9}
+Arrives with each assignment and waits on the desk in the catcher's office in [[mord]]: for instance, the contract for Johan Lindström, a tourist from Gothenburg who fell from a cliff in Manarola ([[chapter-08]]).

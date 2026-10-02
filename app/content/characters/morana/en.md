@@ -10,6 +10,8 @@ Morana serves as [[transition-registrar]] and senior [[purification-manager]] at
 
 :redact[She may well be the “she” whose reforms and optimisations stripped [[charon]] of power over soul logistics. The text only implies it.]{ch=4}
 
+:redact[According to the [[archivist]], Morana keeps watch over everything in Purgatory through reports and denunciations. But hundreds of thousands of souls pass through her every day and she cannot remember each one: once a soul is handed to a manager, she stops tracking it until distribution. Even the Archivist doesn't know where to find her.]{ch=9}
+
 ## Name
 
 The name refers to Morana, the Slavic goddess of death and winter.

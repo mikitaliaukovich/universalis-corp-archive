@@ -1,6 +1,6 @@
 ## Backstory
 
-Mari was born in Kraków. As a teenager she was a tomboy with a messy bob and bitten nails. One night her parents drove to a police station to bring their daughter home. A truck driver fell asleep at the wheel and crushed their car. Mari is convinced that if it weren't for her behaviour they would still be alive — a guilt she carries all her life.
+Mari was born in Kraków. A diligent childhood modelled on her mother's: dance classes, athletics, maths and physics olympiads. As a teenager she was a tomboy with a messy bob and bitten nails; her first party, her first night in a sobering-up cell. One night her parents drove to a police station to bring their daughter home. A truck driver fell asleep at the wheel and crushed their car. Mari is convinced that if it weren't for her behaviour they would still be alive — a guilt she carries all her life.
 
 Her mother was a believer and took her to church every Sunday; after her death Mari stopped going — if Heaven existed, her mother would have found a way to send word.
 
@@ -17,6 +17,8 @@ Mark asks for a divorce — Viktor wants it. Signing the papers unread, Mari smo
 Waking in the [[admissions-ward]], Mari learns from [[morana]] that she has violated seven points of the [[charter]]. :redact[[[charon]] intercepts her and offers a deal: seven assignments — seven saved souls — in exchange for Paradise for Mark and Viktor. If she succeeds, he promises, all three of them will go.]{ch=4}
 
 :redact[Given the Angel of Death's [[pager]], Mari temporarily becomes Death: she catches souls, possesses the living and even dogs, writes reports in a cramped office in the [[mord]] and befriends the runner [[alba]].]{ch=8} :redact[Her fate is the first book in the history of the [[archive]] to be rewritten after completion.]{ch=5}
+
+:redact[The fifth assignment — the Milan–Zurich train in the Alps — ends in disaster: the driver's soul escapes, the train plunges off a bridge and every passenger dies. At the last moment the [[archivist]] pulls Mari out of the dying body. From him she learns that her fate was rewritten, that her reports to Charon vanish without a trace, and that every soul she catches sets off a chain of unplanned deaths. Mari resolves to stop [[charon]].]{ch=9}
 
 ## Character
 

@@ -6,6 +6,6 @@ aliases:
   ru: ["Пневмопочта"]
   en: ["Pneumatic mail"]
 summary:
-  ru: "Пневмопочта, доставляющая агентам маяки и контракты."
-  en: "Pneumatic mail that delivers beacons and contracts to agents."
+  ru: "Пневмопочта, по которой между отделами Корпорации ходят контракты и бумаги."
+  en: "Pneumatic mail that carries contracts and paperwork between the Corporation's departments."
 related: [beacons, catch-contract]

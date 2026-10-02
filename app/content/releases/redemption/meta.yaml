@@ -12,7 +12,7 @@ summary:
 # Anything else worth showing in the fact table: add label/value pairs.
 facts:
   - label: { ru: "Автор", en: "Author" }
-    value: { ru: "Никита Левкович", en: "Mikita Liaukovich" }
+    value: { ru: "Ник Лоренс", en: "Nick Lawrence" }
   - label: { ru: "Язык оригинала", en: "Original language" }
     value: { ru: "Русский", en: "Russian" }
   - label: { ru: "Жанр", en: "Genre" }
@@ -22,3 +22,7 @@ facts:
 #   - label: { ru: "Предзаказ", en: "Pre-order" }
 #     url: "https://example.com"
 related: [mari, charon, archivist, morana]
+images:
+  - file: media/releases/redemption/cover.png
+    kind: cover
+    caption: { ru: "Обложка «Искупления»", en: "Cover of Redemption" }

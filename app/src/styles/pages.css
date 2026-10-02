@@ -467,6 +467,11 @@
   row-gap: 2px;
 }
 
+/* book-shaped, so covers show whole */
+.release-card .thumb--md {
+  height: 108px;
+}
+
 .release-card .thumb__glyph {
   font-family: var(--font-heading);
   font-size: 18px;
@@ -985,7 +990,7 @@
   }
   .release-card .thumb--md {
     width: 48px;
-    height: 60px;
+    height: 72px;
   }
   .bigmenu__item {
     grid-template-columns: 1fr auto;

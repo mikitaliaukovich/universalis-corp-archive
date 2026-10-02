@@ -13,5 +13,9 @@ When he finishes, the Archivist is shaken: this is the first book in history alt
 :::
 
 :::classified{ch=9 title="The Meeting"}
-Watching small “turbulences of fate” smooth themselves back out, the Archivist reveals himself and helps Mari. What he knows shows that [[charon]] is preparing a coup.
+The Archivist steps into the world of the living at the worst possible moment: as the Milan–Zurich train hangs over the gorge, he pulls [[mari]] out of her host's body and drags her away through the door of a service compartment. He refuses to save the girl: “I'm sorry, I can't.” Had the host died with Mari inside, he explains, she would have been walled up in the dead body forever.
+
+He introduces himself, shows her her book of fate — her name in silver on the cover, the ending blacked out — and admits he has been following her. He doesn't remember how long he has served or for which sins, but he has read thousands of fates, and only hers made him leave the [[archive]]. As far as he can tell, the fates of [[mari]], her family, [[jay-abrams|Jay Abrams]] and the passengers of the train were rewritten: their deaths were never in the plan.
+
+Putting her account of the deal together with what he has found, the Archivist concludes that [[charon]] is steering Mari past all of [[morana]]'s systems, and that the chain of rewritten deaths threatens to bring the world down. The only way to stop it is to kill Charon — and he knows someone who can help.
 :::

@@ -1,8 +1,11 @@
 id: coup
 category: organization
 firstChapter: 9
-name: { ru: "Военный переворот", en: "Coup" }
+name: { ru: "Захват власти", en: "The Power Grab" }
+aliases:
+  ru: ["План Харона", "Переворот"]
+  en: ["Charon's plan", "Coup"]
 summary:
-  ru: "Замысел Харона и его сообщников захватить власть в Чистилище."
-  en: "The plan of Charon and his accomplices to seize power in Purgatory."
-related: [charon, reaper, altered-book]
+  ru: "Замысел Харона прийти к власти в Чистилище — с помощью душ, которые ловит для него Мари."
+  en: "Charon's scheme to take power in Purgatory — with the help of the souls Mari catches for him."
+related: [charon, reaper, altered-book, seven-assignments, books-of-fates]

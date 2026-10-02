@@ -17,5 +17,7 @@ After Dallas he meets Mari in a corridor and waves her complaints away: they wer
 :redact[The [[reaper]] speaks of “our plan” — Charon is trying to regain influence by manipulating the distribution of souls.]{ch=6}
 
 :::classified{ch=9 title="File OP-3"}
-Charon and his accomplices are preparing a **military coup** in Purgatory. The [[archivist]] uncovers it while reading Mari's rewritten book of fate.
+Mari tells the [[archivist]] what she knows herself: Charon wants to **seize power** in Purgatory, and her seven assignments are meant to help him do it. The Archivist puts the picture together differently. The deal with Mari is not an employment contract but a one-off arrangement, so she exists in none of [[morana]]'s systems; her [[reports]] go to Charon and are destroyed without a trace. Meanwhile the souls Mari catches die before the dates written in the [[books-of-fates]], and every such death drags others after it.
+
+In the Archivist's view, Charon planned the failure of the fifth assignment in advance — to write Mari off. What he is really after is unknown: wars, epidemics, famine? The Archivist fears an [[coup|apocalypse]] and sees only one way out — to kill Charon.
 :::

@@ -1,0 +1,20 @@
+id: mayer
+name: { ru: "Д. Майер", en: "D. Mayer" }
+role: { ru: "Начальник поезда Милан — Цюрих", en: "Train manager of the Milan–Zurich express" }
+summary:
+  ru: "Улыбчивый начальник поезда в форме швейцарских железных дорог. Отводит «герра Келлера» к машинисту."
+  en: "A cheerful train manager in Swiss Federal Railways uniform. Takes “Herr Keller” to the driver."
+status: dead
+faction: living
+firstChapter: 9
+order: 62
+facts:
+  - label: { ru: "Облик", en: "Look" }
+    value: { ru: "Невысокий, средних лет, тёмно-синяя униформа, именная плашка «Д. Майер»", en: "Short, middle-aged, navy-blue uniform, a name badge reading “D. Mayer”" }
+  - label: { ru: "Должность", en: "Post" }
+    value: { ru: "Zugchef — начальник поезда", en: "Zugchef — train manager" }
+relations:
+  - id: lukas-frei
+    type: { ru: "Машинист его поезда", en: "His train's driver" }
+  - id: markus
+    type: { ru: "Пассажир", en: "Passenger" }

@@ -2,9 +2,9 @@ id: nora
 name: { ru: "Нора Келлер", en: "Nora Keller" }
 role: { ru: "Дочь носителя", en: "The host's daughter" }
 summary:
-  ru: "Пятилетняя девочка в поезде Милан — Цюрих, принявшая вселившуюся в её отца Мари за папу."
-  en: "A five-year-old girl on the Milan–Zurich train who takes the Mari inside her father for her dad."
-status: alive
+  ru: "Пятилетняя девочка в поезде Милан — Цюрих, принявшая вселившуюся в её отца Мари за папу. Мари пыталась её спасти — и не смогла."
+  en: "A five-year-old girl on the Milan–Zurich train who takes the Mari inside her father for her dad. Mari tried to save her — and failed."
+status: dead
 faction: living
 firstChapter: 9
 order: 60
@@ -18,5 +18,7 @@ facts:
 relations:
   - id: markus
     type: { ru: "Отец", en: "Father" }
+  - id: lukas-frei
+    type: { ru: "Вселился в неё", en: "Possessed her" }
   - id: mari
     type: { ru: "Вселилась в её отца", en: "Possessed her father" }

@@ -2,13 +2,13 @@ id: chapter-09
 number: 9
 name: { ru: "Встреча", en: "The Meeting" }
 summary:
-  ru: "Новое задание приходит в папке бегунка Ли. Мари узнаёт о маяках и выходит в скорый поезд Милан — Цюрих: впервые в мужском теле, с чужой пятилетней дочкой на руках."
-  en: "A new job arrives in runner Li's folder. Mari learns about beacons and steps out onto the Milan–Zurich express: in a man's body for the first time, with someone else's five-year-old daughter in tow."
+  ru: "Пятое задание: в теле отца-одиночки Мари ищет в поезде Милан — Цюрих будущего покойника. Душа машиниста сбегает, поезд срывается с моста — а из-под обломков Мари вытаскивает Архивариус, покинувший Архив ради её переписанной судьбы."
+  en: "The fifth assignment: in a single father's body, Mari hunts for the soon-to-be-dead on the Milan–Zurich express. The driver's soul escapes, the train plunges off a bridge — and Mari is pulled from the wreck by the Archivist, who has left the Archive because of her rewritten fate."
 pov: mari
-realm: purgatory
-status: partial
+realm: living
+status: written
 setting:
-  ru: "Чистилище: МОРД, выходная комната; мир живых: скорый поезд Милан — Цюрих в заснеженных Альпах"
-  en: "Purgatory: MORD, the exit room; world of the living: the Milan–Zurich express in the snowbound Alps"
-characters: [mari, li, markus, nora, archivist, charon]
-terms: [mord, exit-room, beacons, soul-projection, universal-language, pneumatic-tube, catch-contract, doors, restless-souls, coup, hosts, possession, purgatory-time, time-card, milan-zurich-train]
+  ru: "Чистилище: МОРД, выходная комната; мир живых: скорый поезд Милан — Цюрих, спиральные тоннели и мост в заснеженных Альпах; мир духов: горный склон в метели"
+  en: "Purgatory: MORD, the exit room; world of the living: the Milan–Zurich express, the spiral tunnels and a bridge in the snowbound Alps; the spirit world: a mountainside in a blizzard"
+characters: [mari, li, markus, nora, mayer, lukas-frei, archivist, charon, jay-abrams, morana]
+terms: [mord, exit-room, beacons, soul-projection, universal-language, time-card, hosts, possession, milan-zurich-train, spirit-world, doors, purgatory-time, restless-souls, altered-book, books-of-fates, service-contract, reports, seven-assignments, reapers, coup]

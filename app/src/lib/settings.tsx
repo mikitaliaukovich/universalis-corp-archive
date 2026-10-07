@@ -15,13 +15,15 @@ export interface Settings {
   tourSeen: string[]
   /** header radio volume, 0–100 */
   radioVolume: number
+  /** show the original three-column home instead of the card home */
+  classicHome: boolean
 }
 
 function defaults(): Settings {
   const { site, theme } = content
   const browser = typeof navigator !== 'undefined' ? navigator.language.slice(0, 2) : ''
   const lang = site.detectBrowserLanguage && site.languages.some((l) => l.id === browser) ? browser : site.defaultLanguage
-  return { lang, palette: theme.defaultPalette, effects: { ...theme.effects }, progress: null, tourSeen: [], radioVolume: site.radio.volume }
+  return { lang, palette: theme.defaultPalette, effects: { ...theme.effects }, progress: null, tourSeen: [], radioVolume: site.radio.volume, classicHome: false }
 }
 
 function load(): Settings {
@@ -41,6 +43,7 @@ function load(): Settings {
           ? LEGACY_TOUR
           : [],
       radioVolume: typeof s.radioVolume === 'number' ? Math.min(100, Math.max(0, s.radioVolume)) : d.radioVolume,
+      classicHome: s.classicHome === true,
     }
   } catch {
     return d

@@ -31,6 +31,10 @@ Everything the site shows lives in [`content/`](content):
 
 **Add a language:** add it to `languages` in `site.yaml`, create `i18n/<lang>.yaml`, add `<lang>` values to the `{ ru, en }` fields and a `<lang>.md` per entry — the validator lists everything missing.
 
+### Home screen
+
+The home screen opens as a column of cards: one per section in `site.yaml` (its label, description, hotkey and record count over a phosphor-tinted picture from that section, chosen among records the reader's clearance allows), then search, clearance and settings. Readers can switch to the classic three-column layout (operator panel, menu, Charter quotes and `home.forces`) in Settings → Home screen; the intro text comes from `home.intro` in both.
+
 ### Password gate
 
 `access` in `site.yaml` makes the boot sequence stop at a password prompt. Only its SHA-256 hash is stored — don't write the password itself into `content/`, every file there ships with the site. A device that entered the right password isn't asked again until the password changes.

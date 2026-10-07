@@ -19,6 +19,7 @@ import { ClearanceOverlay } from './components/shell/ClearanceOverlay'
 import { GuideTour } from './components/shell/GuideTour'
 import { Lightbox } from './components/ui/Lightbox'
 import { Home } from './pages/Home'
+import { HomeCards } from './pages/HomeCards'
 import { Chronicle } from './pages/Chronicle'
 import { Personnel } from './pages/Personnel'
 import { Glossary } from './pages/Glossary'
@@ -151,7 +152,7 @@ function Shell() {
                   transition={{ duration: 0.18, ease: 'easeOut' }}
                 >
                   <Routes location={location}>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={settings.classicHome ? <Home /> : <HomeCards />} />
                     <Route path="/:section/:id?" element={<SectionRoute />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>

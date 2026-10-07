@@ -40,6 +40,24 @@ export function SettingsOverlay() {
         ))}
       </div>
 
+      <h3 className="subhead">{t('settings.home')}</h3>
+      <div className="swatches">
+        {[false, true].map((classic) => (
+          <button
+            key={String(classic)}
+            type="button"
+            className="swatch"
+            aria-pressed={settings.classicHome === classic}
+            onClick={() => {
+              update({ classicHome: classic })
+              sfx.select()
+            }}
+          >
+            {t(classic ? 'settings.homeClassic' : 'settings.homeCards')}
+          </button>
+        ))}
+      </div>
+
       <h3 className="subhead">{t('settings.effects')}</h3>
       <ul className="toggles">
         {effects.map((k) => (

@@ -24,9 +24,10 @@ import { Chronicle } from './pages/Chronicle'
 import { Personnel } from './pages/Personnel'
 import { Glossary } from './pages/Glossary'
 import { Releases } from './pages/Releases'
+import { Games } from './pages/Games'
 import { NotFound } from './pages/NotFound'
 
-const VIEWS = { chronicle: Chronicle, personnel: Personnel, glossary: Glossary, releases: Releases }
+const VIEWS = { chronicle: Chronicle, personnel: Personnel, glossary: Glossary, releases: Releases, games: Games }
 const BOOT_KEY = 'universalis.booted'
 
 function SectionRoute() {

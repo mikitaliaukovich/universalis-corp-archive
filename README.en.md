@@ -51,6 +51,7 @@ This repository holds a companion to the book. It's a web app that looks and beh
 | 🗂️ | **Personnel files** | Character dossiers, backstories, relations and the concept art that shaped them |
 | 🗃️ | **Card index** | A glossary of departments, ranks, documents, places and the laws of the afterlife |
 | 📅 | **Release plan** | Books, series, films and games in order of release, each with its own description |
+| 🕹️ | **Recreation** | Service games played right on the terminal: terminal access, pneumatic mail, redaction, shelving and the queue |
 
 **Spoiler-safe by design.** On the first visit the terminal asks for your *clearance level*: the last chapter you've read. Everything beyond it arrives as black redaction bars stamped **TOP SECRET**. You can declassify them, if you dare.
 

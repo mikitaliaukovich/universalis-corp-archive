@@ -10,6 +10,7 @@ import { Panel } from '../components/ui/Panel'
 import { Logo } from '../components/ui/Logo'
 import { TypewriterText } from '../components/ui/TypewriterText'
 import { FactTable, SubHead } from '../components/ui/EntityBits'
+import { GAMES } from '../games/registry'
 
 export function Home() {
   const { l, t, settings, readTo } = useSettings()
@@ -28,6 +29,7 @@ export function Home() {
     personnel: content.characters.length,
     glossary: content.terms.length,
     releases: content.releases.length,
+    games: GAMES.length,
   }
 
   return (

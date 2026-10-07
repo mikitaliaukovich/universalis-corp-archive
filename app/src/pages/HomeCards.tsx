@@ -9,14 +9,17 @@ import { Panel } from '../components/ui/Panel'
 import { Logo } from '../components/ui/Logo'
 import { TypewriterText } from '../components/ui/TypewriterText'
 import { focusStyle, primaryImage } from '../components/ui/EntityThumb'
+import { GAMES } from '../games/registry'
 
 type Section = (typeof content.site.sections)[number]
 
-const RECORDS: Record<Section['view'], Entity[]> = {
-  chronicle: content.chapters,
-  personnel: content.characters,
-  glossary: content.terms,
-  releases: content.releases,
+/** records a section card counts and picks its picture from; the games have no pictures, so their card shows its code */
+const RECORDS: Record<Section['view'], { count: number; entities: Entity[] }> = {
+  chronicle: { count: content.chapters.length, entities: content.chapters },
+  personnel: { count: content.characters.length, entities: content.characters },
+  glossary: { count: content.terms.length, entities: content.terms },
+  releases: { count: content.releases.length, entities: content.releases },
+  games: { count: GAMES.length, entities: [] },
 }
 
 /** Card home: one column of large section cards and a row of tools. Settings → Home screen switches back to the classic layout. */
@@ -88,7 +91,7 @@ export function HomeCards() {
 function SectionCard({ section: s }: { section: Section }) {
   const { l } = useSettings()
   const locked = useLocked()
-  const records = RECORDS[s.view]
+  const { count, entities: records } = RECORDS[s.view]
   // a fresh pick each visit; only records the reader's clearance allows
   const [seed] = useState(Math.random)
   const image = useMemo(() => {
@@ -104,7 +107,7 @@ function SectionCard({ section: s }: { section: Section }) {
       <span className="homecard__top">
         {s.hotkey && <kbd>{s.hotkey}</kbd>}
         {s.code && <span className="homecard__code">{s.code}</span>}
-        <span className="homecard__count">{String(records.length).padStart(3, '0')}</span>
+        <span className="homecard__count">{String(count).padStart(3, '0')}</span>
       </span>
       <span className="homecard__body">
         <strong className="homecard__label">{l(s.label)}</strong>

@@ -27,7 +27,7 @@ export const SiteSchema = z.object({
       z.object({
         id: z.string(),
         path: z.string(),
-        view: z.enum(['chronicle', 'personnel', 'glossary', 'releases']),
+        view: z.enum(['chronicle', 'personnel', 'glossary', 'releases', 'games']),
         hotkey: z.string().optional(),
         label: L10n,
         code: z.string().optional(),
@@ -69,6 +69,10 @@ export const SiteSchema = z.object({
   }),
   quotes: L10nList,
   home: z.object({ intro: L10n, forcesTitle: L10n, forces: z.array(z.object({ id: z.string(), text: L10n })).default([]) }),
+  /** word lists for the Recreation games: extra passwords for the terminal hack, names for the queue */
+  games: z
+    .object({ words: L10nList.default({}), names: L10nList.default({}), surnames: L10nList.default({}) })
+    .default({ words: {}, names: {}, surnames: {} }),
 })
 export type Site = z.infer<typeof SiteSchema>
 

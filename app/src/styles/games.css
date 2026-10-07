@@ -1,0 +1,373 @@
+/* ================================================================ recreation (games) */
+.games__center .panel__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.games__blurb {
+  font-family: var(--font-type);
+}
+
+.games__controls {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.games__controls li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.games__keys {
+  display: inline-flex;
+  gap: 3px;
+  min-width: 96px;
+}
+
+/* ---- DIR listing when no program is selected */
+.dirlist {
+  font-family: var(--font-type);
+}
+
+.dirlist__cmd {
+  margin: 14px 0 6px;
+}
+
+.dirlist__files {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dirlist__file {
+  display: grid;
+  grid-template-columns: 9ch 4ch minmax(0, 1fr) auto;
+  gap: 12px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  white-space: pre;
+}
+
+.dirlist__file:hover,
+.dirlist__file:focus-visible {
+  background: var(--fg);
+  color: var(--ink);
+  text-shadow: none;
+}
+
+.dirlist__ext,
+.dirlist__best {
+  color: var(--dim);
+}
+
+.dirlist__file:hover .dirlist__ext,
+.dirlist__file:hover .dirlist__best,
+.dirlist__file:focus-visible .dirlist__ext,
+.dirlist__file:focus-visible .dirlist__best {
+  color: inherit;
+}
+
+.dirlist__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- shell */
+.gameshell {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  outline: none;
+}
+
+.gamestatus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gamestatus__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.gamestatus__label {
+  color: var(--dim);
+}
+
+.gamestatus__value {
+  font-family: var(--font-type);
+  font-size: 15px;
+  padding: 0 6px;
+  background: color-mix(in srgb, var(--fg) 88%, #000);
+  color: var(--ink);
+  text-shadow: none;
+  border-radius: 2px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.gamestatus__kbd {
+  margin-left: auto;
+  color: var(--faint);
+  border: 1px solid var(--line-faint);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.gameshell.is-armed .gamestatus__kbd {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.gamestage {
+  position: relative;
+  flex: 1;
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+  container-type: size;
+  border: 1px solid var(--line-faint);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.gameshell.is-armed .gamestage {
+  border-color: var(--line);
+}
+
+/* ---- character screen: every column 0.6em wide (IBM Plex Mono), every row 1.2em */
+.tscreen {
+  --cell-w: 0.6;
+  --cell-h: 1.2;
+  font-family: var(--font-ui);
+  font-size: min(calc(96cqw / (var(--cols) * var(--cell-w))), calc(94cqh / (var(--rows) * var(--cell-h))), 26px);
+  line-height: 1.2;
+  white-space: pre;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.tscreen--live {
+  cursor: crosshair;
+}
+
+.tscreen__row {
+  display: flex;
+  height: 1.2em;
+}
+
+.tscreen__row > span {
+  flex: none;
+  height: 1.2em;
+}
+
+.tscreen__box {
+  width: calc(var(--cell-w) * 1em);
+  overflow: hidden;
+  text-align: center;
+}
+
+.t-fg {
+  color: var(--fg);
+}
+.t-dim {
+  color: var(--dim);
+}
+.t-faint {
+  color: var(--faint);
+  text-shadow: none;
+}
+.t-accent {
+  color: var(--accent);
+}
+.t-danger {
+  color: var(--danger);
+}
+.t-inv,
+.t-ainv,
+.t-dinv {
+  color: var(--ink);
+  text-shadow: none;
+}
+.t-inv {
+  background: var(--fg);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--fg) 40%, transparent);
+}
+.t-ainv {
+  background: var(--accent);
+}
+.t-dinv {
+  background: var(--danger);
+}
+
+/* ---- ready / pause / game over card */
+.gamecard {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: min(86%, 440px);
+  padding: 22px 20px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--panel) 96%, transparent);
+  box-shadow:
+    inset 0 0 0 3px var(--bg),
+    inset 0 0 0 4px var(--line-faint),
+    0 0 24px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  cursor: pointer;
+}
+
+.gamecard__title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gamecard__hint {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.gamecard__line {
+  font-family: var(--font-type);
+}
+
+.gamecard__record {
+  padding: 1px 8px;
+  background: var(--accent);
+  color: var(--ink);
+  text-shadow: none;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.gamestage__stamp {
+  position: absolute;
+  bottom: 26%;
+  right: 7%;
+  pointer-events: none;
+}
+
+/* ---- touch pad (coarse pointers only) */
+.touchpad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+.touchpad__dirs {
+  display: grid;
+  grid-template-columns: repeat(3, 52px);
+  grid-template-rows: repeat(2, 46px);
+  gap: 6px;
+}
+
+.touchpad__up {
+  grid-column: 2;
+}
+.touchpad__left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.touchpad__down {
+  grid-column: 2;
+  grid-row: 2;
+}
+.touchpad__right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.touchpad__actions {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.touchpad__btn {
+  min-width: 52px;
+  height: 46px;
+  padding: 0 10px;
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  font-size: 18px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touchpad__btn:active {
+  background: var(--fg);
+  color: var(--ink);
+  text-shadow: none;
+}
+
+.touchpad__a,
+.touchpad__b {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.touchpad__wide {
+  flex: 1;
+  height: 56px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.touchpad__actions:has(.touchpad__wide) {
+  flex: 1;
+  margin-left: 0;
+}
+
+@media (max-width: 760px) {
+  /* the page scrolls on phones, so the screen sizes from its width alone */
+  .gamestage {
+    flex: none;
+    min-height: 0;
+    padding: 6px 0;
+    container-type: inline-size;
+  }
+  .tscreen {
+    font-size: min(calc(96cqw / (var(--cols) * var(--cell-w))), 22px);
+  }
+  .gamecard {
+    padding: 14px 12px;
+  }
+  .gamestatus__kbd {
+    display: none;
+  }
+  .dirlist__file {
+    grid-template-columns: 9ch minmax(0, 1fr) auto;
+  }
+  .dirlist__ext {
+    display: none;
+  }
+}

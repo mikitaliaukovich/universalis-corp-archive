@@ -17,7 +17,7 @@ Everything the site shows lives in [`content/`](content):
 
 | Path | What it controls |
 |---|---|
-| `site.yaml` | Title, header line, sections (menu, hotkeys, URLs), boot lines, password gate, header radio, newcomer tips, pager messages, Charter quotes, home screen |
+| `site.yaml` | Title, header line, sections (menu, hotkeys, URLs), boot lines, password gate, header radio, newcomer tips, pager messages, Charter quotes, home screen, word lists for the games |
 | `theme.yaml` | Phosphor palettes, fonts, default effects (scanlines, flicker, sound…) |
 | `taxonomy.yaml` | Realms, chapter/character statuses and stamps, factions, glossary categories, release formats and statuses, image kinds |
 | `i18n/<lang>.yaml` | Every interface string |
@@ -87,6 +87,22 @@ images:
 ```
 
 The longer description goes into `ru.md` / `en.md`, with the same Markdown extensions as everywhere else. Story lines, formats and statuses are listed in `taxonomy.yaml`. The first line in `releaseLines` is the trunk. A line with `branchFrom: <line id>` splits off that line just above its own first release. Within a line, releases are numbered in `order`.
+
+### Recreation
+
+The **Recreation** tab (hotkey `5`) holds five games drawn in text characters on the terminal screen, so they follow the reader's phosphor colour and tube effects:
+
+| Program | Game |
+|---|---|
+| Terminal access | Guess the password hidden in a memory dump; each wrong word reports how many letters are in place. Bracket pairs on one line remove a dud or restore the attempts |
+| Pneumatic mail | Snake: lay the tube and pick up capsules |
+| Redaction | Minesweeper: uncover the file and put a black bar over every secret |
+| Archive shelving | Tetris, drawn like the 1984 original |
+| The queue | Approve case files or return them for revision according to a directive that keeps changing |
+
+Clicking the screen or pressing `ENTER` gives the keyboard to the game, and the archive's hotkeys stay quiet while it plays. `ESC` pauses it and gives the keyboard back. A second `ESC` returns to the list. On touch screens an on-screen pad appears. Records are kept per device.
+
+The passwords of the terminal hack are single words of 5–8 letters taken from the names of cards and personnel files open at the reader's clearance, topped up by `games.words` in `site.yaml`. The souls in the queue are named from `games.names` and `games.surnames`. All game texts are `games.*` strings in `i18n/<lang>.yaml`. The games themselves are code in `src/games/`. To add one, write a component that renders through `GameShell` and register it in `src/games/registry.ts`.
 
 ### Markdown extensions
 

@@ -52,6 +52,15 @@ sections:
     description:
       ru: "Книги, сериалы, фильмы и игры — в порядке выхода"
       en: "Books, series, films and games — in order of release"
+  - id: games
+    path: games
+    view: games
+    hotkey: "5"
+    code: "ДСГ"
+    label: { ru: "Досуг", en: "Recreation" }
+    description:
+      ru: "Служебные программы для перерыва: взлом, пневмопочта, цензура, стеллаж, очередь"
+      en: "Service programs for the break: hacking, pneumatic mail, redaction, shelving, the queue"
 
 boot:
   lines:
@@ -189,3 +198,17 @@ home:
       text:
         ru: "[[mari]] — случайный инструмент, который постепенно превращается в самостоятельного игрока."
         en: "[[mari]] — an accidental instrument slowly becoming a player in her own right."
+
+# Recreation section (the games). `words` top up the passwords of the terminal hack, which are mostly drawn
+# from the names of cards and personnel files open at the reader's clearance; 5–8 letters, one word each.
+# `names` and `surnames` make up the souls waiting in the queue.
+games:
+  words:
+    ru: [АРХИВ, УСТАВ, ПЕЙДЖЕР, ЖНЕЦ, ОЧЕРЕДЬ, ДОСЬЕ, ПЕЧАТЬ, ШТАМП, БЛАНК, ОТЧЁТ, ВЕРДИКТ, ДОПУСК, ГРЕШНИК, ПОКАЯНИЕ, РЕЕСТР, ЛЕТОПИСЬ, ПРОТОКОЛ, КАРТОТЕКА, ПРИГОВОР, ЧИСТКА, ДУШИ, КОНТРАКТ, ПРОПУСК, ЗАПРОС, ОТКАЗ, ПАПКА, СЕКРЕТ, КЛЕРК, КУРЬЕР, МАШИНКА, ЛЕНТА, КАПСУЛА, ТРУБА, ЛАМПА, КАТУШКА, ЖЕТОН, ОРДЕР, ПРИКАЗ, СУДЬБА, ВЕЧНОСТЬ, ИСХОД, ПОРОГ, ДВЕРЬ, КОРИДОР, ПЕРЕХОД, РАЗНОС, ВЗЫСКАНИЕ, ПОДПИСЬ, ГРИФ, ЯЩИК, ЧЕРНИЛА, КОПИЯ, ЖУРНАЛ, ИНДЕКС, ШИФР, КЛЮЧ, СЧЁТ, ДОЛГ, ВЫКУП, ИСКУПЛЕНИЕ, ОТДЕЛ, СЛУЖБА, СМЕНА, ТАБЕЛЬ, ПАРОЛЬ, СИГНАЛ, ЭФИР]
+    en: [ARCHIVE, CHARTER, PAGER, REAPER, QUEUE, DOSSIER, STAMP, LEDGER, REPORT, VERDICT, CLEARANCE, SINNER, PENANCE, REGISTER, CHRONICLE, PROTOCOL, SENTENCE, PURGE, SOULS, CONTRACT, PERMIT, REQUEST, DENIAL, FOLDER, SECRET, CLERK, COURIER, TYPIST, RIBBON, CAPSULE, VACUUM, VALVE, SPOOL, TOKEN, WARRANT, ORDER, FATE, ETERNITY, EXODUS, THRESHOLD, DOORWAY, CORRIDOR, PASSAGE, REPRIMAND, PENALTY, SIGNATURE, BUREAU, DRAWER, CARBON, MEMO, INDEX, CIPHER, KEYCODE, DEBTOR, RANSOM, ATONEMENT, OFFICE, SERVICE, SHIFT, TIMECARD, PASSWORD, SIGNAL, STATIC, TRANSIT, REDEEM]
+  names:
+    ru: [Ханна, Отто, Грета, Карл, Ида, Феликс, Марта, Эмиль, Роза, Пауль, Клара, Хуго, Лотта, Бруно, Эрна, Макс, Агата, Вальтер, Ирма, Франц, Елена, Томас, Вера, Ян]
+    en: [Hanna, Otto, Greta, Karl, Ida, Felix, Marta, Emil, Rosa, Paul, Clara, Hugo, Lotte, Bruno, Erna, Max, Agatha, Walter, Irma, Franz, Elena, Thomas, Vera, Jan]
+  surnames:
+    ru: [Вайс, Брандт, Келлер, Фогель, Хартман, Ланг, Рот, Бауэр, Фишер, Крюгер, Линднер, Новак, Моретти, Дюбуа, Ковальски, Хаас, Зоммер, Винтер, Эберт, Шмидт]
+    en: [Weiss, Brandt, Keller, Vogel, Hartmann, Lang, Roth, Bauer, Fischer, Kruger, Lindner, Novak, Moretti, Dubois, Kowalski, Haas, Sommer, Winter, Ebert, Schmidt]

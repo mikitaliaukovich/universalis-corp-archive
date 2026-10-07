@@ -12,6 +12,7 @@ import './styles/base.css'
 import './styles/crt.css'
 import './styles/components.css'
 import './styles/pages.css'
+import './styles/games.css'
 import App from './App'
 
 createRoot(document.getElementById('root')!).render(

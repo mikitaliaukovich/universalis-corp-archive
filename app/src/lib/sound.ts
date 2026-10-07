@@ -46,6 +46,11 @@ export const sfx = {
   pager: () => {
     for (let i = 0; i < 3; i++) tone(2900, 0.09, 'square', 0.02, i * 0.16)
   },
+  /** wrong move / denied */
+  error: () => {
+    tone(140, 0.09, 'square', 0.035)
+    tone(110, 0.12, 'square', 0.035, 0.09)
+  },
   /** rubber stamp thud */
   stamp: () => tone(90, 0.12, 'sine', 0.12),
 }
